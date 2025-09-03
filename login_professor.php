@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <title>Nome do Site</title>
+    <title>TAURUS</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -20,15 +20,20 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include 'templates/header.php'; ?>
 
-    <main class="container espaçamento-main flex-grow-1 mb-5 pb-3">
+    <main class="container espaçamento-main flex-grow-1 mb-5 pb-5">
         <div class="row">
-            <!-- Seção de especificações -->
+            <!-- Coluna esquerda -->
             <div class="col-md-6 mt-4">
-                <div class="text-right mb-4 fs-2 fw-bold">
+                <div class="d-flex align-items-center mb-4">
+                <img src="imagens/logo.png" alt="Logo TAURUS" style="height: 50px;" class="me-1">
+                <p class="mb-0 fs-2 fw-bold">
                     TAU<span class="header_cor">RUS</span>
+                </p>
                 </div>
 
-                <div class="mb-4">
+
+
+                <div class="mb-4 ms-3">
                     <div class="d-flex align-items-start mb-3">
                         <i class="bi bi-person-video3 fs-3 text-dark me-3"></i>
                         <div>
@@ -65,12 +70,12 @@
 
             <!-- Painel de Login -->
             <div class="col-md-6 mt-1 d-flex justify-content-center">
-                <div id="loginPanel" class="w-100" style="max-width: 500px; position: sticky; top: 80px;">
+                <div id="loginPanel"  class="w-100 position-relative" style="max-width: 500px;">
 
                     <!-- Card de Login -->
                     <div id="loginCard" class="card shadow w-100">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">Entrar no Espaço do Professor</h2>
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-center fw-bold">Entrar no Espaço do Professor</h2>
                             <p class="text-center">Preencha os campos para prosseguir com seu login</p>
                             <form action="" method="post">
                                 <div class="mb-3">
@@ -96,7 +101,7 @@
                     </div>
 
                     <!-- Card de Recuperação de Senha -->
-                    <div id="modalEsqueciSenha" class="card shadow w-100 d-none">
+                    <div id="modalEsqueciSenha" class="card shadow w-100 d-none mt-5" style="position: absolute; top: 0; left: 0; z-index: 10;">
                         <div class="card-body">
                             <h2 class="card-title text-center">Esqueci minha senha</h2>
                             <p class="text-center"> Siga os passos para recuperar sua conta</p>
@@ -121,48 +126,10 @@
                 </div>
             </div>
     </main>
-
-
+    
     <?php include 'templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/navbar-scroll.js"></script>
-    <!-- Script chamando o modal de "Esqueci a senha"-->
-    <<script>
-        const loginCard = document.getElementById('loginCard');
-        const modalSenha = document.getElementById('modalEsqueciSenha');
-        const linkEsqueci = document.getElementById('esqueciSenhaLink');
-        const linkVoltar = document.getElementById('voltarLogin');
-        const formRecuperacao = document.getElementById('formRecuperacao');
-        const mensagemSucesso = document.getElementById('mensagemSucesso');
-
-        linkEsqueci.addEventListener('click', function(e) {
-        e.preventDefault();
-        loginCard.classList.add('d-none');
-        modalSenha.classList.remove('d-none');
-        });
-
-        linkVoltar.addEventListener('click', function(e) {
-        e.preventDefault();
-        modalSenha.classList.add('d-none');
-        loginCard.classList.remove('d-none');
-        mensagemSucesso.classList.add('d-none');
-        });
-
-        formRecuperacao.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const email = document.getElementById('emailRecuperacao').value;
-        if (email.trim() === '' || !email.includes('@')) {
-        alert('Por favor, insira um e-mail válido.');
-        return;
-        }
-        mensagemSucesso.classList.add('d-none');
-        setTimeout(() => {
-        mensagemSucesso.classList.remove('d-none');
-        }, 800);
-        });
-        </script>
-
-
+    <script src="js/login.js"></script>
 </body>
-
 </html>

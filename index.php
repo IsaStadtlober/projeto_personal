@@ -40,7 +40,7 @@
 
           <!-- Academia -->
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow atividade-card rounded-0 border-1 border-secondary">
+            <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
                 <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Academia (Bem-Estar)</h5>
                 <p class="fw-bold mb-2">Seu Treino Merece Objetivo</p>
@@ -52,7 +52,7 @@
 
           <!-- Lutas -->
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow atividade-card rounded-0 border-1 border-secondary">
+            <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
                 <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Vários tipos de lutas</h5>
                 <p class="fw-bold mb-2">Força, técnica e disciplina</p>
@@ -64,7 +64,7 @@
 
           <!-- Skate -->
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow atividade-card rounded-0 border-1 border-secondary">
+            <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
                 <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Skateboarding</h5>
                 <p class="fw-bold mb-2">Menos tombos, mais progresso</p>
@@ -76,7 +76,7 @@
 
           <!-- Muito mais -->
           <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow atividade-card bg-dark text-white rounded-0">
+            <div class="card h-100 shadow atividade-card bg-dark text-white rounded-1">
               <div class="card-body">
                 <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Muito mais...</h5>
                 <p class="fw-bold mb-2">UM SÓ LUGAR, TODOS OS SEUS OBJETIVOS.</p>

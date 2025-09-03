@@ -34,11 +34,9 @@
 
 /* Seção de Serviços */
 .servicos .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .servicos .card:hover {
 transform: scale(1.07);
-box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.658);
-
 }
