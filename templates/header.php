@@ -7,9 +7,9 @@
     <!-- Coluna central: imagem + nome -->
     <div class="d-flex align-items-center mx-auto">
       <img src="imagens/logo.png" alt="Logo" style="height: 40px;">
-      <p class="mb-0 fs-1 text-dark fw-bold">
+      <a href="index.php" class="mb-0 fs-1 text-dark fw-bold text-decoration-none ms-2">
         TAU<span class="header_cor">RUS</span>
-      </p>
+      </a>
     </div>
 
     <!-- Coluna direita: botão com dropdown sem seta -->
@@ -20,8 +20,8 @@
           <i class="bi bi-person-fill ms-1 fs-5 icon-hover"></i>
         </a>
         <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-          <li><a class="dropdown-item" href="login-aluno.php">ENTRAR COMO ALUNO</a></li>
-          <li><a class="dropdown-item" href="login-professor.php">ENTRAR COMO PROFESSOR</a></li>
+          <li><a class="dropdown-item" href="login_aluno.php">ENTRAR COMO ALUNO</a></li>
+          <li><a class="dropdown-item" href="login_professor.php">ENTRAR COMO PROFESSOR</a></li>
         </ul>
       </div>
     </div>

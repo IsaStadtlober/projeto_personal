@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
-.espaçamento-main{
+.espaçamento-main {
     padding-top: 180px;
+}
+
+/* Responsividade para o painel de login */
+@media (max-width: 576px) {
+    #loginPanel {
+        position: static !important;
+        max-width: 100vw;
+    }
+}
+
+#modalEsqueciSenha {
+    max-width: 500px;
+    position: sticky;
+    top: 80px;
 }
