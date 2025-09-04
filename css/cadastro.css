@@ -1,6 +1,36 @@
 @charset "UTF-8";
 
 /* Estilos para Casdastro Professor */
+main {
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
 
+.logo-taurus {
+  margin-left: -12px;
+}
+
+/* Responsividade para o painel de login */
+
+@media (max-width: 576px) {
+    #loginPanel {
+        position: static !important;
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 992px) {
+  .coluna-esquerda {
+    margin-top: -1rem;
+    margin-left: 0.1rem;
+  }
+}
+
+/*Estilo para o Recuperar Senha*/
+#modalEsqueciSenha {
+    max-width: 500px;
+    position: sticky;
+    top: 80px;
+}
 
 /* Estilos para Casdastro Aluno */
