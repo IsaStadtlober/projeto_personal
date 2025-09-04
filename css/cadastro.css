@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* Estilos para Casdastro Professor */
+body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+  }
+
 main {
     margin-top: 200px;
     margin-bottom: 70px;
@@ -8,10 +13,56 @@ main {
 
 .logo-taurus {
   margin-left: -12px;
+}  
+
+/* Painel esquerdo */
+.left-panel {
+  padding: 40px;
+}
+.left-panel .logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.left-panel .logo span {
+  color: orange;
+}
+.left-panel ul li {
+  margin-bottom: 15px;
+}
+/* Formulário */
+.form-container {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+.form-container h5 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.form-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #555;
+}
+.form-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+.btn-custom {
+  background-color: #444;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* Responsividade para o painel de login */
-
 @media (max-width: 576px) {
     #loginPanel {
         position: static !important;
