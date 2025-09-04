@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
+/* Estilos para Login ALuno e Professor */
 main {
-    margin-top: 200px; /* ou qualquer valor que funcione bem com seu layout */
+    margin-top: 200px;
     margin-bottom: 70px;
 }
 
 .logo-taurus {
-  margin-left: -12px; /* ou -12px se quiser mais colado */
+  margin-left: -12px;
+}
+
+/* Responsividade para o painel de login */
+
+@media (max-width: 576px) {
+    #loginPanel {
+        position: static !important;
+        max-width: 100vw;
+    }
 }
 
 @media (max-width: 992px) {
@@ -16,14 +26,7 @@ main {
   }
 }
 
-/* Responsividade para o painel de login */
-@media (max-width: 576px) {
-    #loginPanel {
-        position: static !important;
-        max-width: 100vw;
-    }
-}
-
+/*Estilo para o Recuperar Senha*/
 #modalEsqueciSenha {
     max-width: 500px;
     position: sticky;
