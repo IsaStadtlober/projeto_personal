@@ -1,38 +1,128 @@
 @charset "UTF-8";
 
-/* Estilos para Casdastro Professor */
+/* Estilos para Cadastro Professor */
 .card {
     border-radius: 10px;
 }
 
 .custom-file-input {
     display: none;
+
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
 }
+    main {
+        margin-top: 200px;
+        margin-bottom: 70px;
+    }
 
-/* Estilo do botão de upload */
-.custom-file-upload label {
-    cursor: pointer;
-    padding: 10px 15px;
-    border: 1px solid #6c757d;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
+    .logo-taurus {
+        margin-left: -12px;
+    }
 
-.custom-file-upload label:hover {
-    background-color: #6c757d;
-    color: #fff;
-}
+    /* Painel esquerdo */
+    .left-panel {
+        padding: 40px;
+    }
 
-/* Estilo do texto do nome do arquivo */
-#file-name {
-    font-size: 0.9rem;
-    color: #6c757d;
-}
+    .left-panel .logo {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
-.card-title {
-    font-size: 1.5rem;
-}
+    .left-panel .logo span {
+        color: orange;
+    }
 
-/* Estilos para Casdastro Aluno */
+    .left-panel ul li {
+        margin-bottom: 15px;
+    }
 
-/* Ocultar o input file padrão */
+    /* Formulário */
+    .form-container {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-container h5 {
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .form-container p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .form-label {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        background-color: #444;
+        color: #fff;
+        width: 100%;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    /* Responsividade para o painel de login */
+    @media (max-width: 576px) {
+        #loginPanel {
+            position: static !important;
+            max-width: 100vw;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .coluna-esquerda {
+            margin-top: -1rem;
+            margin-left: 0.1rem;
+        }
+    }
+
+    /*Estilo para o Recuperar Senha*/
+    #modalEsqueciSenha {
+        max-width: 500px;
+        position: sticky;
+        top: 80px;
+    }
+
+    /* Estilo do botão de upload */
+    .custom-file-upload label {
+        cursor: pointer;
+        padding: 10px 15px;
+        border: 1px solid #6c757d;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .custom-file-upload label:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+    /* Estilo do texto do nome do arquivo */
+    #file-name {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    /* Estilos para Casdastro Aluno */
+
+    /* Ocultar o input file padrão */
