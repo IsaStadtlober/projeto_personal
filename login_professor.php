@@ -67,7 +67,7 @@
       </div>
 
       <!-- Painel de Login -->
-      <div class="col-lg-6 col-12 mt-0 px-3 px-lg-0">
+      <div class="col-lg-6 col-12 mt-4 px-3 px-lg-0">
         <div id="loginPanel" class="w-100 mx-auto px-4">
           <!-- Card de Login -->
           <div id="loginCard" class="card shadow w-100">
@@ -98,26 +98,28 @@
           </div>
 
           <!-- Card de Recuperação de Senha -->
-          <div id="modalEsqueciSenha" class="card shadow w-100 d-none mt-5" style="top: 0; left: 0; z-index: 10;">
-            <div class="card-body p-3">
-              <h2 class="card-title text-center">Esqueci minha senha</h2>
-              <p class="text-center">Siga os passos para recuperar sua conta</p>
-              <form id="formRecuperacao">
-                <div class="mb-3">
-                  <label for="emailRecuperacao" class="form-label fw-bold">E-mail</label>
-                  <p class="text-right">Informe seu e-mail para receber um link de recuperação da sua senha.</p>
-                  <input type="email" class="form-control" id="emailRecuperacao" required>
+            <div class="d-flex justify-content-center mt-lg-5">
+                <div id="modalEsqueciSenha" class="card shadow w-100 px-4 d-none">
+                    <div class="card-body p-4">
+                    <h2 class="card-title text-center fw-bold">Recuperar Senha</h2>
+                    <p class="text-center">Informe seu e-mail para receber o link de recuperação</p>
+                    <form id="formRecuperacao">
+                        <div class="mb-3">
+                        <label for="emailRecuperacao" class="form-label fw-bold">E-mail</label>
+                        <input type="email" class="form-control" id="emailRecuperacao" required>
+                        </div>
+                        <div class="d-grid">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                        Instruções enviadas para o seu e-mail!
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#" id="voltarLogin">Voltar para o login</a>
+                    </div>
                 </div>
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-secondary">Enviar</button>
-                </div>
-              </form>
-              <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
-                Instruções enviadas para o seu e-mail!
-              </div>
-              <div class="text-center mt-3">
-                <a href="#" id="voltarLogin">Voltar para o login</a>
-              </div>
+            </div>
             </div>
           </div>
         </div>
