@@ -86,7 +86,7 @@
                 <div class="d-flex justify-content-between mb-3 align-items-center">
                   <div class="d-flex align-items-center">
                     <span>Não tem conta?</span>
-                    <a href="#" class="ms-1">Crie uma!</a>
+                    <a href="cadastro_professor.php" class="ms-1">Crie uma!</a>
                   </div>
                   <a href="#" id="esqueciSenhaLink">Esqueci a senha</a>
                 </div>
