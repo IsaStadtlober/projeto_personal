@@ -20,10 +20,10 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include 'templates/header.php'; ?>
 
-    <main class="container espaçamento-main flex-grow-1 mb-5 pb-5">
-        <div class="row">
+    <main class="container flex-grow-1">
+        <div class="row gx-4 gy-5">
             <!-- Coluna esquerda -->
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4 mb-4 mb-md-0">
                 <div class="d-flex align-items-center mb-4">
                 <img src="imagens/logo.png" alt="Logo TAURUS" style="height: 50px;" class="me-1">
                 <p class="mb-0 fs-2 fw-bold">
@@ -69,8 +69,8 @@
             </div>
 
             <!-- Painel de Login -->
-            <div class="col-md-6 mt-1 d-flex justify-content-center">
-                <div id="loginPanel"  class="w-100 position-relative" style="max-width: 500px;">
+            <div class="col-md-6 mt-1 d-flex justify-content-center px-3 px-md-0">
+                <div id="loginPanel"  class="w-100" style="max-width: 500px;">
 
                     <!-- Card de Login -->
                     <div id="loginCard" class="card shadow w-100">
@@ -101,7 +101,7 @@
                     </div>
 
                     <!-- Card de Recuperação de Senha -->
-                    <div id="modalEsqueciSenha" class="card shadow w-100 d-none mt-5" style="position: absolute; top: 0; left: 0; z-index: 10;">
+                    <div id="modalEsqueciSenha" class="card shadow w-100 d-none mt-5" style="top: 0; left: 0; z-index: 10;">
                         <div class="card-body">
                             <h2 class="card-title text-center">Esqueci minha senha</h2>
                             <p class="text-center"> Siga os passos para recuperar sua conta</p>

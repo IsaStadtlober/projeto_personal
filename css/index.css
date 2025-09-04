@@ -2,9 +2,8 @@
 
 /* Index */
 .hero-text {
-  min-height: calc(100vh - 70px); /* Altura total menos o header */
-  margin-top: 70px; 
-  background: url('../imagens/img_index1.png') no-repeat center center; /* Imagem de fundo */
+  min-height: 100vh;
+  background: url('../imagens/img_index1.png') no-repeat top center;
   background-size: cover;
 }
 
@@ -38,5 +37,5 @@
 }
 
 .servicos .card:hover {
-transform: scale(1.07);
+transform: scale(1.04);
 }

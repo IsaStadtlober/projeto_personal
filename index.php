@@ -36,17 +36,17 @@
     <section class="servicos py-5 mt-5 text-center">
       <div class="container">
         <h2 class="mb-5 fw-bold fs-3 text-dark">TUDO EM SÓ UM<br> LUGAR...</h2>
-        <div class="row g-3">
+        <div class="row g-4">
 
           <!-- Academia -->
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
-                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Academia (Bem-Estar)</h5>
+                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 mt-2 rounded">Academia (Bem-Estar)</h5>
                 <p class="fw-bold mb-2">Seu Treino Merece Objetivo</p>
                 <p class="card-text text-secondary">Não perca mais tempo na academia sem um plano real.<br> Tenha acesso a um programa de treino pensado para o seu tipo de corpo, genética e rotina.</p>
               </div>
-              <img src="imagens/img_academia1.png" alt="Academia" class="img-fluid mx-auto d-block mb-5 pb-3" style="width: 65%; object-fit: cover;">
+              <img src="imagens/img_academia1.png" alt="Academia" class="img-fluid mx-auto d-block mb-5 p-2" style="max-width: 100%; height: auto; object-fit: cover;">
             </div>
           </div>
 
@@ -54,11 +54,11 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
-                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Vários tipos de lutas</h5>
+                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 mt-2 rounded">Vários tipos de lutas</h5>
                 <p class="fw-bold mb-2">Força, técnica e disciplina</p>
                 <p class="card-text text-secondary">Domine cada golpe, melhore sua resistência e se sinta mais confiante. Nossos treinos de boxe online são a melhor forma de atingir seus objetivos, onde quer que você esteja.</p>
               </div>
-              <img src="imagens/img_luta2.png" alt="Lutas" class="img-fluid mx-auto d-block mb-5 pb-3" style="width: 65%; object-fit: cover;">
+              <img src="imagens/img_luta2.png" alt="Lutas" class="img-fluid mx-auto d-block mb-5 p-2" style="max-width: 100%; height: auto; object-fit: cover;">
             </div>
           </div>
 
@@ -66,11 +66,11 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow atividade-card rounded-1 border-1 border-secondary">
               <div class="card-body">
-                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Skateboarding</h5>
+                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 mt-2 rounded">Skateboarding</h5>
                 <p class="fw-bold mb-2">Menos tombos, mais progresso</p>
                 <p class="card-text text-secondary">O segredo para dominar novas manobras é a técnica.<br> Receba um treino completo, pensado para te dar o controle total sobre o seu skate.</p>
               </div>
-              <img src="imagens/img_skate3.png" alt="Skate" class="img-fluid mx-auto d-block mb-5 pb-3" style="width: 65%; object-fit: cover;">
+              <img src="imagens/img_skate3.png" alt="Skate" class="img-fluid mx-auto d-block mb-5 p-2" style="max-width: 100%; height: auto; object-fit: cover;">
             </div>
           </div>
 
@@ -78,10 +78,10 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow atividade-card bg-dark text-white rounded-1">
               <div class="card-body">
-                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 rounded">Muito mais...</h5>
+                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 mt-2 rounded">Muito mais...</h5>
                 <p class="fw-bold mb-2">UM SÓ LUGAR, TODOS OS SEUS OBJETIVOS.</p>
                 <p class="card-text">De musculação a boxe, de skate a yoga, a sua jornada de transformação começa aqui. Oferecemos um método completo que se adapta a você, não importa o seu esporte, com treinos personalizados para potencializar seus resultados. Nós cuidamos da estratégia para você se focar no que mais importa: treinar com propósito. E muito mais...</p>
-                <a href="#" class="btn btn-outline-light rounded-0 mt-2">QUERO CONHECER. . .</a>
+                <a href="#" class="btn btn-outline-light rounded-0 mt-0">QUERO CONHECER. . .</a>
               </div> 
             </div>
           </div>

@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-.espaçamento-main {
-    padding-top: 180px;
+main {
+    margin-top: 200px; /* ou qualquer valor que funcione bem com seu layout */
+    margin-bottom: 70px;
 }
 
 /* Responsividade para o painel de login */
