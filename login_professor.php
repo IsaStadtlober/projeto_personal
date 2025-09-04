@@ -30,7 +30,7 @@
             <p class="mb-0 fs-2 fw-bold">TAU<span class="header_cor">RUS</span></p>
           </div>
 
-          <div class="mb-4">
+          <div class="mb-5">
             <div class="d-flex align-items-start mb-3">
               <i class="bi bi-person-video3 fs-3 text-dark me-3"></i>
               <div>
