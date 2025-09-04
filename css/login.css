@@ -5,6 +5,17 @@ main {
     margin-bottom: 70px;
 }
 
+.logo-taurus {
+  margin-left: -12px; /* ou -12px se quiser mais colado */
+}
+
+@media (max-width: 992px) {
+  .coluna-esquerda {
+    margin-top: -1rem;
+    margin-left: 0.1rem;
+  }
+}
+
 /* Responsividade para o painel de login */
 @media (max-width: 576px) {
     #loginPanel {
@@ -18,3 +29,5 @@ main {
     position: sticky;
     top: 80px;
 }
+
+
