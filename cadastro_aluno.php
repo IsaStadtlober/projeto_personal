@@ -109,6 +109,11 @@
         <!-- Card 2: Informações Adicionais -->
         <div id="cadastroCard2" class="card shadow w-100 d-none">
           <div class="card-body p-4">
+             <div class="position-absolute top-0 start-0 m-3">
+              <button type="button" class="btn btn-link text-dark p-0" id="btnVoltar1">
+                <i class="bi bi-arrow-left fs-3"></i>
+              </button>
+            </div>
             <h2 class="card-title text-center fw-bold">Informações Adicionais</h2>
             <p class="text-center">Preencha os campos para prosseguir com seu cadastro</p>
             <form id="formCadastro2" action="" method="post">
@@ -167,6 +172,11 @@
         <!-- Card 3: Senha -->
         <div id="cadastroCard3" class="card shadow w-100 d-none">
           <div class="card-body p-4">
+            <div class="position-absolute top-0 start-0 m-3">
+              <button type="button" class="btn btn-link text-dark p-0" id="btnVoltar2">
+                <i class="bi bi-arrow-left fs-3"></i>
+              </button>
+            </div>
             <h2 class="card-title text-center fw-bold">Definir Senha</h2>
             <p class="text-center">Escolha uma senha para sua conta</p>
             <form id="formCadastro3" action="" method="post">
@@ -192,7 +202,7 @@
   <?php include 'templates/footer.php'; ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/navbar-scroll.js"></script>
-  <script src="js/cadastro.js"></script>
+  <script src="js/cadastro_aluno.js"></script>
 </body>
 
 </html>
