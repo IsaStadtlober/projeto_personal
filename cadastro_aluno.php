@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-  <title>TAURUS - Cadastro</title>
+  <title>Cadastro Aluno</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -43,7 +43,7 @@
               <i class="bi bi-chat-dots fs-3 text-dark me-3"></i>
               <div>
                 <h5 class="fw-bold mb-1">Comunicação Direta:</h5>
-                <p class="mb-0">Converse com seu personal, receba feedbacks e ajuste seus plano quando precisar.</p>
+                <p class="mb-0">Converse com seu personal, receba feedbacks e ajuste seus plano.</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@
               <i class="bi bi-graph-up fs-3 text-dark me-3"></i>
               <div>
                 <h5 class="fw-bold mb-1">Monitore seu Progresso:</h5>
-                <p class="mb-0">Acompanhe seus resultados com dados e graficos para ver sua evolução.</p>
+                <p class="mb-0">Acompanhe sua evolução com os gráficos para ver seus resultados.</p>
               </div>
             </div>
 
@@ -59,7 +59,7 @@
               <i class="bi bi-book fs-3 text-dark me-3"></i>
               <div>
                 <h5 class="fw-bold mb-1">Conteúdos Exclusivos</h5>
-                <p class="mb-0">Acesse materiais de apoio, dicas de nutrição e guias de referência.</p>
+                <p class="mb-0">Acesse materiais de apoio, dicas de nutrição e guias de técnica.</p>
               </div>
             </div>
           </div>
