@@ -11,10 +11,10 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- CSS personalizado -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -98,32 +98,32 @@
           </div>
 
           <!-- Card de Recuperação de Senha -->
-            <div class="d-flex justify-content-center mt-lg-5">
-                <div id="modalEsqueciSenha" class="card shadow w-100 px-4 d-none">
-                    <div class="card-body p-4">
-                    <h2 class="card-title text-center fw-bold">Recuperar Senha</h2>
-                    <p class="text-center">Informe seu e-mail para receber o link de recuperação</p>
-                    <form id="formRecuperacao">
-                        <div class="mb-3">
-                        <label for="emailRecuperacao" class="form-label fw-bold">E-mail</label>
-                        <input type="email" class="form-control" id="emailRecuperacao" required>
-                        </div>
-                        <div class="d-grid">
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
-                        </div>
-                    </form>
-                    <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
-                        Instruções enviadas para o seu e-mail!
-                    </div>
-                    <div class="text-center mt-3">
-                        <a href="#" id="voltarLogin">Voltar para o login</a>
-                    </div>
+          <div class="d-flex justify-content-center mt-lg-5">
+            <div id="modalEsqueciSenha" class="card shadow w-100 px-4 d-none">
+              <div class="card-body p-4">
+                <h2 class="card-title text-center fw-bold">Recuperar Senha</h2>
+                <p class="text-center">Informe seu e-mail para receber o link de recuperação</p>
+                <form id="formRecuperacao">
+                  <div class="mb-3">
+                    <label for="emailRecuperacao" class="form-label fw-bold">E-mail</label>
+                    <input type="email" class="form-control" id="emailRecuperacao" required>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                  </div>
+                </form>
+                <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                  Instruções enviadas para o seu e-mail!
                 </div>
-            </div>
+                <div class="text-center mt-3">
+                  <a href="#" id="voltarLogin">Voltar para o login</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
 
@@ -132,4 +132,5 @@
   <script src="js/navbar-scroll.js"></script>
   <script src="js/login.js"></script>
 </body>
+
 </html>
