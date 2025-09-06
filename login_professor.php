@@ -132,5 +132,4 @@
   <script src="js/navbar-scroll.js"></script>
   <script src="js/login.js"></script>
 </body>
-
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
   <?php include 'templates/header.php'; ?>
 
@@ -84,7 +86,7 @@
                 <div class="d-flex justify-content-between mb-3 align-items-center">
                   <div class="d-flex align-items-center">
                     <span>Não tem conta?</span>
-                    <a href="#" id="criarContaLink" class="ms-1">Crie uma!</a>
+                    <a href="cadastro_aluno.php" class="ms-1">Crie uma!</a>
                   </div>
                   <a href="#" id="esqueciSenhaLink">Esqueci a senha</a>
                 </div>
@@ -92,6 +94,32 @@
                   <button type="submit" class="btn btn-secondary">Avançar</button>
                 </div>
               </form>
+            </div>
+          </div>
+
+          <!-- Card de Recuperação de Senha -->
+            <div class="d-flex justify-content-center mt-lg-5">
+                <div id="modalEsqueciSenha" class="card shadow w-100 px-4 d-none">
+                    <div class="card-body p-4">
+                    <h2 class="card-title text-center fw-bold">Recuperar Senha</h2>
+                    <p class="text-center">Informe seu e-mail para receber o link de recuperação</p>
+                    <form id="formRecuperacao">
+                        <div class="mb-3">
+                        <label for="emailRecuperacao" class="form-label fw-bold">E-mail</label>
+                        <input type="email" class="form-control" id="emailRecuperacao" required>
+                        </div>
+                        <div class="d-grid">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                        Instruções enviadas para o seu e-mail!
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#" id="voltarLogin">Voltar para o login</a>
+                    </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -102,5 +130,6 @@
   <?php include 'templates/footer.php'; ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/navbar-scroll.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>
