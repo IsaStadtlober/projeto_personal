@@ -98,14 +98,15 @@
                 <label class="form-label fw-bold">Foto de Perfil</label>
                 <div class="custom-file-upload">
                   <input type="file" class="custom-file-input" id="foto_perfil" name="foto_perfil" accept="image/*" required>
-                  <label for="foto_perfil" class="btn btn-outline-dark d-flex align-items-center gap-2">
+                  <label for="foto_perfil" class="btn btn-outline-dark d-flex align-items-center gap-2 p-2">
                     <i class="bi bi-image"></i> Escolher Arquivo
                   </label>
-                  <span id="file-name" class="text-muted mt-2 d-block">Nenhum arquivo selecionado</span>
+                  <span id="file-name" class="small text-muted mt-2 d-block">Nenhum arquivo selecionado</span>
                 </div>
               </div>
-              <div class="d-grid">
-                <button type="button" class="btn btn-secondary" id="btnAvancar1">Avançar</button>
+              <div class="d-flex justify-content-between gap-3">
+                <button type="reset" class="btn btn-outline-danger w-50">Limpar Tudo</button>
+                <button type="button" class="btn btn-secondary w-50" id="btnAvancar1">Avançar</button>
               </div>
             </form>
           </div>
@@ -137,7 +138,7 @@
                 <label for="focoCliente" class="form-label fw-bold">Foco de cliente</label>
                 <input type="text" name="foco" id="foco" class="form-control" placeholder="Ex: Iniciante, Idosos, Atletas, Reabilitação, Emagrecimento" required>
               </div>
-              <div class="mb-3">
+              <div class="mb-4">
                 <label class="form-label">Dias de Disponibilidade</label>
                 <div class="d-flex flex-wrap gap-3 days-selector">
                   <input type="checkbox" class="btn-check" name="disponibilidade[]" id="domingo" value="domingo" autocomplete="off">
@@ -162,8 +163,15 @@
                   <label class="btn btn-outline-dark" for="sabado">D</label>
                 </div>
               </div>
-              <div class="d-grid">
-                <button type="button" class="btn btn-secondary" id="btnAvancar2">Avançar</button>
+              <div class="d-flex flex-column gap-3">
+                <!-- Linha 1: Voltar e Limpar -->
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-dark" id="btnVoltar1">Voltar</button>
+                  <button type="reset" class="btn btn-outline-danger">Limpar Tudo</button>
+                </div>
+
+                <!-- Linha 2: Avançar -->
+                <button type="button" class="btn btn-secondary w-100 btn-md p-2" id="btnAvancar2">Avançar</button>
               </div>
             </form>
           </div>
@@ -183,8 +191,9 @@
                 <label for="confirmarSenha" class="form-label fw-bold">Confirmar Senha</label>
                 <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
               </div>
-              <div class="d-grid">
-                <button type="submit" class="btn btn-secondary">Finalizar Cadastro</button>
+              <div class="d-flex justify-content-between gap-3">
+                <button type="button" class="btn btn-outline-dark w-50" id="btnVoltar2">Voltar</button>
+                <button type="submit" class="btn btn-secondary w-50">Finalizar Cadastro</button>
               </div>
             </form>
           </div>

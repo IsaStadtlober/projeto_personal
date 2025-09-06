@@ -91,22 +91,35 @@
                     <option>Não Pratico</option>
                     <option>Não, Sou sedentário</option>
               </select>
-              <div class="mb-3">
+              <div class="mt-3">
               <label class="form-label fw-bold">QUAIS DIAS NA SEMANA VOCÊ TEM DISPONIBILIDADE?</label>
               <div class="d-flex flex-wrap days-selector">
-                <div class="d-flex flex-wrap">
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">S</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">T</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">Q</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">Q</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">S</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark me-2 mb-2 fw-bold">S</button>
-                    <button type="button" class="btn btn-light btn-secondary rounded-circle border border-dark mb-2 fw-bold">D</button>
+                <div class="d-flex flex-wrap gap-3 days-selector">
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="domingo" value="domingo" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="domingo">S</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="segunda" value="segunda" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="segunda">T</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="terca" value="terca" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="terca">Q</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="quarta" value="quarta" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="quarta">Q</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="quinta" value="quinta" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="quinta">S</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="sexta" value="sexta" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="sexta">S</label>
+
+                  <input type="checkbox" class="btn-check" name="disponibilidade[]" id="sabado" value="sabado" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="sabado">D</label>
                 </div>
              </div>
 
             </div>
-              <div class="d-grid">
+              <div class="d-grid mt-4">
                 <button type="button" class="btn btn-secondary" id="btnAvancar1">Concluir</button>
               </div>
             </form>
