@@ -97,7 +97,7 @@
       <div class="position-relative w-100 mb-5">
         <img src="imagens/img_index3.png" alt="Banner" class="img-fluid w-100 m-0 p-0">
         <div class="position-absolute top-50 start-50 translate-middle text-center px-3">
-          <h1 class="text-white fs-4 fw-bold display-4 flex-wrap pt-2">TODOS OS TREINOS, UM SÓ OBJETIVO: O SEU.</h1>
+          <h1 class="text-white fs-3 fw-bold display-4 flex-wrap pt-2">TODOS OS TREINOS, UM SÓ OBJETIVO: O SEU.</h1>
         </div>
       </div>
 
@@ -111,7 +111,7 @@
             Descubra uma nova era de bem-estar com o nosso site, a plataforma que conecta você aos melhores personal trainers online do país. Chega de treinos genéricos e sem graça. Aqui, sua jornada de saúde e fitness é completamente personalizada.
             </p>
 
-            <h5 class="fw-bold text-dark mb-3 fs-3 text-uppercase">A sua jornada, o seu esporte, o seu<br> professor</h5>
+            <h5 class="fw-bold text-dark mb-3 fs-4 text-uppercase">A sua jornada, o seu esporte, o seu<br> professor</h5>
             <p class="text-dark mb-4 small">
               Seja qual for o seu objetivo — perda de peso, ganho de massa muscular, preparação para uma maratona, ou simplesmente começar a se exercitar — temos o profissional certo para te guiar. Nossa plataforma reúne uma vasta rede de personal trainers especializados em diversas modalidades.
             </p>
