@@ -95,36 +95,36 @@
     <section class="container-fluid p-0 m-0">
       <!-- Banner com imagem de fundo ocupando toda a largura -->
       <div class="position-relative w-100 mb-5">
-        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid w-100 m-0 p-0">
-        <div class="position-absolute top-50 start-50 translate-middle text-center px-3">
-          <h1 class="text-white fs-3 fw-bold display-4 flex-wrap pt-2">TODOS OS TREINOS, UM SÓ OBJETIVO: O SEU.</h1>
+        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid w-100 object-fit-cover" style="min-height: 100px; max-height: 100px;">
+        <div class="position-absolute top-50 start-50 translate-middle text-center px-3 w-100">
+          <h1 class="text-white fw-bold pt-2 fs-3">TODOS OS TREINOS, UM SÓ OBJETIVO:<br> O SEU.</h1>
         </div>
       </div>
 
       <!-- Conteúdo dividido em duas colunas -->
-      <div class="container py-5 mt-5">
-        <div class="row gx-5 gy-5 align-items-start justify-content-center mt-5 pt-3">
+      <div class="container pb-5 mb-5">
+        <div class="row gx-5 gy-5 mt-lg-5 mt-3 pt-lg-4 pt-2 align-items-center justify-content-center">
           <!-- Coluna de texto -->
-          <div class="col-lg-6 col-12 px-4">
-            <h2 class="fw-bold text-dark mb-3 text-uppercase fs-4">A revolução do treino online:<br>O personal trainer perfeito para você</h2>
+          <div class="col-lg-6 col-12 coluna-texto px-4 pt-4 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start">
+            <h2 class="fw-bold text-dark mb-3 text-uppercase fs-4 fs-md-4 fs-lg-3">A revolução do treino online:<br>O personal trainer perfeito para você</h2>
             <p class="text-dark mb-4 small">
-            Descubra uma nova era de bem-estar com o nosso site, a plataforma que conecta você aos melhores personal trainers online do país. Chega de treinos genéricos e sem graça. Aqui, sua jornada de saúde e fitness é completamente personalizada.
+            Descubra uma nova era de bem-estar com o nosso site, a plataforma que conecta você aos melhores personal trainers online do país. Aqui, sua jornada de saúde e fitness é completamente personalizada.
             </p>
 
-            <h5 class="fw-bold text-dark mb-3 fs-4 text-uppercase">A sua jornada, o seu esporte, o seu<br> professor</h5>
+            <h5 class="fw-bold text-dark mb-3 fs-4 text-uppercase">A sua jornada, o seu esporte, o seu professor</h5>
             <p class="text-dark mb-4 small">
-              Seja qual for o seu objetivo — perda de peso, ganho de massa muscular, preparação para uma maratona, ou simplesmente começar a se exercitar — temos o profissional certo para te guiar. Nossa plataforma reúne uma vasta rede de personal trainers especializados em diversas modalidades.
+              Seja qual for o seu objetivo — perda de peso, ganho de massa muscular ou simplesmente começar a se exercitar — temos o profissional certo para te guiar. Nossa plataforma reúne uma vasta rede de personal trainers especializados em diversas modalidades.
             </p>
 
             <ul class="list-unstyled">
-              <li class="mb-1 small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong>Dança? </strong>Temos professores de zumba e ballet.</li>
-              <li class="mb-1 small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong>Lutas? </strong>Escolha entre instrutores de boxe e jiu-jitsu.</li>
-              <li class="small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong>Fitness? </strong>Descubra novos exercícios em yoga e pilates.</li>
+              <li class="mb-1 small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong class="fs-6">Dança? </strong>Temos professores de zumba e ballet.</li>
+              <li class="mb-1 small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong class="fs-6">Lutas? </strong>Escolha entre instrutores de boxe e jiu-jitsu.</li>
+              <li class="small"><i class="bi bi-check-circle-fill me-2 header_cor"></i><strong class="fs-6">Fitness? </strong>Descubra novos exercícios em yoga e pilates.</li>
             </ul>
           </div>
 
           <!-- Coluna da imagem -->
-          <div class="col-lg-6 col-12 text-center">
+          <div class="col-lg-6 col-12 text-center mb-lg-0">
               <img src="imagens/img_index2.png" alt="Mulher treinando" style="box-shadow: 5px 4px 3px 1px #f89616;" class="img-fluid">
           </div>
         </div>
