@@ -140,6 +140,62 @@
           <h1 class="text-white fw-bold pt-2 fs-3">COMO COMEÇAR?</h1>
         </div>
       </div>
+
+      <div class="container py-5">
+        <div class="row justify-content-center text-center position-relative">
+          <!-- Linha horizontal (conector) -->
+          <div class="position-absolute top-50 start-0 w-100 d-none d-md-block" style="height: 2px; background-color: #f89616;"></div>
+
+          <!-- Passo 1 -->
+          <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <i class="bi bi-person-plus-fill fs-1 text-warning"></i>
+              </div>
+              <h5 class="fw-bold">1. Crie sua conta</h5>
+              <p class="small text-muted">Explore nossa lista de esportes e encontre o personal ideal para você, filtrando por modalidade, experiência ou avaliação.</p>
+            </div>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <i class="bi bi-search fs-1 text-warning"></i>
+              </div>
+              <h5 class="fw-bold">2. Encontre seu professor</h5>
+              <p class="small text-muted">Explore a variedade de esportes e encontre o profissional ideal, usando filtros de modalidade, experiência e localização.</p>
+            </div>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <i class="bi bi-calendar-check fs-1 text-warning"></i>
+              </div>
+              <h5 class="fw-bold">3. Agende sua aula</h5>
+              <p class="small text-muted">Marque suas aulas online ou presenciais diretamente pela plataforma, no horário que for mais conveniente para você.</p>
+            </div>
+          </div>
+
+          <!-- Passo 4 -->
+          <div class="col-12 col-md-3 position-relative">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <i class="bi bi-trophy fs-1 text-warning"></i>
+              </div>
+              <h5 class="fw-bold">4. Alcance seus objetivos</h5>
+              <p class="small text-muted">Comece a treinar com um especialista e evolua no esporte que você ama, no seu próprio ritmo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto final -->
+        <div class="text-center mt-5 pt-5 mb-5">
+          <p class="fw-semibold text-dark">Sua jornada no esporte, em um só lugar. Tenha o seu plano de treino ideal, não importa qual seja a sua modalidade.</p>
+        </div>
+      </div>
     </section>
 
   </main>
