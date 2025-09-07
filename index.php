@@ -148,7 +148,7 @@
 
           <!-- Passo 1 -->
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
-            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
                 <i class="bi bi-person-plus-fill fs-1 text-warning"></i>
               </div>
@@ -159,7 +159,7 @@
 
           <!-- Passo 2 -->
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
-            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
                 <i class="bi bi-search fs-1 text-warning"></i>
               </div>
@@ -170,7 +170,7 @@
 
           <!-- Passo 3 -->
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
-            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
                 <i class="bi bi-calendar-check fs-1 text-warning"></i>
               </div>
@@ -181,7 +181,7 @@
 
           <!-- Passo 4 -->
           <div class="col-12 col-md-3 position-relative">
-            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between">
+            <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
                 <i class="bi bi-trophy fs-1 text-warning"></i>
               </div>
