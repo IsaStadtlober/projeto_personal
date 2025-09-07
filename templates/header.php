@@ -1,8 +1,15 @@
 <nav id="mainNavbar" class="navbar bg-white fixed-top py-2 shadow visible-navbar">
   <div class="container-fluid d-flex justify-content-between align-items-center">
 
-    <!-- Coluna esquerda (vazia ou com menu futuramente) -->
-    <div style="width: 100px;"></div>
+    <!-- Coluna esquerda: botão de voltar (exibe apenas fora da index.php) -->
+    <div style="width: 100px;" class="text-start">
+      <?php if (basename($_SERVER['PHP_SELF']) !== 'index.php'): ?>
+        <a href="index.php" class="btn btn-link text-dark d-flex align-items-center gap-1">
+          <i class="bi bi-arrow-left fs-4"></i>
+        </a>
+      <?php endif; ?>
+    </div>
+
 
     <!-- Coluna central: imagem + nome -->
     <div class="d-flex align-items-center mx-auto">
