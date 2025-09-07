@@ -87,7 +87,7 @@
           </div>
 
         </div>
-        <p class="pt-5 mt-2 fs-6 text-dark fw-semibold">Sua jornada no esporte, em um só lugar. Tenha o seu plano de treino ideal, não importa qual seja a sua modalidade.</p>
+        <p class="pt-5 mt-3 mb-4 fs-6 text-dark fw-semibold">Sua jornada no esporte, em um só lugar. Tenha o seu plano de treino ideal, não importa qual seja a sua modalidade.</p>
       </div>
     </section>
 
@@ -95,7 +95,7 @@
     <section class="container-fluid p-0 m-0">
       <!-- Banner com imagem de fundo ocupando toda a largura -->
       <div class="position-relative w-100 mb-5">
-        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid w-100 object-fit-cover" style="min-height: 100px; max-height: 100px;">
+        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid" style="min-height: 100px; max-height: 100px;">
         <div class="position-absolute top-50 start-50 translate-middle text-center px-3 w-100">
           <h1 class="text-white fw-bold pt-2 fs-3">TODOS OS TREINOS, UM SÓ OBJETIVO:<br> O SEU.</h1>
         </div>
@@ -103,10 +103,10 @@
 
       <!-- Conteúdo dividido em duas colunas -->
       <div class="container pb-5 mb-5">
-        <div class="row gx-5 gy-5 mt-lg-5 mt-3 pt-lg-4 pt-2 align-items-center justify-content-center">
+        <div class="row gx-5 gy-5 pt-5 align-items-center justify-content-center">
           <!-- Coluna de texto -->
-          <div class="col-lg-6 col-12 coluna-texto px-4 pt-4 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start">
-            <h2 class="fw-bold text-dark mb-3 text-uppercase fs-4 fs-md-4 fs-lg-3">A revolução do treino online:<br>O personal trainer perfeito para você</h2>
+          <div class="col-lg-6 col-12 px-4  text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start">
+            <h2 class="fw-bold text-dark mb-3 text-uppercase fs-4">A revolução do treino online:<br>O personal trainer perfeito para você</h2>
             <p class="text-dark mb-4 small">
             Descubra uma nova era de bem-estar com o nosso site, a plataforma que conecta você aos melhores personal trainers online do país. Aqui, sua jornada de saúde e fitness é completamente personalizada.
             </p>
