@@ -95,7 +95,7 @@
     <section class="container-fluid p-0 m-0">
       <!-- Banner com imagem de fundo ocupando toda a largura -->
       <div class="position-relative w-100 mb-5">
-        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid" style="min-height: 100px; max-height: 100px;">
+        <img src="imagens/img_index3.png" alt="Banner" class="img-fluid w-100" style="min-height: 100px; max-height: 100px;">
         <div class="position-absolute top-50 start-50 translate-middle text-center px-3 w-100">
           <h1 class="text-white fw-bold pt-2 fs-3">TODOS OS TREINOS, UM SÓ OBJETIVO:<br> O SEU.</h1>
         </div>
