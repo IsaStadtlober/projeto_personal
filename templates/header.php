@@ -14,7 +14,7 @@
     <!-- Coluna central: imagem + nome -->
     <div class="d-flex align-items-center mx-auto">
       <img src="/projeto_personal/imagens/logo.png" alt="Logo" style="height: 40px;">
-      <a href="index.php" class="mb-0 fs-1 text-dark fw-bold text-decoration-none ms-2">
+      <a href="../index.php" class="mb-0 fs-1 text-dark fw-bold text-decoration-none ms-2">
         TAU<span class="header_cor">RUS</span>
       </a>
     </div>

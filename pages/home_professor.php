@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
   <title>TAURUS</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@ $_SESSION['usuario_nome'] = "Prof. Carlos";
 
             <!-- Coluna central: imagem + nome -->
             <div class="d-flex align-items-center mx-auto">
-            <img src="imagens/logo.png" alt="Logo" style="height: 40px;">
+            <img src="../imagens/logo.png" alt="Logo" style="height: 40px;">
             <a href="index.php" class="mb-0 fs-1 text-dark fw-bold text-decoration-none ms-2">
                 TAU<span class="header_cor">RUS</span>
             </a>
@@ -63,8 +63,8 @@ $_SESSION['usuario_nome'] = "Prof. Carlos";
     
 </main>
 
-<?php include 'templates/sidebar.php'; ?>
+<?php include '../templates/sidebar.php'; ?>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
