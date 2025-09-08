@@ -16,5 +16,5 @@ projeto_personal/
 │   └── login_aluno.php 
 ├── index.php # Página inicial do site
 ├── README.md # Documentação do projeto 
-└── LICENSE Licença de uso
+└── LICENSE # Licença de uso
 ```
