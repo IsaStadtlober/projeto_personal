@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +13,12 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="sidebar.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php include '../templates/sidebar.php'; ?>
-
 
     
     <?php include '../templates/footer.php'; ?>
