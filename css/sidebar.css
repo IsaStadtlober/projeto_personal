@@ -1,9 +1,0 @@
-.nav-link {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: #f1f1f1; /* fundo claro ao passar o mouse */
-  color: #000 !important;    /* texto escuro */
-  border-radius: 5px;
-}
