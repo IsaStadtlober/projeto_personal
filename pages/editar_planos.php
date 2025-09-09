@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<?php include '../templates/sidebar.php'; ?>
 
 <?php
 session_start();
@@ -59,12 +60,6 @@ $_SESSION['usuario_nome'] = "Prof. Carlos";
         </div>
     </nav>
 </header>
-
-<main>
-    
-</main>
-
-<?php include '../templates/sidebar.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
