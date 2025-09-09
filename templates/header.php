@@ -3,12 +3,16 @@
 
     <!-- Coluna esquerda: botão de voltar (exibe apenas fora da index.php) -->
     <div style="width: 100px;" class="text-start">
-      <!-- Botão de voltar (exibe apenas fora da index.php) -->
-      <?php if (basename($_SERVER['PHP_SELF']) !== 'index.php'): ?>
-        <a href="../index.php" class="btn btn-link text-dark d-flex align-items-center gap-1">
-          <i class="bi bi-arrow-left fs-4"></i>
-        </a>
-      <?php endif; ?>
+      <!-- Botão de voltar exibe em páginas específicas -->
+     <?php
+      $currentPage = basename($_SERVER['PHP_SELF']);
+      $pagesComSeta = ['cadastro_aluno.php', 'cadastro_professor.php', 'login_aluno.php', 'login_professor.php'];
+    ?>
+    <?php if (in_array($currentPage, $pagesComSeta)): ?>
+      <a href="../index.php" class="btn btn-link text-dark d-flex align-items-center gap-1">
+        <i class="bi bi-arrow-left fs-4"></i>
+      </a>
+    <?php endif; ?>
     </div>
 
 
