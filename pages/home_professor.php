@@ -23,7 +23,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
         <div class="offcanvas-header">
             <div class="d-flex align-items-center">
-                <img src="imagens/logo.png" alt="Logo" style="height: 30px;">
+                <img src="../imagens/logo.png" alt="Logo" style="height: 30px;">
                 <span class="fs-4 fw-bold ms-2">TAU<span class="text-warning">RUS</span></span>
             </div>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
