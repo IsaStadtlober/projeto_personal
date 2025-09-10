@@ -26,7 +26,7 @@
         <div class="container my-5 pt-5">
             <div class="row justify-content-center">
                 <!-- Card Inicial -->
-                <div id="cardInicial" class="col-12 col-md-8 col-lg-6 mx-auto">
+                <div id="cardInicial" class="col-12 col-md-8 col-lg-6 mx-auto mt-4">
                     <div class="card shadow-lg border-0 rounded-4 p-5">
                         <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
                         <p class="text-center mb-5 text-muted">Selecione um plano</p>
@@ -46,7 +46,7 @@
                 </div>
 
                 <!--Card Semanal-->
-                <div class="container d-none" id="cardSemanal">
+                <div class="container d-none mt-2" id="cardSemanal">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
                             <div class="card shadow-lg border-0 rounded-4 p-3 w-100">
@@ -82,7 +82,7 @@
                 </div>
 
                 <!--Card Mensal-->
-                <div class="container d-none" id="cardMensal">
+                <div class="container d-none mt-2" id="cardMensal">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
                             <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Card Anual -->
-                <div class="container d-none" id="cardAnual">
+                <div class="container d-none mt-4" id="cardAnual">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
                             <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
