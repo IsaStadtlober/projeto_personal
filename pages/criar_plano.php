@@ -27,13 +27,13 @@
                 <h2 class="card-title text-center fw-bold mb-2">CONFIGURAR PLANO</h2>
                 <p class="text-center mb-5 text-muted">De um nome e uma descrição ao seu plano</p>
                 <form>
-                    <div class="mb-3">
-                        <label for="nomePlano" class="form-label fw-semibold fs-6">Nome do plano</label>
+                    <div class="mb-4">
+                        <label for="nomePlano" class="form-label fw-semibold fs-5">Nome do plano</label>
                         <input type="text" class="form-control rounded-3" id="nomePlano" name="nomePlano"
                             placeholder="Ex: Treino de Força Avançado">
                     </div>
-                    <div class="mb-4">
-                        <label for="objetivoPlano" class="form-label fw-semibold">Objetivo</label>
+                    <div class="mb-4 mt-2">
+                        <label for="objetivoPlano" class="form-label fw-semibold fs-5">Objetivo</label>
                         <input type="text" class="form-control rounded-3" id="objetivoPlano" name="objetivoPlano"
                             placeholder="Ex: Com esse plano você vai sair do nível...">
                     </div>
