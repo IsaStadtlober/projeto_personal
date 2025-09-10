@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*Estilo Corpo da página*/
+body {
+    background-image: url('../imagens/img_home_prof.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*Estilo input*/
+#mainCriar input[type="text"]:hover {
+    border-color: #f89616ab;
+}
+
+input.form-control:focus {
+  border-color: #f89616ab !important;
+  box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
+}
+

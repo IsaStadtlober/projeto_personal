@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +10,25 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../css/home_prof.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/criar_editar.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php include '../templates/sidebar.php'; ?>
 
-    <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative" style="margin-top: 70px;">
+    <main id="mainCriar" class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative" style="margin-top: 70px;">
         <div class="card shadow-lg rounded-4 border-0" style="width: 620px; max-width: 95vw; min-height: 450px;">
-            <div class="card-body p-4">
-                <h2 class="card-title text-center fw-bold mb-2">Configurar Plano</h2>
-                <p class="text-center mb-4">De um nome e uma descrição ao seu plano</p>
+            <div class="card-body p-5">
+                <h2 class="card-title text-center fw-bold mb-2">CONFIGURAR PLANO</h2>
+                <p class="text-center mb-5 text-muted">De um nome e uma descrição ao seu plano</p>
                 <form>
                     <div class="mb-3">
-                        <label for="nomePlano" class="form-label fw-semibold">Nome do plano</label>
+                        <label for="nomePlano" class="form-label fw-semibold fs-6">Nome do plano</label>
                         <input type="text" class="form-control rounded-3" id="nomePlano" name="nomePlano"
                             placeholder="Ex: Treino de Força Avançado">
                     </div>

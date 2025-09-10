@@ -58,12 +58,12 @@
             <i class="bi bi-person-circle ms-2 fs-5"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-            <li><a class="dropdown-item" href="#">👤 Perfil</a></li>
-            <li><a class="dropdown-item" href="#">⚙️ Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item text-danger" href="#">🚪 Sair</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
           </ul>
         </div>
       <?php endif; ?>

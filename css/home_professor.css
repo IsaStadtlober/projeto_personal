@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+/*Estilo Corpo da página*/
 body {
     background-image: url('../imagens/img_home_prof.png');
     background-size: cover;

@@ -14,12 +14,16 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/home_professor.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php include '../templates/sidebar.php'; ?>
 
+<main id="mainHome">
+
+</main>
     
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -15,26 +15,29 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/criar_editar.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php include '../templates/sidebar.php'; ?>
 
-    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <main id="mainEditar" class="flex-grow-1 d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6 mt-5 pt-4">
                     <div class="card shadow-lg border-0 rounded-4 p-5">
-                        <h2 class="text-center fw-bold mb-3">EDITAR O TREINO</h2>
-                        <p class="text-center text-muted mb-4 fs-5">Selecione um Plano</p>
+                        <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
+                        <p class="text-center mb-5 text-muted">Selecione um plano</p>
+                        <h5 class="fw-semibold mb-0 fs-5 px-2">Nome dos Planos</h5>
+                        <hr class="mb-1">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span>Treino de Força Avançado</span>
                                 <a href="#" class="text-warning"><i class="bi bi-pencil-fill fs-5"></i></a>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <span>Base - Intermediário</span>
+                                <span>Baxe - Intermediário</span>
                                 <a href="#" class="text-warning"><i class="bi bi-pencil-fill fs-5"></i></a>
                             </li>
                         </ul>
