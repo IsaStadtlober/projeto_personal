@@ -8,7 +8,7 @@ body {
     background-position: center center;
 }
 
-/*Estilo input*/
+/*Estilo input mainCriar*/
 #mainCriar input[type="text"]:hover {
     border-color: #f89616ab;
 }
@@ -18,3 +18,13 @@ input.form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
 }
 
+/* Hover para o select dentro de #mainCriar */
+#mainCriar select.form-select:hover {
+  border-color: #f89616ab;
+}
+
+/* Focus para o select */
+select.form-select:focus {
+  border-color: #f89616ab !important;
+  box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
+}

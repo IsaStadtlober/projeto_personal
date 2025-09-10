@@ -22,10 +22,11 @@
     <?php include '../templates/header.php'; ?>
     <?php include '../templates/sidebar.php'; ?>
 
-    <main id="mainEditar" class="flex-grow-1 d-flex align-items-center justify-content-center">
-        <div class="container">
+    <main id="mainCriar" class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative">
+        <div class="container my-5 pt-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 mt-5 pt-4">
+                <!-- Card Inicial -->
+                <div id="cardInicial" class="col-12 col-md-8 col-lg-6 mx-auto">
                     <div class="card shadow-lg border-0 rounded-4 p-5">
                         <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
                         <p class="text-center mb-5 text-muted">Selecione um plano</p>
@@ -34,13 +35,163 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span>Treino de Força Avançado</span>
-                                <a href="#" class="text-warning"><i class="bi bi-pencil-fill fs-5"></i></a>
+                                <a href="#" class="header_cor"><i class="bi bi-pencil-fill fs-5"></i></a>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span>Baxe - Intermediário</span>
-                                <a href="#" class="text-warning"><i class="bi bi-pencil-fill fs-5"></i></a>
+                                <a href="#" class="header_cor"><i class="bi bi-pencil-fill fs-5"></i></a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+
+                <!--Card Semanal-->
+                <div class="container d-none" id="cardSemanal">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0 rounded-4 p-3 w-100">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarSemanal">
+                                        <i class="bi bi-arrow-left fs-3"></i>
+                                    </button>
+                                    <h2 class="card-title text-center fw-bold mb-2">Configuração Semanal</h2>
+                                    <p class="text-center mb-5 text-muted">Selecione os dias da semana para o plano semanal.</p>
+                                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingo" value="domingo" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="domingo">Dom</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="segunda" value="segunda" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="segunda">Seg</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="terca" value="terca" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="terca">Ter</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quarta" value="quarta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quarta">Qua</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quinta" value="quinta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quinta">Qui</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sexta" value="sexta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sexta">Sex</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabado" value="sabado" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sabado">Sáb</label>
+                                    </div>
+                                    <div class="text-center mt-4 w-100 d-grid">
+                                        <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card Mensal-->
+                <div class="container d-none" id="cardMensal">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarMensal">
+                                        <i class="bi bi-arrow-left fs-3"></i>
+                                    </button>
+                                    <h2 class="card-title text-center fw-bold mb-2">Configuração Mensal</h2>
+                                    <p class="text-center mb-5 text-muted">Selecione as semanas e os dias da semana para o plano mensal.</p>
+
+                                    <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana1" value="semana1" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana1">Semana 1</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana2" value="semana2" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana2">Semana 2</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana3" value="semana3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana3">Semana 3</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana4" value="semana4" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana4">Semana 4</label>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingoMensal" value="domingo" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="domingoMensal">Dom</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="segundaMensal" value="segunda" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="segundaMensal">Seg</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="tercaMensal" value="terca" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="tercaMensal">Ter</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quartaMensal" value="quarta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quartaMensal">Qua</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quintaMensal" value="quinta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quintaMensal">Qui</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sextaMensal" value="sexta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sextaMensal">Sex</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabadoMensal" value="sabado" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sabadoMensal">Sáb</label>
+                                    </div>
+
+                                    <div class="text-center mt-4 w-100 d-grid">
+                                        <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Anual -->
+                <div class="container d-none" id="cardAnual">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarAnual">
+                                        <i class="bi bi-arrow-left fs-3"></i>
+                                    </button>
+                                    <h2 class="card-title text-center fw-bold mb-2">Configuração Anual</h2>
+                                    <p class="text-center mb-5 text-muted">Selecione os meses, semanas e dias da semana para o plano anual.</p>
+
+                                    <select class="form-select mb-4" aria-label="Selecione o Mês">
+                                        <option selected>Selecione o Mês</option>
+                                        <option value="1">Janeiro</option>
+                                        <option value="2">Fevereiro</option>
+                                        <option value="3">Março</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Maio</option>
+                                        <option value="6">Junho</option>
+                                        <option value="7">Julho</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Setembro</option>
+                                        <option value="10">Outubro</option>
+                                        <option value="11">Novembro</option>
+                                        <option value="12">Dezembro</option>
+                                    </select>
+
+                                    <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana1Anual" value="semana1" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana1Anual">Semana 1</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana2Anual" value="semana2" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana2Anual">Semana 2</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana3Anual" value="semana3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana3Anual">Semana 3</label>
+                                        <input type="checkbox" class="btn-check" name="semanas[]" id="semana4Anual" value="semana4" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="semana4Anual">Semana 4</label>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingoAnual" value="domingo" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="domingoAnual">Dom</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="segundaAnual" value="segunda" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="segundaAnual">Seg</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="tercaAnual" value="terca" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="tercaAnual">Ter</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quartaAnual" value="quarta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quartaAnual">Qua</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="quintaAnual" value="quinta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="quintaAnual">Qui</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sextaAnual" value="sexta" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sextaAnual">Sex</label>
+                                        <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabadoAnual" value="sabado" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="sabadoAnual">Sáb</label>
+                                    </div>
+
+                                    <div class="text-center mt-4 w-100 d-grid">
+                                        <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,6 +201,7 @@
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar-scroll.js"></script>
+    <script src="../js/editar_plano.js"></script>
 </body>
 
 </html>
