@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Estilo botão de pesquisar*/
+.offcanvas input[type="text"]:hover {
+    border-color: #f89616ab;
+}
+
+/*Estilo hover*/
+.offcanvas .nav-link {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  color: #212529;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+.offcanvas .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+  z-index: -1; /* Fica atrás do texto */
+}
+
+.offcanvas .nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+.offcanvas .nav-link:hover {
+  color: #000 !important;
+}
+
+

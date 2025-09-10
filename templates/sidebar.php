@@ -1,25 +1,3 @@
-<!-- CSS personalizado (coloque no <head> ou em seu arquivo CSS) -->
-<style>
-  .offcanvas .nav-link {
-    transition: background-color 0.2s ease, color 0.2s ease;
-    border-radius: 6px;
-    color: #212529; /* cor escura padrão */
-  }
-
-  .offcanvas .nav-link:hover {
-    background-color: #f1f1f1;
-    color: #000 !important;
-  }
-
-  .offcanvas input[type="text"] {
-    font-size: 14px;
-  }
-
-  .offcanvas input[type="text"]:hover {
-  border-color: #f89616ab;     /* borda mais visível */
-}
-</style>
-
 <!-- Offcanvas lateral -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
   <div class="offcanvas-header flex-column align-items-start">

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
