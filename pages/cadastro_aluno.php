@@ -109,7 +109,7 @@
         <!-- Card 2: Informações Adicionais -->
         <div id="cadastroCard2" class="card shadow w-100 d-none">
           <div class="card-body p-4">
-             <div class="position-absolute top-0 start-0 m-3">
+            <div class="position-absolute top-0 start-0 m-3">
               <button type="button" class="btn btn-link text-dark p-0" id="btnVoltar1">
                 <i class="bi bi-arrow-left fs-3"></i>
               </button>
@@ -204,4 +204,5 @@
   <script src="../js/navbar-scroll.js"></script>
   <script src="../js/cadastro_aluno.js"></script>
 </body>
+
 </html>
