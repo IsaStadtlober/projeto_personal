@@ -7,3 +7,67 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.dashboard-main {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.status-card-small {
+    max-width: 350px;
+    /* largura máxima */
+    margin-left: auto;
+    margin-right: auto;
+    /* centraliza horizontalmente */
+}
+
+.status-card {
+    text-align: center;
+}
+
+.status-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.status-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.status-icon {
+    font-size: 2rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    top: 1px;
+    /* ajuste fino opcional */
+}
+
+.status-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+.mb-2 {
+    font-size: 14px;
+}
+
+.alertas-card {
+  border: none; /* remove a borda */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* adiciona uma sombra leve */
+  border-radius: 8px; /* mantém os cantos arredondados, opcional */
+}
