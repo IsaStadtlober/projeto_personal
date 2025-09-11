@@ -7,6 +7,7 @@ const btnProximo = document.getElementById('btnProximo');
 const btnVoltarSemanal = document.getElementById('btnVoltarSemanal');
 const btnVoltarMensal = document.getElementById('btnVoltarMensal');
 const btnVoltarAnual = document.getElementById('btnVoltarAnual');
+const btnAdicionar = document.getElementById('btnAdicionar');
 
 // Gerenciar o clique no botão "Próximo"
 btnProximo.addEventListener('click', function () {
