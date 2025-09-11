@@ -63,7 +63,7 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
+            <li><a class="dropdown-item text-danger" href="/projeto_personal/index.php">Sair</a></li>
           </ul>
         </div>
       <?php endif; ?>
