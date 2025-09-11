@@ -19,12 +19,15 @@
 
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
-    <?php include '../templates/sidebar.php'; ?>
+    <?php
+    $currentPage = $_SERVER['REQUEST_URI']; // ou basename($_SERVER['PHP_SELF'])
+    include '../templates/sidebar.php';
+    ?>
 
-<main id="mainHome">
+    <main id="mainHome">
 
-</main>
-    
+    </main>
+
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar-scroll.js"></script>

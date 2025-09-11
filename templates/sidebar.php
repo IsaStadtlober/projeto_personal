@@ -1,10 +1,21 @@
+<style>
+@charset "UTF-8";
+
+.nav-link.active {
+  color: #e68b14ff;
+  font-weight: bold;
+  background-color: rgba(248, 150, 22, 0.1);
+  border-left: 4px solid var(--primary-color);
+}
+</style>
+
 <!-- Offcanvas lateral -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
   <div class="offcanvas-header flex-column align-items-start">
     <!-- Logo e título -->
     <div class="d-flex align-items-center mb-3">
       <img src="../imagens/logo.png" alt="Logo" style="height: 30px;">
-      <span class="fs-4 fw-bold ms-2">TAU<span class="text-warning">RUS</span></span>
+      <span class="fs-4 fw-bold ms-2">TAU<span class="header_cor">RUS</span></span>
     </div>
 
     <!-- Barra de pesquisa -->
@@ -19,37 +30,37 @@
   <div class="offcanvas-body px-3">
     <ul class="nav flex-column mt-2">
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="home_professor.php">
+        <a class="nav-link <?= (strpos($currentPage, 'home_professor.php') !== false) ? 'active' : '' ?>" href="home_professor.php">
           <i class="bi bi-house-door me-2"></i> Home
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="chat.php">
+        <a class="nav-link <?= (strpos($currentPage, 'chat.php') !== false) ? 'active' : '' ?>" href="chat.php">
           <i class="bi bi-chat-dots me-2"></i> Chat
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="adicionar_aluno.php">
+        <a class="nav-link <?= (strpos($currentPage, 'adicionar_aluno.php') !== false) ? 'active' : '' ?>" href="adicionar_aluno.php">
           <i class="bi bi-person-plus me-2"></i> Adicionar Aluno
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="criar_plano.php">
+        <a class="nav-link <?= (strpos($currentPage, 'criar_plano.php') !== false) ? 'active' : '' ?>" href="criar_plano.php">
           <i class="bi bi-file-earmark-plus me-2"></i> Criar Plano
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="editar_planos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'editar_planos.php') !== false) ? 'active' : '' ?>" href="editar_planos.php">
           <i class="bi bi-pencil-square me-2"></i> Editar Planos
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="gerenciar_planos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'gerenciar_planos.php') !== false) ? 'active' : '' ?>" href="gerenciar_planos.php">
           <i class="bi bi-journal-text me-2"></i> Gerenciar Planos
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link link-dark" href="progresso_alunos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'progresso_alunos.php') !== false) ? 'active' : '' ?>" href="progresso_alunos.php">
           <i class="bi bi-bar-chart-line me-2"></i> Progresso Alunos
         </a>
       </li>
