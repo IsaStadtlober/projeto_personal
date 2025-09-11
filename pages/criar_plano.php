@@ -30,8 +30,13 @@
             <div class="row justify-content-center">
                 <!-- Card Inicial -->
                 <div id="cardInicial" class="col-12 col-md-8 col-lg-6 mx-auto mt-4">
-                    <div class="card shadow-lg rounded-4 border-0 p-4">
+                    <div class="card shadow-lg rounded-4 border-0 p-3">
                         <div class="card-body">
+                            <div class="d-flex align-items-center text-muted mb-4">
+                                <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                <span class="px-3 fw-semibold">Passo 1 de 2</span>
+                                <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                            </div>
                             <h2 class="card-title text-center fw-bold mb-2">CONFIGURAR PLANO</h2>
                             <p class="text-center mb-5 text-muted">Dê um nome e uma descrição ao seu plano</p>
                             <form id="formConfigurarPlano">
@@ -65,11 +70,18 @@
                 <div class="container d-none mt-2" id="cardSemanal">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="card shadow-lg border-0 rounded-4 p-3 w-100">
+                            <div class="card shadow-lg border-0 rounded-4 p-2 w-100">
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarSemanal">
-                                        <i class="bi bi-arrow-left fs-3"></i>
-                                    </button>
+                                    <div class="text-start" style="margin-left: -8px;">
+                                        <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarSemanal">
+                                            <i class="bi bi-arrow-left fs-4"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted mb-4">
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                        <span class="px-3 fw-semibold">Passo 2 de 2</span>
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                    </div>
                                     <h2 class="card-title text-center fw-bold mb-2">Configuração Semanal</h2>
                                     <p class="text-center mb-5 text-muted">Selecione os dias da semana para o plano semanal.</p>
                                     <div class="d-flex flex-wrap gap-2 justify-content-center">
@@ -101,14 +113,20 @@
                 <div class="container d-none mt-2" id="cardMensal">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
+                            <div class="card shadow-lg rounded-4 border-0 p-2 w-100">
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarMensal">
-                                        <i class="bi bi-arrow-left fs-3"></i>
-                                    </button>
+                                    <div class="text-start" style="margin-left: -8px;">
+                                        <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarMensal">
+                                            <i class="bi bi-arrow-left fs-4"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted mb-4">
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                        <span class="px-3 fw-semibold">Passo 2 de 2</span>
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                    </div>
                                     <h2 class="card-title text-center fw-bold mb-2">Configuração Mensal</h2>
                                     <p class="text-center mb-5 text-muted">Selecione as semanas e os dias da semana para o plano mensal.</p>
-
                                     <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
                                         <input type="checkbox" class="btn-check" name="semanas[]" id="semana1" value="semana1" autocomplete="off">
                                         <label class="btn btn-outline-secondary" for="semana1">Semana 1</label>
@@ -150,14 +168,20 @@
                 <div class="container d-none mt-4" id="cardAnual">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="card shadow-lg rounded-4 border-0 p-3 w-100">
+                            <div class="card shadow-lg rounded-4 border-0 p-2 w-100">
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarAnual">
-                                        <i class="bi bi-arrow-left fs-3"></i>
-                                    </button>
+                                    <div class="text-start" style="margin-left: -8px;">
+                                        <button type="button" class="btn btn-link text-dark p-0" id="btnVoltarAnual">
+                                            <i class="bi bi-arrow-left fs-4"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex align-items-center text-muted mb-4">
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                        <span class="px-3 fw-semibold">Passo 2 de 2</span>
+                                        <hr class="flex-grow-1 border-top border-secondary opacity-50">
+                                    </div>
                                     <h2 class="card-title text-center fw-bold mb-2">Configuração Anual</h2>
                                     <p class="text-center mb-5 text-muted">Selecione os meses, semanas e dias da semana para o plano anual.</p>
-
                                     <select class="form-select mb-4" aria-label="Selecione o Mês">
                                         <option selected>Selecione o Mês</option>
                                         <option value="1">Janeiro</option>

@@ -1,47 +1,67 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cardInicial = document.getElementById('cardInicial');
-    const cardSemanal = document.getElementById('cardSemanal');
-    const cardMensal = document.getElementById('cardMensal');
-    const cardAnual = document.getElementById('cardAnual');
-    const btnVoltarSemanal = document.getElementById('btnVoltarSemanal');
-    const btnVoltarMensal = document.getElementById('btnVoltarMensal');
-    const btnVoltarAnual = document.getElementById('btnVoltarAnual');
+  // Cards principais
+  const cardControle = document.getElementById('cardControle');
+  const cardInicial = document.getElementById('cardInicial');
+  const cardSemanal = document.getElementById('cardSemanal');
+  const cardMensal = document.getElementById('cardMensal');
+  const cardAnual = document.getElementById('cardAnual');
 
-    const cards = [cardSemanal, cardMensal, cardAnual];
-    let cardIndex = 0;
+  // Botões de navegação
+  const btnVoltarInicial = document.getElementById('btnVoltarInicial');
+  const btnProximo = document.getElementById('btnProximo');
+  const btnVoltarSemanal = document.getElementById('btnVoltarSemanal');
+  const btnVoltarMensal = document.getElementById('btnVoltarMensal');
+  const btnVoltarAnual = document.getElementById('btnVoltarAnual');
 
-    function esconderTodosOsCards() {
-        cards.forEach(card => {
-            card.classList.add('d-none');
-        });
-    }
+  // Lista dos cards de ciclo e controle de índice
+  const cardsCiclo = [cardSemanal, cardMensal, cardAnual];
+  let cardIndex = 0;
 
-    document.querySelectorAll('.bi-pencil-fill').forEach(icon => {
-        icon.addEventListener('click', function (e) {
-            e.preventDefault();
-            esconderTodosOsCards();
-            cardInicial.classList.add('d-none');
+  // Oculta todos os cards
+  function esconderTodos() {
+    cardControle.classList.add('d-none');
+    cardInicial.classList.add('d-none');
+    cardsCiclo.forEach(card => card.classList.add('d-none'));
+  }
 
-            // Mostrar o próximo card na sequência
-            cards[cardIndex].classList.remove('d-none');
-
-            // Avança o índice e reinicia se passar do último
-            cardIndex = (cardIndex + 1) % cards.length;
-        });
+  // Clica no lápis → abre cardInicial com nome preenchido
+  document.querySelectorAll('.editar-plano').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const nomePlano = this.getAttribute('data-nome');
+      document.getElementById('nomePlano').value = nomePlano;
+      esconderTodos();
+      cardInicial.classList.remove('d-none');
+      cardIndex = 0;
     });
+  });
 
-    btnVoltarSemanal.addEventListener('click', function () {
-        cardSemanal.classList.add('d-none');
-        cardInicial.classList.remove('d-none');
-    });
+  // Clica em "Próximo" → avança para o próximo card de ciclo
+  btnProximo.addEventListener('click', function () {
+    esconderTodos();
+    cardsCiclo[cardIndex].classList.remove('d-none');
+    cardIndex = (cardIndex + 1) % cardsCiclo.length;
+  });
 
-    btnVoltarMensal.addEventListener('click', function () {
-        cardMensal.classList.add('d-none');
-        cardInicial.classList.remove('d-none');
-    });
+  // Voltar do cardInicial → para cardControle
+  btnVoltarInicial.addEventListener('click', function () {
+    esconderTodos();
+    cardControle.classList.remove('d-none');
+  });
 
-    btnVoltarAnual.addEventListener('click', function () {
-        cardAnual.classList.add('d-none');
-        cardInicial.classList.remove('d-none');
-    });
+  // Voltar dos cards de ciclo → para cardInicial
+  btnVoltarSemanal.addEventListener('click', function () {
+    esconderTodos();
+    cardInicial.classList.remove('d-none');
+  });
+
+  btnVoltarMensal.addEventListener('click', function () {
+    esconderTodos();
+    cardInicial.classList.remove('d-none');
+  });
+
+  btnVoltarAnual.addEventListener('click', function () {
+    esconderTodos();
+    cardInicial.classList.remove('d-none');
+  });
 });
