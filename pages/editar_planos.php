@@ -62,7 +62,7 @@
                                 <span class="px-3 fw-semibold">Passo 1 de 2</span>
                                 <hr class="flex-grow-1 border-top border-secondary opacity-50">
                             </div>
-                            <h2 class="card-title text-center fw-bold mb-2">CONFIGURAR PLANO</h2>
+                            <h2 class="card-title text-center fw-bold mb-2">EDITAR PLANO</h2>
                             <p class="text-center mb-5 text-muted">Dê um nome e uma descrição ao seu plano</p>
                             <form id="formConfigurarPlano">
                                 <div class="mb-4">
@@ -98,8 +98,8 @@
                                     <span class="px-3 fw-semibold">Passo 2 de 2</span>
                                     <hr class="flex-grow-1 border-top border-secondary opacity-50">
                                 </div>
-                                <h2 class="card-title text-center fw-bold mb-2">Configuração Semanal</h2>
-                                <p class="text-center mb-5 text-muted">Selecione os dias da semana para o plano semanal.</p>
+                                <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
+                                <p class="text-center mb-5 text-muted">Escolha o dia dos exercícios e seus treinos (Semanal)</p>
                                 <div class="d-flex flex-wrap gap-2 justify-content-center">
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingo" value="domingo" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="domingo">Dom</label>
@@ -116,8 +116,9 @@
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabado" value="sabado" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="sabado">Sáb</label>
                                 </div>
-                                <div class="text-center mt-4 w-100 d-grid">
-                                    <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                <div class="d-flex justify-content-center gap-2 mt-4 w-100">
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="submit" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
                                 </div>
                             </div>
                         </div>
@@ -139,18 +140,15 @@
                                     <span class="px-3 fw-semibold">Passo 2 de 2</span>
                                     <hr class="flex-grow-1 border-top border-secondary opacity-50">
                                 </div>
-                                <h2 class="card-title text-center fw-bold mb-2">Configuração Mensal</h2>
-                                <p class="text-center mb-5 text-muted">Selecione as semanas e os dias da semana para o plano mensal.</p>
-                                <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana1" value="semana1" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana1">Semana 1</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana2" value="semana2" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana2">Semana 2</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana3" value="semana3" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana3">Semana 3</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana4" value="semana4" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana4">Semana 4</label>
-                                </div>
+                                <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
+                                <p class="text-center mb-5 text-muted">Escolha o dia dos exercícios e seus treinos (Mensal)</p>
+                                <select class="form-select mb-4" aria-label="Selecione a Semana">
+                                    <option selected>Selecione a Semana</option>
+                                    <option value="1">Semana 1</option>
+                                    <option value="2">Semana 2</option>
+                                    <option value="3">Semana 3</option>
+                                    <option value="4">Semana 4</option>
+                                </select>
                                 <div class="d-flex flex-wrap gap-2 justify-content-center">
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingoMensal" value="domingo" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="domingoMensal">Dom</label>
@@ -167,8 +165,9 @@
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabadoMensal" value="sabado" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="sabadoMensal">Sáb</label>
                                 </div>
-                                <div class="text-center mt-4 w-100 d-grid">
-                                    <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                <div class="d-flex justify-content-center gap-2 mt-4 w-100">
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="submit" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
                                 </div>
                             </div>
                         </div>
@@ -190,8 +189,8 @@
                                     <span class="px-3 fw-semibold">Passo 2 de 2</span>
                                     <hr class="flex-grow-1 border-top border-secondary opacity-50">
                                 </div>
-                                <h2 class="card-title text-center fw-bold mb-2">Configuração Anual</h2>
-                                <p class="text-center mb-5 text-muted">Selecione os meses, semanas e dias da semana para o plano anual.</p>
+                                <h2 class="card-title text-center fw-bold mb-2">EDITAR O TREINO</h2>
+                                <p class="text-center mb-5 text-muted">Escolha o dia dos exercícios e seus treinos (Anual)</p>
                                 <select class="form-select mb-4" aria-label="Selecione o Mês">
                                     <option selected>Selecione o Mês</option>
                                     <option value="1">Janeiro</option>
@@ -207,16 +206,13 @@
                                     <option value="11">Novembro</option>
                                     <option value="12">Dezembro</option>
                                 </select>
-                                <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana1Anual" value="semana1" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana1Anual">Semana 1</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana2Anual" value="semana2" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana2Anual">Semana 2</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana3Anual" value="semana3" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana3Anual">Semana 3</label>
-                                    <input type="checkbox" class="btn-check" name="semanas[]" id="semana4Anual" value="semana4" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semana4Anual">Semana 4</label>
-                                </div>
+                                <select class="form-select mb-4" aria-label="Selecione a Semana">
+                                    <option selected>Selecione a Semana</option>
+                                    <option value="1">Semana 1</option>
+                                    <option value="2">Semana 2</option>
+                                    <option value="3">Semana 3</option>
+                                    <option value="4">Semana 4</option>
+                                </select>
                                 <div class="d-flex flex-wrap gap-2 justify-content-center">
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="domingoAnual" value="domingo" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="domingoAnual">Dom</label>
@@ -233,8 +229,9 @@
                                     <input type="checkbox" class="btn-check" name="diasSemana[]" id="sabadoAnual" value="sabado" autocomplete="off">
                                     <label class="btn btn-outline-secondary" for="sabadoAnual">Sáb</label>
                                 </div>
-                                <div class="text-center mt-4 w-100 d-grid">
-                                    <button type="submit" class="btn btn-secondary rounded-3">Enviar</button>
+                                <div class="d-flex justify-content-center gap-2 mt-4 w-100">
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="submit" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
                                 </div>
                             </div>
                         </div>
