@@ -255,7 +255,7 @@
                     <div class="position-absolute top-0 end-0 m-2 z-3">
                         <button class="btn btn-light d-flex align-items-center gap-2 px-2 py-1 rounded-pill shadow-sm" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasTreino" aria-controls="offcanvasTreino">
-                            <i class="bi bi-list fs-6 text-dark"></i>
+                            <i class="bi bi-list fs-6 header_cor"></i>
                             <span class="fw-semibold text-dark small">Exercícios Adicionados</span>
                         </button>
                     </div>
