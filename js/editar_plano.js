@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnVoltarMensal = document.getElementById('btnVoltarMensal');
   const btnVoltarAnual = document.getElementById('btnVoltarAnual');
 
+  /*Botões de Adicionar Treino */
+  const btnAdicionarTreino = document.querySelectorAll('.btn-Adicionar');
+  const modalAdicionarTreino = document.getElementById('meuModal');
+
   // Lista dos cards de ciclo e controle de índice
   const cardsCiclo = [cardSemanal, cardMensal, cardAnual];
   let cardIndex = 0;
@@ -64,15 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
     esconderTodos();
     cardInicial.classList.remove('d-none');
   });
-});
 
-// js para chamar o modal ao clicar no botão "Adicionar Treino"
-const btnAdicionarTreino = document.querySelectorAll('.btn-Adicionar');
-const modalAdicionarTreino = document.getElementById('meuModal');
-
-btnAdicionarTreino.forEach(function (btn) {
+  // js para chamar o modal ao clicar no botão "Adicionar Treino"
+  btnAdicionarTreino.forEach(function (btn) {
     btn.addEventListener('click', function () {
-        const modal = new bootstrap.Modal(modalAdicionarTreino);
-        modal.show();
+      const modal = new bootstrap.Modal(modalAdicionarTreino);
+      modal.show();
     });
+  });
 });
+
