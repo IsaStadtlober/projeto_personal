@@ -226,12 +226,8 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< Updated upstream
 
                 <!--Modal de Adicionar Treino-->
-=======
-                <!-- Modal de Exercícios-->
->>>>>>> Stashed changes
                 <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
