@@ -226,6 +226,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Modal de Adicionar Treino-->
                 <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
