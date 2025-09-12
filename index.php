@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-  <title>TAURUS</title>
+  <title>XPORTES</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -78,10 +78,9 @@
           <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow atividade-card bg-dark text-white rounded-1">
               <div class="card-body">
-                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-3 mt-2 rounded">Muito mais...</h5>
-                <p class="fw-bold mb-2">UM SÓ LUGAR, TODOS OS SEUS OBJETIVOS.</p>
+                <h5 class="card-title fw-bold bg-transform text-white py-1 mb-4 mt-2 rounded">Muito mais...</h5>
+                <p class="fw-bold mb-3">UM SÓ LUGAR, TODOS OS SEUS OBJETIVOS.</p>
                 <p class="card-text">De musculação a boxe, de skate a yoga, a sua jornada de transformação começa aqui. Oferecemos um método completo que se adapta a você, não importa o seu esporte, com treinos personalizados para potencializar seus resultados. Nós cuidamos da estratégia para você se focar no que mais importa: treinar com propósito. E muito mais...</p>
-                <a href="#" class="btn btn-outline-light rounded-0 mt-0">QUERO CONHECER. . .</a>
               </div> 
             </div>
           </div>

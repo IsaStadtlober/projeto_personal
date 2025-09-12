@@ -1,21 +1,10 @@
-<style>
-@charset "UTF-8";
-
-.nav-link.active {
-  color: #e68b14ff;
-  font-weight: bold;
-  background-color: rgba(248, 150, 22, 0.1);
-  border-left: 4px solid var(--primary-color);
-}
-</style>
-
 <!-- Offcanvas lateral -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
   <div class="offcanvas-header flex-column align-items-start">
     <!-- Logo e título -->
     <div class="d-flex align-items-center mb-3">
       <img src="../imagens/logo.png" alt="Logo" style="height: 30px;">
-      <span class="fs-4 fw-bold ms-2">TAU<span class="header_cor">RUS</span></span>
+      <span class="fs-4 fw-bold ms-2">X<span class="header_cor">portes</span></span>
     </div>
 
     <!-- Barra de pesquisa -->
@@ -32,11 +21,6 @@
       <li class="nav-item mb-3" style="font-size: 18px;">
         <a class="nav-link <?= (strpos($currentPage, 'home_professor.php') !== false) ? 'active' : '' ?>" href="home_professor.php">
           <i class="bi bi-house-door me-2"></i> Home
-        </a>
-      </li>
-      <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'chat.php') !== false) ? 'active' : '' ?>" href="chat.php">
-          <i class="bi bi-chat-dots me-2"></i> Chat
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">

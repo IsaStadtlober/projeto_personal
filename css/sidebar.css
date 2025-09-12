@@ -10,6 +10,12 @@ input.form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
 }
 
+/*Botão de fechar*/
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /*Estilo hover*/
 .offcanvas .nav-link {
   position: relative;
@@ -40,5 +46,13 @@ input.form-control:focus {
 
 .offcanvas .nav-link:hover {
   color: #000 !important;
+}
+
+/* Estilo do Link ativo*/
+.nav-link.active {
+  color: #e68b14ff;
+  font-weight: bold;
+  background-color: rgba(248, 150, 22, 0.1);
+  border-left: 4px solid var(--primary-color);
 }
 

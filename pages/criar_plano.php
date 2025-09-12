@@ -52,18 +52,12 @@
                                 </div>
                                 <div class="btn-group w-100 mb-4" role="group" aria-label="Tipo de ciclo">
                                     <input type="radio" class="btn-check" name="ciclo" id="semanal" value="semanal" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="semanal">Semanal</label>
+                                    <label class="btn btn-outline-secondary" for="semanal">Plano<br> <strong>SEMANAL</strong></label>
                                     <input type="radio" class="btn-check" name="ciclo" id="mensal" value="mensal" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="mensal">Mensal</label>
+                                    <label class="btn btn-outline-secondary" for="mensal">Plano<br> <strong>MENSAL</strong></label>
                                     <input type="radio" class="btn-check" name="ciclo" id="anual" value="anual" autocomplete="off">
-                                    <label class="btn btn-outline-secondary" for="anual">Anual</label>
+                                    <label class="btn btn-outline-secondary" for="anual">Plano<br> <strong>ANUAL</strong></label>
                                 </div>
-                                <div class="text-muted d-flex justify-content-around">
-                                    <p>Exercício Semanal</p>
-                                    <p>Ciclo Mensal</p>
-                                    <p>Ciclo Anual</p>
-                                </div>
-
                                 <div class="d-grid">
                                     <button type="button" class="btn btn-secondary rounded-3" id="btnProximo">Próximo</button>
                                 </div>

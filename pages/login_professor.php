@@ -27,7 +27,7 @@
         <div class="conteudo-esquerda">
           <div class="d-flex align-items-center mb-4 gap-2 ps-0">
             <img src="../imagens/logo.png" alt="Logo TAURUS" style="height: 50px;" class="logo-taurus">
-            <p class="mb-0 fs-2 fw-bold">TAU<span class="header_cor">RUS</span></p>
+            <p class="mb-0 fs-2 fw-bold">X<span class="header_cor">portes</span></p>
           </div>
 
           <div class="mb-5">
