@@ -229,11 +229,11 @@
 
                 <!-- Modal de Adicionar Treino -->
                 <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content position-relative p-4">
 
                             <!-- Botão de fechar -->
-                            <div class="position-absolute top-0 start-0 m-2 z-3">
+                            <div class="position-absolute top-0 start-0 m-2 z-3 fs-5">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
 
@@ -248,16 +248,16 @@
                             </div>
 
                             <!-- HEADER -->
-                            <div class="modal-header flex-column align-items-center w-100 pt-5 pb-2">
-                                <h5 class="modal-title text-center w-100 fs-3 fw-bold" id="meuModalLabel">ADICIONAR TREINO</h5>
+                            <div class="modal-header flex-column align-items-center w-100 pt-2 pb-3">
+                                <h5 class="modal-title text-center w-100 fs-2 fw-bold" id="meuModalLabel">ADICIONAR TREINO</h5>
 
                                 <!-- Busca + Select -->
-                                <div class="d-flex w-100 gap-1 justify-content-center mt-3 mb-3 px-1">
-                                    <div class="position-relative w-75">
+                                <div class="d-flex w-100 gap-1 justify-content-center mt-3 mb-4 px-1">
+                                    <div class="position-relative w-100">
                                         <input type="search" class="form-control form-control-md ps-5" placeholder="Pesquisar exercício...">
                                         <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" style="color: gray;"></i>
                                     </div>
-                                    <select class="form-select form-select-sm w-25">
+                                    <select class="form-select form-select-md w-50">
                                         <option value="">Categorias</option>
                                         <option>Força</option>
                                         <option>Cardio</option>
@@ -267,9 +267,9 @@
                                 </div>
 
                                 <!-- Categoria + Dias centralizados lado a lado -->
-                                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap w-100 px-2 mb-2">
-                                    <h6 class="mb-0 fs-5">SELECIONE O DIA:</h6>
-                                    <div class="d-flex gap-1 flex-wrap">
+                                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap w-100 mb-2">
+                                    <h6 class="mb-0 fs-4">SELECIONE O DIA:</h6>
+                                    <div class="d-flex gap-3 flex-wrap">
                                         <input type="checkbox" class="btn-check" id="dom" autocomplete="off">
                                         <label class="btn btn-outline-dark rounded-circle dia-btn" for="dom">D</label>
 
@@ -295,49 +295,49 @@
                             </div>
 
                             <!-- BODY -->
-                            <div class="modal-body pt-2 px-3">
+                            <div class="modal-body pt-3 px-0">
                                 <div class="d-flex flex-column gap-2 align-items-center">
                                     <!-- Card Musculação -->
-                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                    <div class="card shadow-sm w-100">
                                         <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center">
-                                                <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-2"
-                                                    style="width:80px; height:80px; object-fit:cover;">
+                                                <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-3"
+                                                    style="width:95px; height:95px; object-fit:cover;">
                                                 <div>
                                                     <strong class="fs-5">Musculação</strong><br>
                                                     <small class="text-muted fs-6">Força</small>
                                                 </div>
                                             </div>
-                                            <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
+                                            <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
                                         </div>
                                     </div>
 
                                     <!-- Card Muay Thai -->
-                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                    <div class="card shadow-sm w-100">
                                         <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center">
-                                                <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-2"
-                                                    style="width:80px; height:80px; object-fit:cover;">
+                                                <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3"
+                                                    style="width:95px; height:95px; object-fit:cover;">
                                                 <div>
                                                     <strong class="fs-5">Muay Thai</strong><br>
                                                     <small class="text-muted fs-6">Luta</small>
                                                 </div>
                                             </div>
-                                            <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
+                                            <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
                                         </div>
                                     </div>
 
                                     <!-- Card Personalização -->
-                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                    <div class="card shadow-sm w-100">
                                         <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-center gap-3">
                                                 <i class="bi bi-plus-circle-fill text-dark fs-1"></i>
                                                 <div>
                                                     <strong class="fs-5">Personalização</strong><br>
                                                     <small class="text-muted fs-6">Custom</small>
                                                 </div>
                                             </div>
-                                            <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
+                                            <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -412,6 +412,9 @@
                                                 <td>5</td>
                                                 <td>Leg press inclinado 45°</td>
                                                 <td>
+                                                    <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                        <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                                    </button>
                                                     <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                         <i class="bi bi-trash" style="color: red; font-size: 1.1rem;"></i>
                                                     </button>

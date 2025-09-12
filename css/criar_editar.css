@@ -30,13 +30,3 @@ select.form-select:focus {
 }
 
 /*Modal de Adicionar Treinos*/
-
-.dia-btn {
-  width: 32px;
-  height: 32px;
-  font-weight: bold;
-  font-size: 0.85rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
