@@ -65,3 +65,14 @@ document.addEventListener("DOMContentLoaded", function () {
     cardInicial.classList.remove('d-none');
   });
 });
+
+// js para chamar o modal ao clicar no botão "Adicionar Treino"
+const btnAdicionarTreino = document.querySelectorAll('.btn-Adicionar');
+const modalAdicionarTreino = document.getElementById('meuModal');
+
+btnAdicionarTreino.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        const modal = new bootstrap.Modal(modalAdicionarTreino);
+        modal.show();
+    });
+});

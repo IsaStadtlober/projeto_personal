@@ -117,7 +117,7 @@
                                     <label class="btn btn-outline-secondary" for="sabado">Sáb</label>
                                 </div>
                                 <div class="d-flex justify-content-center gap-2 mt-4 w-100">
-                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
                                     <button type="submit" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                                     <label class="btn btn-outline-secondary" for="sabadoMensal">Sáb</label>
                                 </div>
                                 <div class="d-flex justify-content-center gap-2 mt-4 w-100">
-                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
                                     <button type="submit" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                                     <label class="btn btn-outline-secondary" for="sabadoAnual">Sáb</label>
                                 </div>
                                 <div class="d-flex justify-content-center gap-2 mt-4 w-100">
-                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2">Adicionar treino</button>
+                                    <button type="button" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
                                     <button type="submit" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                 </div>
                             </div>
@@ -239,6 +239,22 @@
                 </div>
             </div>
         </div>
+
+        <!--Modal de Adicionar Treino-->
+                <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="meuModalLabel">Título do Modal</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            </div>
+                            <div class="modal-body">
+                                Conteúdo do modal...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <?php include '../templates/footer.php'; ?>
