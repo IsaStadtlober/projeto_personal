@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/logo1.png" type="image/x-icon">
     <title>Criar Planos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -252,8 +252,8 @@
                                 <h5 class="modal-title text-center w-100 fs-3 fw-bold" id="meuModalLabel">ADICIONAR TREINO</h5>
 
                                 <!-- Busca + Select -->
-                                <div class="d-flex w-100 gap-2 justify-content-center mt-3 mb-3 px-2">
-                                    <input type="search" class="form-control form-control-md w-50" placeholder="Buscar exercício...">
+                                <div class="d-flex w-100 gap-1 justify-content-center mt-3 mb-3 px-1">
+                                    <input type="search" class="form-control form-control-md w-75" placeholder="Buscar exercício...">
                                     <select class="form-select form-select-sm w-25">
                                         <option value="">Categorias</option>
                                         <option>Força</option>
@@ -263,9 +263,9 @@
                                     </select>
                                 </div>
 
-                                <!-- Categoria + Dias centralizados lado a lado -->
+                                <!-- Categoria + Dias centralizados -->
                                 <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap w-100 px-2 mb-2">
-                                    <h6 class="mb-0 fs-5">CATEGORIA:</h6>
+                                    <h6 class="mb-0 fs-6">SELECIONE O DIA:</h6>
                                     <div class="d-flex gap-1 flex-wrap">
                                         <input type="checkbox" class="btn-check" id="dom" autocomplete="off">
                                         <label class="btn btn-outline-dark rounded-circle dia-btn" for="dom">D</label>
@@ -351,30 +351,56 @@
                                     <table class="table table-sm table-bordered">
                                         <thead class="table-light">
                                             <tr>
-                                                <th>#</th>
+                                                <th></th>
                                                 <th>Exercício</th>
+                                                <th>Ações</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
                                                 <td>Leg press inclinado 45°</td>
+                                                <td>
+                                                    <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                                        <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>Leg press inclinado 45°</td>
+                                                <td>
+                                                    <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                                        <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>Leg press inclinado 45°</td>
+                                                <td>
+                                                    <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                                        <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td>Leg press inclinado 45°</td>
+                                                <td>
+                                                    <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                                        <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td>Leg press inclinado 45°</td>
+                                                <td>
+                                                    <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                                        <i class="bi bi-trash" style="color: red; font-size: 1.1rem;"></i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -383,7 +409,7 @@
                         </div>
                     </div>
                 </div>
-                
+
     </main>
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
