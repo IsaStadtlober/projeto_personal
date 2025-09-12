@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center gap-2 mt-4 w-100">
                                         <button type="button" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
-                                        <button type="submit" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
+                                        <button type="submit" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center gap-2 mt-4 w-100">
                                         <button type="button" id="adicionar" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
-                                        <button type="submit" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
+                                        <button type="submit" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center gap-2 mt-4 w-100">
                                         <button type="button" class="btn btn-secondary rounded-3 px-4 py-2 btn-Adicionar">Adicionar treino</button>
-                                        <button id="concluir" type="button" class="btn btn-warning text-white rounded-3 px-4 py-2">Concluir</button>
+                                        <button id="concluir" type="button" class="btn text-white rounded-3 px-4 py-2" style="background-color: #f85e16f1;">Concluir</button>
                                     </div>
                                 </div>
                             </div>
