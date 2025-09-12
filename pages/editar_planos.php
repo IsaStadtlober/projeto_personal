@@ -255,7 +255,7 @@
                     <div class="position-absolute top-0 end-0 m-2 z-3">
                         <button class="btn btn-light d-flex align-items-center gap-2 px-2 py-1 rounded-pill shadow-sm" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasTreino" aria-controls="offcanvasTreino">
-                            <i class="bi bi-list fs-6 text-primary"></i>
+                            <i class="bi bi-list fs-6 text-dark"></i>
                             <span class="fw-semibold text-dark small">Exercícios Adicionados</span>
                         </button>
                     </div>
@@ -318,7 +318,7 @@
                                             <small class="text-muted fs-6">Força</small>
                                         </div>
                                     </div>
-                                    <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                    <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
                                 </div>
                             </div>
 
@@ -333,7 +333,7 @@
                                             <small class="text-muted fs-6">Luta</small>
                                         </div>
                                     </div>
-                                    <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                    <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
                                 </div>
                             </div>
 
@@ -341,13 +341,13 @@
                             <div class="card shadow-sm w-100" style="max-width: 600px;">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center gap-2">
-                                        <i class="bi bi-plus-circle-fill text-success fs-2"></i>
+                                        <i class="bi bi-plus-circle-fill text-dark fs-1"></i>
                                         <div>
                                             <strong class="fs-5">Personalização</strong><br>
                                             <small class="text-muted fs-6">Custom</small>
                                         </div>
                                     </div>
-                                    <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                    <i class="bi bi-arrow-right-circle fs-4 header_cor"></i>
                                 </div>
                             </div>
                         </div>
@@ -374,6 +374,9 @@
                                         <td>1</td>
                                         <td>Leg press inclinado 45°</td>
                                         <td>
+                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                            </button>
                                             <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                 <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
                                             </button>
@@ -383,6 +386,9 @@
                                         <td>2</td>
                                         <td>Leg press inclinado 45°</td>
                                         <td>
+                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                            </button>
                                             <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                 <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
                                             </button>
@@ -392,6 +398,9 @@
                                         <td>3</td>
                                         <td>Leg press inclinado 45°</td>
                                         <td>
+                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                            </button>
                                             <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                 <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
                                             </button>
@@ -401,6 +410,9 @@
                                         <td>4</td>
                                         <td>Leg press inclinado 45°</td>
                                         <td>
+                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                            </button>
                                             <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                 <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
                                             </button>
@@ -410,6 +422,9 @@
                                         <td>5</td>
                                         <td>Leg press inclinado 45°</td>
                                         <td>
+                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                            </button>
                                             <button class="btn p-0 border-0 bg-transparent" title="Remover">
                                                 <i class="bi bi-trash" style="color: red; font-size: 1.1rem;"></i>
                                             </button>
