@@ -266,7 +266,10 @@
 
                         <!-- Busca + Select -->
                         <div class="d-flex w-100 gap-1 justify-content-center mt-3 mb-3 px-1">
-                            <input type="search" class="form-control form-control-md w-75" placeholder="Buscar exercício...">
+                            <div class="position-relative w-75">
+                                <input type="search" class="form-control form-control-md ps-5" placeholder="Pesquisar exercício...">
+                                <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" style="color: gray;"></i>
+                            </div>
                             <select class="form-select form-select-sm w-25">
                                 <option value="">Categorias</option>
                                 <option>Força</option>

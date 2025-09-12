@@ -7,9 +7,10 @@
       <span class="fs-4 fw-bold ms-2"><span class="header_cor">X</span>portes</span>
     </div>
 
-    <!-- Barra de pesquisa -->
-    <form class="w-100 mb-2">
-      <input type="text" class="form-control form-control-sm" placeholder="Pesquisar..." aria-label="Pesquisar">
+    <!-- Barra de pesquisa com ícone -->
+    <form class="w-100 mb-2 position-relative">
+      <input type="text" class="form-control form-control-sm ps-5" placeholder="Pesquisar..." aria-label="Pesquisar">
+      <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" style="color: gray;"></i>
     </form>
 
     <!-- Botão de fechar -->
