@@ -226,17 +226,75 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< Updated upstream
 
                 <!--Modal de Adicionar Treino-->
+=======
+                <!-- Modal de Exercícios-->
+>>>>>>> Stashed changes
                 <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="meuModalLabel">Título do Modal</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+
+                            <!-- HEADER -->
+                            <div class="modal-header flex-column align-items-start w-100">
+                                <h5 class="modal-title mb-3" id="meuModalLabel">ADICIONAR TREINO</h5>
+
+                                <!-- Busca + Select -->
+                                <div class="d-flex w-100 gap-2 mb-3">
+                                    <input type="search" class="form-control" placeholder="Buscar exercício...">
+                                    <select class="form-select">
+                                        <option value="">Categorias</option>
+                                        <option>Força</option>
+                                        <option>Cardio</option>
+                                    </select>
+                                </div>
+
+                                <!-- Categorias + Dias -->
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <h6 class="mb-0">Categorias</h6>
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" class="btn-check" id="dom" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="dom">D</label>
+
+                                        <input type="checkbox" class="btn-check" id="seg" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="seg">S</label>
+
+                                        <input type="checkbox" class="btn-check" id="ter" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="ter">T</label>
+
+                                        <input type="checkbox" class="btn-check" id="qua" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="qua">Q</label>
+
+                                        <input type="checkbox" class="btn-check" id="qui" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="qui">Q</label>
+
+                                        <input type="checkbox" class="btn-check" id="sex" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="sex">S</label>
+
+                                        <input type="checkbox" class="btn-check" id="sab" autocomplete="off">
+                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="sab">S</label>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- BODY -->
                             <div class="modal-body">
-                                Conteúdo do modal...
+                                <!-- Item de exercício -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="../imagens/musculacao.png" alt="Musculação" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <strong>Musculação</strong><br>
+                                        <a href="#">Força</a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="../imagens/muay_thai.png" alt="Muay Thai" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+                                    <div>
+                                        <strong>Muay Thai</strong><br>
+                                        <a href="#">Luta</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
