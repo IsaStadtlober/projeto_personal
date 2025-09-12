@@ -26,7 +26,7 @@
       <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center coluna-esquerda mb-4 mb-lg-0">
         <div class="conteudo-esquerda">
           <div class="d-flex align-items-center mb-4 gap-2 ps-0">
-            <img src="../imagens/logo.png" alt="Logo TAURUS" style="height: 50px;" class="logo-taurus">
+            <img src="../imagens/logo1.png" alt="Logo Xportes" style="height: 38px;" class="logo-xportes">
             <p class="mb-0 fs-2 fw-bold">X<span class="header_cor">portes</span></p>
           </div>
 

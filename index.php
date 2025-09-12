@@ -124,7 +124,7 @@
 
           <!-- Coluna da imagem -->
           <div class="col-lg-6 col-12 text-center mb-lg-0">
-              <img src="imagens/img_index2.png" alt="Mulher treinando" style="box-shadow: 5px 4px 3px 1px #f89616;" class="img-fluid">
+              <img src="imagens/img_index2.png" alt="Mulher treinando" style="box-shadow: 5px 4px 3px 1px #f85e16c9;" class="img-fluid">
           </div>
         </div>
       </div>
@@ -143,13 +143,13 @@
       <div class="container py-5">
         <div class="row justify-content-center text-center position-relative">
           <!-- Linha horizontal (conector) -->
-          <div class="position-absolute top-50 start-0 w-100 d-none d-md-block" style="height: 2px; background-color: #f89616;"></div>
+          <div class="position-absolute top-50 start-0 w-100 d-none d-md-block" style="height: 2px; background-color: #f85e16f1;"></div>
 
           <!-- Passo 1 -->
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
             <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
-                <i class="bi bi-person-plus-fill fs-1 text-warning"></i>
+                <i class="bi bi-person-plus-fill fs-1" style="color: #f85e16f1;"></i>
               </div>
               <h5 class="fw-bold">1. Crie sua conta</h5>
               <p class="small text-muted">Explore nossa lista de esportes e encontre o personal ideal para você, filtrando por modalidade, experiência ou avaliação.</p>
@@ -160,7 +160,7 @@
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
             <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
-                <i class="bi bi-search fs-1 text-warning"></i>
+                <i class="bi bi-search fs-1" style="color: #f85e16f1;"></i>
               </div>
               <h5 class="fw-bold">2. Encontre seu professor</h5>
               <p class="small text-muted">Explore a variedade de esportes e encontre o profissional ideal, usando filtros de modalidade, experiência e localização.</p>
@@ -171,7 +171,7 @@
           <div class="col-12 col-md-3 mb-5 mb-md-0 position-relative">
             <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
-                <i class="bi bi-calendar-check fs-1 text-warning"></i>
+                <i class="bi bi-calendar-check fs-1" style="color: #f85e16f1;"></i>
               </div>
               <h5 class="fw-bold">3. Agende sua aula</h5>
               <p class="small text-muted">Marque suas aulas online ou presenciais diretamente pela plataforma, no horário que for mais conveniente para você.</p>
@@ -182,7 +182,7 @@
           <div class="col-12 col-md-3 position-relative">
             <div class="bg-white p-3 rounded shadow h-100 d-flex flex-column justify-content-between card-hover">
               <div class="mb-2">
-                <i class="bi bi-trophy fs-1 text-warning"></i>
+                <i class="bi bi-trophy fs-1" style="color: #f85e16f1;"></i>
               </div>
               <h5 class="fw-bold">4. Alcance seus objetivos</h5>
               <p class="small text-muted">Comece a treinar com um especialista e evolua no esporte que você ama, no seu próprio ritmo.</p>

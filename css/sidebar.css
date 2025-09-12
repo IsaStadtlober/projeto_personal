@@ -2,11 +2,11 @@
 
 /*Estilo botão de pesquisar*/
 .offcanvas input[type="text"]:hover {
-    border-color: #f89616ab;
+    border-color: #f85e16f1;;
 }
 
 input.form-control:focus {
-  border-color: #f89616ab !important;
+  border-color: #f85e16f1;
   box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
 }
 
@@ -50,7 +50,7 @@ input.form-control:focus {
 
 /* Estilo do Link ativo*/
 .nav-link.active {
-  color: #e68b14ff;
+  color: #f85e16f1;;
   font-weight: bold;
   background-color: rgba(248, 150, 22, 0.1);
   border-left: 4px solid var(--primary-color);

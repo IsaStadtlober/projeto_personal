@@ -10,22 +10,22 @@ body {
 
 /*Estilo input mainCriar*/
 #mainCriar input[type="text"]:hover {
-    border-color: #f89616ab;
+    border-color: #f85e16f1;;
 }
 
 input.form-control:focus {
-  border-color: #f89616ab !important;
+  border-color: #f85e16f1 !important;
   box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
 }
 
 /* Hover para o select dentro de #mainCriar */
 #mainCriar select.form-select:hover {
-  border-color: #f89616ab;
+  border-color: #f85e16f1;
 }
 
 /* Focus para o select */
 select.form-select:focus {
-  border-color: #f89616ab !important;
+  border-color: #f85e16f1 !important;
   box-shadow: 0 0 0 0.25rem rgba(248, 150, 22, 0.4) !important;
 }
 

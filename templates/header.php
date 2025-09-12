@@ -25,7 +25,7 @@
 
     <!-- Coluna central: imagem + nome -->
     <div class="d-flex align-items-center mx-auto">
-      <img src="/projeto_personal/imagens/logo.png" alt="Logo" style="height: 40px;">
+      <img src="/projeto_personal/imagens/logo1.png" alt="Logo" style="height: 40px;">
       <a href="../index.php" class="mb-0 fs-1 text-dark fw-bold text-decoration-none ms-2">
         X<span class="header_cor">portes</span>
       </a>
