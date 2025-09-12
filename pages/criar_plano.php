@@ -227,75 +227,163 @@
                     </div>
                 </div>
 
-                <!--Modal de Adicionar Treino-->
+                <!-- Modal de Adicionar Treino -->
                 <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
+                    <div class="modal-dialog modal-md modal-dialog-scrollable">
+                        <div class="modal-content position-relative p-4">
+
+                            <!-- Botão de fechar -->
+                            <div class="position-absolute top-0 start-0 m-2 z-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            </div>
+
+
+                            <!-- Exercícios Adicionados -->
+                            <div class="position-absolute top-0 end-0 m-2 z-3">
+                                <button class="btn btn-light d-flex align-items-center gap-2 px-2 py-1 rounded-pill shadow-sm" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasTreino" aria-controls="offcanvasTreino">
+                                    <i class="bi bi-list fs-6 text-primary"></i>
+                                    <span class="fw-semibold text-dark small">Exercícios Adicionados</span>
+                                </button>
+                            </div>
 
                             <!-- HEADER -->
-                            <div class="modal-header flex-column align-items-start w-100">
-                                <h5 class="modal-title mb-3" id="meuModalLabel">ADICIONAR TREINO</h5>
+                            <div class="modal-header flex-column align-items-center w-100 pt-5 pb-2">
+                                <h5 class="modal-title text-center w-100 fs-3 fw-bold" id="meuModalLabel">ADICIONAR TREINO</h5>
 
                                 <!-- Busca + Select -->
-                                <div class="d-flex w-100 gap-2 mb-3">
-                                    <input type="search" class="form-control" placeholder="Buscar exercício...">
-                                    <select class="form-select">
+                                <div class="d-flex w-100 gap-2 justify-content-center mt-3 mb-3 px-2">
+                                    <input type="search" class="form-control form-control-md w-50" placeholder="Buscar exercício...">
+                                    <select class="form-select form-select-sm w-25">
                                         <option value="">Categorias</option>
                                         <option>Força</option>
                                         <option>Cardio</option>
+                                        <option>Luta</option>
+                                        <option>Personalização</option>
                                     </select>
                                 </div>
 
-                                <!-- Categorias + Dias -->
-                                <div class="d-flex justify-content-between w-100 align-items-center">
-                                    <h6 class="mb-0">Categorias</h6>
-                                    <div class="d-flex gap-2">
+                                <!-- Categoria + Dias centralizados lado a lado -->
+                                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap w-100 px-2 mb-2">
+                                    <h6 class="mb-0 fs-5">CATEGORIA:</h6>
+                                    <div class="d-flex gap-1 flex-wrap">
                                         <input type="checkbox" class="btn-check" id="dom" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="dom">D</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="dom">D</label>
 
                                         <input type="checkbox" class="btn-check" id="seg" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="seg">S</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="seg">S</label>
 
                                         <input type="checkbox" class="btn-check" id="ter" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="ter">T</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="ter">T</label>
 
                                         <input type="checkbox" class="btn-check" id="qua" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="qua">Q</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="qua">Q</label>
 
                                         <input type="checkbox" class="btn-check" id="qui" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="qui">Q</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="qui">Q</label>
 
                                         <input type="checkbox" class="btn-check" id="sex" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="sex">S</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="sex">S</label>
 
                                         <input type="checkbox" class="btn-check" id="sab" autocomplete="off">
-                                        <label class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center dia-btn" for="sab">S</label>
+                                        <label class="btn btn-outline-dark rounded-circle dia-btn" for="sab">S</label>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- BODY -->
-                            <div class="modal-body">
-                                <!-- Item de exercício -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="../imagens/musculacao.png" alt="Musculação" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
-                                    <div>
-                                        <strong>Musculação</strong><br>
-                                        <a href="#">Força</a>
+                            <div class="modal-body pt-2 px-3">
+                                <div class="d-flex flex-column gap-2 align-items-center">
+                                    <!-- Card Musculação -->
+                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                        <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-2"
+                                                    style="width:80px; height:80px; object-fit:cover;">
+                                                <div>
+                                                    <strong class="fs-5">Musculação</strong><br>
+                                                    <small class="text-muted fs-6">Força</small>
+                                                </div>
+                                            </div>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card Muay Thai -->
+                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                        <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-2"
+                                                    style="width:80px; height:80px; object-fit:cover;">
+                                                <div>
+                                                    <strong class="fs-5">Muay Thai</strong><br>
+                                                    <small class="text-muted fs-6">Luta</small>
+                                                </div>
+                                            </div>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card Personalização -->
+                                    <div class="card shadow-sm w-100" style="max-width: 600px;">
+                                        <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="bi bi-plus-circle-fill text-success fs-2"></i>
+                                                <div>
+                                                    <strong class="fs-5">Personalização</strong><br>
+                                                    <small class="text-muted fs-6">Custom</small>
+                                                </div>
+                                            </div>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="../imagens/muay_thai.png" alt="Muay Thai" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
-                                    <div>
-                                        <strong>Muay Thai</strong><br>
-                                        <a href="#">Luta</a>
-                                    </div>
+                            <!-- Offcanvas dentro do modal -->
+                            <div class="offcanvas offcanvas-end position-absolute top-0 end-0 h-100" tabindex="-1" id="offcanvasTreino"
+                                aria-labelledby="offcanvasTreinoLabel" style="width: 280px; z-index: 1055;">
+                                <div class="offcanvas-header">
+                                    <h6 class="offcanvas-title" id="offcanvasTreinoLabel">SEGUNDA-FEIRA</h6>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <table class="table table-sm table-bordered">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Exercício</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Leg press inclinado 45°</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Leg press inclinado 45°</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Leg press inclinado 45°</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Leg press inclinado 45°</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Leg press inclinado 45°</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
     </main>
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
