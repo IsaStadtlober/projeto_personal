@@ -4,7 +4,7 @@
     <div class="d-flex justify-content-center align-items-center gap-0">
       <img src="/projeto_personal/imagens/logo1.png" alt="Logo" style="height: 39px;">
       <p class="mb-0 fs-2 fw-bold fst-italic ms-2">
-        X<span class="footer_cor">portes</span>
+        <span class="header_cor">X</span>portes
       </p>
     </div>
   </div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../imagens/logo1.png" type="image/x-icon">
   <title>Cadastro Professor</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
         <div class="conteudo-esquerda">
           <div class="d-flex align-items-center mb-4 gap-2 ps-0">
             <img src="../imagens/logo1.png" alt="Logo Xportes" style="height: 38px;" class="logo-xportes">
-            <p class="mb-0 fs-2 fw-bold">X<span class="header_cor">portes</span></p>
+            <p class="mb-0 fs-2 fw-bold"><span class="header_cor">X</span>portes</p>
           </div>
 
           <div class="mb-5">
