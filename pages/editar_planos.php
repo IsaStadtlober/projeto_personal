@@ -307,15 +307,30 @@
                         </div>
                     </div>
 
-                    <!-- BODY -->
-                    <div class="modal-body pt-3 px-0">
-                        <div class="d-flex flex-column gap-2 align-items-center">
+                    <!-- BODY DO MODAL -->
+                    <div class="modal-body bg-cor px-3 py-1">
+
+                        <!-- TOPO DOS CARDS TROCADOS -->
+                        <div id="topoCards" class="w-100 d-none mb-3 mt-2">
+                            <div class="position-relative w-100">
+                                <!-- Botão de voltar à esquerda -->
+                                <button class="btn btn-secondary btn-sm d-flex align-items-center gap-2 position-absolute start-0 top-0" onclick="restaurarCards()" style="z-index: 1;">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <span>Voltar</span>
+                                </button>
+
+                                <!-- Nome centralizado -->
+                                <h4 id="nomeCardSelecionado" class="text-center fw-bold mb-0">MUSCULAÇÃO</h4>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO DE CARDS INICIAIS -->
+                        <div id="cardsIniciais" class="d-flex flex-column gap-2 align-items-center">
                             <!-- Card Musculação -->
-                            <div class="card shadow-sm w-100">
+                            <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Musculação">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-3"
-                                            style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Musculação</strong><br>
                                             <small class="text-muted fs-6">Força</small>
@@ -326,11 +341,10 @@
                             </div>
 
                             <!-- Card Muay Thai -->
-                            <div class="card shadow-sm w-100">
+                            <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Muay Thai">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3"
-                                            style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Muay Thai</strong><br>
                                             <small class="text-muted fs-6">Luta</small>
@@ -341,7 +355,52 @@
                             </div>
 
                             <!-- Card Personalização -->
-                            <div class="card shadow-sm w-100">
+                            <div class="card shadow-sm w-100 card-hover">
+                                <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <i class="bi bi-plus-circle-fill text-dark fs-1"></i>
+                                        <div>
+                                            <strong class="fs-5">Personalização</strong><br>
+                                            <small class="text-muted fs-6">Custom</small>
+                                        </div>
+                                    </div>
+                                    <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO DE CARDS ALTERNATIVOS (OCULTOS INICIALMENTE) -->
+                        <div id="cardsAlternativos" class="d-flex flex-column gap-2 align-items-center d-none">
+                            <!-- Card Agachamento -->
+                            <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Agachamento">
+                                <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../imagens/agachamento.png" alt="Agachamento" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <div>
+                                            <strong class="fs-5">Agachamento</strong><br>
+                                            <small class="text-muted fs-6">Pernas</small>
+                                        </div>
+                                    </div>
+                                    <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
+                                </div>
+                            </div>
+
+                            <!-- Card Flexão -->
+                            <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Flexão">
+                                <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../imagens/flexao.png" alt="Flexão" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <div>
+                                            <strong class="fs-5">Flexão</strong><br>
+                                            <small class="text-muted fs-6">Peito</small>
+                                        </div>
+                                    </div>
+                                    <i class="bi bi-arrow-right-circle fs-3 header_cor"></i>
+                                </div>
+                            </div>
+
+                            <!-- Card Personalização -->
+                            <div class="card shadow-sm w-100 card-hover">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center gap-3">
                                         <i class="bi bi-plus-circle-fill text-dark fs-1"></i>
@@ -440,13 +499,14 @@
                 </div>
             </div>
         </div>
-        
+
     </main>
 
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar-scroll.js"></script>
     <script src="../js/editar_plano.js"></script>
+    <script src="../js/cardsTreinos.js"></script>
 </body>
 
 </html>

@@ -39,3 +39,8 @@ select.form-select:focus {
   align-items: center;
   justify-content: center;
 }
+
+.bg-cor {
+  background-color: #6d6d6d1c;
+}
+
