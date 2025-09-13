@@ -242,14 +242,96 @@
 
         <!-- Modal de Adicionar Treino -->
         <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                <div class="modal-content position-relative p-4">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                <!-- Offcanvas dentro do modal -->
+                <div class="offcanvas offcanvas-end position-absolute top-0 end-0 h-100"
+                    id="offcanvasTreino" tabindex="-1" aria-labelledby="offcanvasTreinoLabel" data-bs-backdrop="false" style="width: 280px; z-index: 1055; transition: none;">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title" id="offcanvasTreinoLabel">SEGUNDA-FEIRA</h6>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <table class="table table-sm table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th></th>
+                                    <th>Exercício</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Leg press inclinado 45°</td>
+                                    <td>
+                                        <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                            <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                        </button>
+                                        <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                            <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Leg press inclinado 45°</td>
+                                    <td>
+                                        <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                            <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                        </button>
+                                        <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                            <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Leg press inclinado 45°</td>
+                                    <td>
+                                        <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                            <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                        </button>
+                                        <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                            <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Leg press inclinado 45°</td>
+                                    <td>
+                                        <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                            <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                        </button>
+                                        <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                            <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Leg press inclinado 45°</td>
+                                    <td>
+                                        <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
+                                            <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
+                                        </button>
+                                        <button class="btn p-0 border-0 bg-transparent" title="Remover">
+                                            <i class="bi bi-trash" style="color: red; font-size: 1.1rem;"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modal-content position-relative px-3 py-4">
 
                     <!-- Botão de fechar -->
                     <div class="position-absolute top-0 start-0 m-2 z-3 fs-5">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
-
 
                     <!-- Exercícios Adicionados -->
                     <div class="position-absolute top-0 end-0 m-2 z-3">
@@ -261,7 +343,7 @@
                     </div>
 
                     <!-- HEADER -->
-                    <div class="modal-header flex-column align-items-center w-100 pt-2 pb-3">
+                    <div class="modal-header flex-column align-items-center w-100 pt-5 pb-3">
                         <h5 class="modal-title text-center w-100 fs-2 fw-bold" id="meuModalLabel">ADICIONAR TREINO</h5>
 
                         <!-- Busca + Select -->
@@ -341,7 +423,8 @@
                             </div>
 
                             <!-- Card Muay Thai -->
-                            <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Muay Thai">
+                            <!-- OBS: está sem o card-treino depois do card-hover -->
+                            <div class="card shadow-sm w-100 card-hover" data-nome="Muay Thai">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
@@ -355,6 +438,7 @@
                             </div>
 
                             <!-- Card Personalização -->
+                            <!-- OBS: está sem o card-treino depois do card-hover -->
                             <div class="card shadow-sm w-100 card-hover">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center gap-3">
@@ -369,8 +453,8 @@
                             </div>
                         </div>
 
-                        <!-- GRUPO DE CARDS ALTERNATIVOS (OCULTOS INICIALMENTE) -->
-                        <div id="cardsAlternativos" class="d-flex flex-column gap-2 align-items-center d-none">
+                        <!-- GRUPO DE CARDS ALTERNATIVOS ESPECÍFICOS PARA MUSCULAÇÃO -->
+                        <div id="cardsAlternativosMusculacao" class="d-flex flex-column gap-2 align-items-center d-none">
                             <!-- Card Agachamento -->
                             <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Agachamento">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
@@ -413,92 +497,102 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Offcanvas dentro do modal -->
-                    <div class="offcanvas offcanvas-end position-absolute top-0 end-0 h-100" tabindex="-1" id="offcanvasTreino"
-                        aria-labelledby="offcanvasTreinoLabel" style="width: 280px; z-index: 1055;">
-                        <div class="offcanvas-header">
-                            <h6 class="offcanvas-title" id="offcanvasTreinoLabel">SEGUNDA-FEIRA</h6>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <table class="table table-sm table-bordered">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Exercício</th>
-                                        <th>Ações</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Leg press inclinado 45°</td>
-                                        <td>
-                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
-                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
-                                            </button>
-                                            <button class="btn p-0 border-0 bg-transparent" title="Remover">
-                                                <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Leg press inclinado 45°</td>
-                                        <td>
-                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
-                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
-                                            </button>
-                                            <button class="btn p-0 border-0 bg-transparent" title="Remover">
-                                                <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Leg press inclinado 45°</td>
-                                        <td>
-                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
-                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
-                                            </button>
-                                            <button class="btn p-0 border-0 bg-transparent" title="Remover">
-                                                <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Leg press inclinado 45°</td>
-                                        <td>
-                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
-                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
-                                            </button>
-                                            <button class="btn p-0 border-0 bg-transparent" title="Remover">
-                                                <i class="bi bi-trash" style="color: red; font-size: 1rem;"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Leg press inclinado 45°</td>
-                                        <td>
-                                            <button class="btn p-0 border-0 bg-transparent me-2" title="Editar">
-                                                <i class="bi bi-pencil text-dark" style="font-size: 1rem;"></i>
-                                            </button>
-                                            <button class="btn p-0 border-0 bg-transparent" title="Remover">
-                                                <i class="bi bi-trash" style="color: red; font-size: 1.1rem;"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- Painel de Detalhes dos Cards Alternativos -->
+                        <div id="painelDetalhes" class="bg-white rounded shadow-sm p-3 mt-3 w-100 d-none">
+                            <!-- Botão de fechar -->
+                            <div class="d-flex justify-content-end mb-2">
+                                <button class="btn btn-outline-secondary btn-sm" id="fecharPainel">
+                                    <i class="bi bi-x-lg"></i> Fechar
+                                </button>
+                            </div>
+
+                            <!-- TOPO: Imagem + Título + Músculos + Variações -->
+                            <div class="row g-3 text-center text-lg-start justify-content-center">
+                                <div class="col-12 col-lg-3 text-center">
+                                    <img src="../imagens/agachamento.png" alt="Agachamento" class="rounded me-2"
+                                        style="width:160px; height:160px; object-fit:cover;">
+                                </div>
+                                <div class="col-12 col-lg-9 text-center text-lg-start">
+                                    <h5 id="tituloExercicio" class="fw-bold fs-4 mb-2">Agachamento</h5>
+                                    <p class="mb-2"><strong>Músculos Envolvidos:</strong><br>
+                                        <span id="musculosExercicio">Quadríceps, Glúteos, Isquiotibiais, Ertores da coluna</span>
+                                    </p>
+                                    <p class="mb-1"><strong>Variações:</strong><br>
+                                        <span id="variacoesExercicio">Sumo, Búlgaro, Frontal, com Halteres</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Linha divisória -->
+                            <hr class="my-3">
+
+                            <!-- DESCRIÇÃO -->
+                            <div class="mb-4 text-center text-lg-start">
+                                <p><strong class="fs-5">Descrição:</strong><br>
+                                    <span id="descricaoExercicio">Execute o movimento como se fosse sentar numa cadeira...</span>
+                                </p>
+                            </div>
+
+                            <!-- UPLOAD DE MÍDIA -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold fs-5">Fotos ou vídeos do exercício</label>
+                                <div class="border rounded p-4 text-center bg-light position-relative" style="cursor: pointer;">
+                                    <i class="bi bi-cloud-upload fs-1 text-muted mb-2"></i><br>
+                                    <span class="text-muted">Arraste arquivos aqui ou clique para enviar</span>
+                                    <input type="file" multiple class="form-control mt-2" style="display: none;">
+                                </div>
+                            </div>
+
+                            <!-- CAMPOS DE ENTRADA: -->
+                            <div class="row g-4 mb-4 text-center text-lg-start fw-bold">
+                                <!-- Coluna 1: Séries + Repetições -->
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Séries</label>
+                                        <input type="number" class="form-control" id="inputSeries">
+                                    </div>
+                                    <div>
+                                        <label class="form-label">Repetições</label>
+                                        <input type="number" class="form-control" id="inputRepeticoes">
+                                    </div>
+                                </div>
+
+                                <!-- Coluna 2: Carga/Instrumento + Tempo de Descanso -->
+                                <div class="col-12 col-md-6 fw-bold">
+                                    <div class="mb-3">
+                                        <label class="form-label">Carga / Instrumento</label>
+                                        <div class="d-flex gap-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text">Kg:</span>
+                                                <input type="number" class="form-control" id="inputCarga">
+                                            </div>
+                                            <input type="text" class="form-control" id="inputInstrumento" placeholder="Instrumento">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="form-label">Tempo de Descanso</label>
+                                        <div class="d-flex gap-2">
+                                            <input type="number" class="form-control w-40" id="inputTempo">
+                                            <input type="text" class="form-control w-60" id="inputForma" placeholder="ex: segundos">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- OBSERVAÇÕES -->
+                            <div class="mb-3 text-center text-lg-start fw-bold fs-5">
+                                <label class="form-label">Observações</label>
+                                <textarea class="form-control" id="inputObservacoes" rows="2"
+                                    placeholder="Ex: Foque na profundidade do movimento..."></textarea>
+                            </div>
+
+                            <!-- BOTÃO FINAL -->
+                            <button class="btn text-white w-100" style="background-color: #f85e16f1;">Adicionar</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </main>
 
@@ -506,6 +600,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar-scroll.js"></script>
     <script src="../js/editar_plano.js"></script>
+    <script src="../js/dadosExercicios.js"></script>
     <script src="../js/cardsTreinos.js"></script>
 </body>
 

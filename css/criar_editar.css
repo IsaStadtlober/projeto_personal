@@ -30,6 +30,7 @@ select.form-select:focus {
 }
 
 /*Modal de Adicionar Treinos*/
+/*Botões de Data*/
 .dia-btn {
   width: 32px;
   height: 32px;
@@ -40,7 +41,51 @@ select.form-select:focus {
   justify-content: center;
 }
 
+/*Offcanvas principal*/
+.offcanvas {
+  transform: none !important;
+}
+
 .bg-cor {
   background-color: #6d6d6d1c;
 }
+
+/*Estilo da barra de rolagem*/
+.scrollavel::-webkit-scrollbar {
+  display: none;
+}
+.scrollavel {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/*Painel de detalhes como um Offcanvas*/
+#painelDetalhes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 73vh; /* Cresce até 85% da tela */
+  background-color: #fff;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 1rem;
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+
+  overflow-y: auto; /* Só rola se ultrapassar 85vh */
+  z-index: 10;
+}
+
+#painelDetalhes.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
 
