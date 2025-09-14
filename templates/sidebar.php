@@ -25,7 +25,7 @@
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'adicionar_aluno.php') !== false) ? 'active' : '' ?>" href="adicionar_aluno.php">
+        <a class="nav-link <?= (strpos($currentPage, 'add_aluno.php') !== false) ? 'active' : '' ?>" href="add_aluno.php">
           <i class="bi bi-person-plus me-2"></i> Adicionar Aluno
         </a>
       </li>
