@@ -25,7 +25,7 @@
     include '../templates/sidebar.php';
     ?>
 
-    <main class="container my-5 pt-5">
+    <main class="container" style="margin-top: 140px; margin-bottom: 80px;">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="card shadow">
