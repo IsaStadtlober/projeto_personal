@@ -25,7 +25,7 @@
     include '../templates/sidebar.php';
     ?>
 
-    <main class="container mt-5 pt-5">
+    <main class="container my-5 pt-5">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="card shadow">
@@ -63,26 +63,81 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Muay thay avançado</td>
-                                        <td>2</td>
-                                        <td><span class="badge bg-success rounded-5 fw-light fs-6">Ativo</span></td>
+                                    <!-- Plano: Muay Thai -->
+                                    <tr data-bs-toggle="collapse" data-bs-target=".alunosMuayThai" class="cursor-pointer">
+                                        <td>Muay thai avançado</td>
+                                        <td>3</td>
+                                        <td><span class="badge bg-success rounded-pill">Ativo</span></td>
                                         <td class="text-center">
-                                            <button class="btn btn-sm btn-outline-secondary me-1 mt-2"><i class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-sm btn-outline-secondary me-1 mt-2"><i class="bi bi-person-plus"></i></button>
-                                            <button class="btn btn-sm btn-outline-secondary mt-2"><i class="bi bi bi-people-fill"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger mt-2"><i class="bi bi-trash"></i></button>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-person-plus"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-people-fill"></i></button>
+                                                <button class="btn btn-sm btn-outline-danger mb-1"><i class="bi bi-trash"></i></button>
+                                            </div>
                                         </td>
                                     </tr>
+
+                                    <!-- Aluno 1 -->
+                                    <tr class="collapse alunosMuayThai">
+                                        <td style="background-color: #efeff0b7;">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-person-circle fs-4 me-2 text-dark"></i>
+                                                <strong>Isabella</strong>
+                                            </div>
+                                        </td>
+                                        <td style="background-color: #efeff0b7;">001</td>
+                                        <td style="background-color: #efeff0b7;"><span class="badge bg-success rounded-pill">Ativo</span></td>
+                                        <td class="text-center" style="background-color: #efeff0b7;">
+                                            <button class="btn btn-sm btn-outline-primary me-1"><i class="bi bi-bar-chart-line"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Aluno 2 -->
+                                    <tr class="collapse alunosMuayThai bg-body-tertiary">
+                                        <td style="background-color: #efeff0b7;">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-person-circle fs-4 me-2 text-dark"></i>
+                                                <strong>Marcus</strong>
+                                            </div>
+                                        </td>
+                                        <td style="background-color: #efeff0b7;">002</td>
+                                        <td style="background-color: #efeff0b7;"><span class="badge bg-danger rounded-pill">Excluído</span></td>
+                                        <td class="text-center" style="background-color: #efeff0b7;">
+                                            <button class="btn btn-sm btn-outline-primary me-1"><i class="bi bi-bar-chart-line"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Aluno 3 -->
+                                    <tr class="collapse alunosMuayThai bg-body-tertiary">
+                                        <td style="background-color: #efeff0b7;">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-person-circle fs-4 me-2 text-dark"></i>
+                                                <strong>Kauã</strong>
+                                            </div>
+                                        </td>
+                                        <td style="background-color: #efeff0b7;">003</td>
+                                        <td style="background-color: #efeff0b7;"><span class="badge bg-success rounded-pill">Ativo</span></td>
+                                        <td class="text-center" style="background-color: #efeff0b7;">
+                                            <button class="btn btn-sm btn-outline-primary me-1"><i class="bi bi-bar-chart-line"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Plano: Boxe avançado -->
                                     <tr>
                                         <td>Boxe avançado</td>
                                         <td>12</td>
-                                        <td><span class="badge bg-danger rounded-5 fw-light fs-6">Excluído</span></td>
+                                        <td><span class="badge bg-danger rounded-pill">Excluído</span></td>
                                         <td class="text-center">
-                                            <button class="btn btn-sm btn-outline-secondary me-1 mt-2"><i class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-sm btn-outline-secondary me-1 mt-2"><i class="bi bi-person-plus"></i></button>
-                                            <button class="btn btn-sm btn-outline-secondary mt-2"><i class="bi bi bi-people-fill"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger mt-2"><i class="bi bi-trash"></i></button>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-person-plus"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary me-1 mb-1"><i class="bi bi-people-fill"></i></button>
+                                                <button class="btn btn-sm btn-outline-danger mb-1"><i class="bi bi-trash"></i></button>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
