@@ -33,7 +33,7 @@
             <div class="row g-3 align-items-stretch justify-content-center">
                 <!-- Bloco 1 -->
                 <div class="col-10 col-lg-3 d-flex flex-column gap-2">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="status-title fs-4 fw-bold">Planos Ativos</h5>
                             <div class="status-content">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="status-title fs-4 fw-bold">Planos a Revisar</h5>
                             <div class="status-content">
@@ -63,14 +63,14 @@
                                 <div class="legenda-item"><span class="bolinha" style="background-color: #aaaaaaff;"></span> Em andamento</div>
                                 <div class="legenda-item"><span class="bolinha" style="background-color: #454545ff;"></span> Não iniciado</div>
                             </div>
-                            <canvas id="graficoProgresso" width="180" height="180"></canvas>
+                            <canvas id="graficoProgresso" width="100" height="100"></canvas>
                         </div>
                     </div>
                 </div>
 
                 <!-- Bloco 3 -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="fs-4 fw-bold card-title">Top Alunos</h5>
                             <canvas id="graficoTopAlunos" height="150"></canvas>
@@ -86,7 +86,7 @@
             <div class="row g-3 align-items-stretch justify-content-center">
                 <!-- Bloco 1: Alertas importantes-->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-4">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
                         <div class="w-100">
                             <h5 class="fs-4 fw-bold card-title text-warning mb-3">⚠️ Alertas importantes</h5>
                             <ul class="list-group list-group-flush">
@@ -142,7 +142,7 @@
 
                 <!-- Bloco 2 -->
                 <div class="col-10 col-lg-3 d-flex flex-column gap-2">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center py-2">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="card-title fs-4 fw-bold">Feedback dos Alunos</h5>
                             <div class="d-flex justify-content-around fs-3">
@@ -153,7 +153,7 @@
                             <canvas id="graficoFeedback" height="55"></canvas>
                         </div>
                     </div>
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="card-title fs-4 fw-bold ">Motivação Geral</h5>
                             <div class="display-4 fw-bold text-black">2</div>
@@ -164,7 +164,7 @@
 
                 <!-- Bloco 3: Atividade Recente ajustado -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-4">
+                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
                         <div class="w-100">
                             <h5 class="fs-4 fw-bold card-title mb-3">📌 Atividade Recente</h5>
                             <ul class="list-group list-group-flush">
