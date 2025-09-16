@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Estilo Corpo da página*/
+body {
+    background-image: url('../imagens/img_home_prof.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-x: hidden;
+}
+
+#mainHome{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.bolinha {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
