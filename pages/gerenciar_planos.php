@@ -21,8 +21,8 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php
-    $currentPage = $_SERVER['REQUEST_URI']; // ou basename($_SERVER['PHP_SELF'])
-    include '../templates/sidebar.php';
+    $currentPage = $_SERVER['REQUEST_URI'];
+    include '../templates/sidebar_prof.php';
     ?>
 
     <main class="container" style="margin-top: 140px; margin-bottom: 80px;">

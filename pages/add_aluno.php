@@ -18,10 +18,11 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
-    <?php 
+    <?php
     $currentPage = $_SERVER['REQUEST_URI'];
-    include '../templates/sidebar.php';
+    include '../templates/sidebar_prof.php';
     ?>
+    
     <main id="mainCriar" class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative">
         <div class="container my-5 pt-5">
             <div class="row justify-content-center">

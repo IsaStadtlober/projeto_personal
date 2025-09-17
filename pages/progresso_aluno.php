@@ -22,7 +22,7 @@
     <?php include '../templates/header.php'; ?>
     <?php
     $currentPage = $_SERVER['REQUEST_URI'];
-    include '../templates/sidebar.php';
+    include '../templates/sidebar_prof.php';
     ?>
 
     <main class="container" style="margin-top: 140px; margin-bottom: 80px;">

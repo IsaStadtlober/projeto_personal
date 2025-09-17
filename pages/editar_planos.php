@@ -21,8 +21,8 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php
-    $currentPage = $_SERVER['REQUEST_URI']; // ou basename($_SERVER['PHP_SELF'])
-    include '../templates/sidebar.php';
+    $currentPage = $_SERVER['REQUEST_URI'];
+    include '../templates/sidebar_prof.php';
     ?>
 
     <main id="mainCriar" class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative">

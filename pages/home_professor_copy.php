@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo1.png" type="image/x-icon">
-    <title>Home</title>
+    <title>Home Professor</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -22,8 +22,8 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include '../templates/header.php'; ?>
     <?php
-    $currentPage = $_SERVER['REQUEST_URI']; // ou basename($_SERVER['PHP_SELF'])
-    include '../templates/sidebar.php';
+    $currentPage = $_SERVER['REQUEST_URI'];
+    include '../templates/sidebar_prof.php';
     ?>
 
     <main id="mainHome" class="dashboard-main">
@@ -38,7 +38,7 @@
                             <h5 class="status-title fs-4 fw-bold">Planos Ativos</h5>
                             <div class="status-content">
                                 <span class="status-icon fs-1 fw-bold"">📋</span>
-                                <span class="status-number fs-1 fw-bold"">12</span>
+                                <span class=" status-number fs-1 fw-bold"">12</span>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <h5 class="status-title fs-4 fw-bold">Planos a Revisar</h5>
                             <div class="status-content">
                                 <span class="status-icon fs-1 fw-bold"">⏳</span>
-                                <span class="status-number fs-1 fw-bold"">3</span>
+                                <span class=" status-number fs-1 fw-bold"">3</span>
                             </div>
                         </div>
                     </div>
