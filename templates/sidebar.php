@@ -45,7 +45,7 @@
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'progresso_alunos.php') !== false) ? 'active' : '' ?>" href="progresso_alunos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'progresso_aluno.php') !== false) ? 'active' : '' ?>" href="progresso_aluno.php">
           <i class="bi bi-bar-chart-line me-2"></i> Progresso Alunos
         </a>
       </li>
