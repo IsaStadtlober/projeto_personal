@@ -3,7 +3,7 @@
   <div class="offcanvas-header flex-column align-items-start">
     <!-- Logo e título -->
     <div class="d-flex align-items-center mb-3">
-      <img src="../imagens/logo1.png" alt="Logo" style="height: 27px;">
+      <img src="../../imagens/logo1.png" alt="Logo" style="height: 27px;">
       <span class="fs-4 fw-bold ms-2"><span class="header_cor">X</span>portes</span>
     </div>
 

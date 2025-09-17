@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../imagens/logo1.png" type="image/x-icon">
     <title>Editar Planos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="stylesheet" href="../css/criar_editar.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/css_prof/criar_editar.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <?php include '../templates/header.php'; ?>
+    <?php include '../../templates/header.php'; ?>
     <?php
     $currentPage = $_SERVER['REQUEST_URI'];
-    include '../templates/sidebar_prof.php';
+    include '../../templates/sidebar_prof.php';
     ?>
 
     <main id="mainCriar" class="d-flex justify-content-center align-items-center min-vh-100 w-100 position-relative">
@@ -412,7 +412,7 @@
                             <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Musculação">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/musculacao.png" alt="Musculação" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../../imagens/musculacao.png" alt="Musculação" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Musculação</strong><br>
                                             <small class="text-muted fs-6">Força</small>
@@ -427,7 +427,7 @@
                             <div class="card shadow-sm w-100 card-hover" data-nome="Muay Thai">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../../imagens/muay_thai.png" alt="Muay Thai" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Muay Thai</strong><br>
                                             <small class="text-muted fs-6">Luta</small>
@@ -459,7 +459,7 @@
                             <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Agachamento">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/agachamento.png" alt="Agachamento" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../../imagens/agachamento.png" alt="Agachamento" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Agachamento</strong><br>
                                             <small class="text-muted fs-6">Pernas</small>
@@ -473,7 +473,7 @@
                             <div class="card shadow-sm w-100 card-hover card-treino" data-nome="Flexão">
                                 <div class="card-body py-1 px-2 d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../imagens/flexao.png" alt="Flexão" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
+                                        <img src="../../imagens/flexao.png" alt="Flexão" class="rounded me-3" style="width:95px; height:95px; object-fit:cover;">
                                         <div>
                                             <strong class="fs-5">Flexão</strong><br>
                                             <small class="text-muted fs-6">Peito</small>
@@ -510,7 +510,7 @@
                             <!-- TOPO: Imagem + Título + Músculos + Variações -->
                             <div class="row g-3 text-center text-lg-start justify-content-center">
                                 <div class="col-12 col-lg-3 text-center">
-                                    <img src="../imagens/agachamento.png" alt="Agachamento" class="rounded me-2"
+                                    <img src="../../imagens/agachamento.png" alt="Agachamento" class="rounded me-2"
                                         style="width:160px; height:160px; object-fit:cover;">
                                 </div>
                                 <div class="col-12 col-lg-9 text-center text-lg-start">
@@ -596,12 +596,12 @@
 
     </main>
 
-    <?php include '../templates/footer.php'; ?>
+    <?php include '../../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navbar-scroll.js"></script>
-    <script src="../js/editar_plano.js"></script>
-    <script src="../js/dadosExercicios.js"></script>
-    <script src="../js/cardsTreinos.js"></script>
+    <script src="../../js/navbar-scroll.js"></script>
+    <script src="../../js/js_prof/editar_plano.js"></script>
+    <script src="../../js/js_prof/dadosExercicios.js"></script>
+    <script src="../../js/js_prof/cardsTreinos.js"></script>
 </body>
 
 </html>

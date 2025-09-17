@@ -3,7 +3,7 @@
   <div class="offcanvas-header flex-column align-items-start">
     <!-- Logo e título -->
     <div class="d-flex align-items-center mb-3">
-      <img src="../imagens/logo1.png" alt="Logo" style="height: 27px;">
+      <img src="../../imagens/logo1.png" alt="Logo" style="height: 27px;">
       <span class="fs-4 fw-bold ms-2"><span class="header_cor">X</span>portes</span>
     </div>
 
@@ -20,32 +20,32 @@
   <div class="offcanvas-body px-3">
     <ul class="nav flex-column mt-2">
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'home_professor.php') !== false) ? 'active' : '' ?>" href="home_professor.php">
+        <a class="nav-link <?= (strpos($currentPage, 'home_professor.php') !== false) ? 'active' : '' ?>" href="../area_prof/home_professor.php">
           <i class="bi bi-house-door me-2"></i> Home
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'add_aluno.php') !== false) ? 'active' : '' ?>" href="add_aluno.php">
+        <a class="nav-link <?= (strpos($currentPage, 'add_aluno.php') !== false) ? 'active' : '' ?>" href="../area_prof/add_aluno.php">
           <i class="bi bi-person-plus me-2"></i> Adicionar Aluno
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'criar_plano.php') !== false) ? 'active' : '' ?>" href="criar_plano.php">
+        <a class="nav-link <?= (strpos($currentPage, 'criar_plano.php') !== false) ? 'active' : '' ?>" href="../area_prof/criar_plano.php">
           <i class="bi bi-file-earmark-plus me-2"></i> Criar Plano
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'editar_planos.php') !== false) ? 'active' : '' ?>" href="editar_planos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'editar_planos.php') !== false) ? 'active' : '' ?>" href="../area_prof/editar_planos.php">
           <i class="bi bi-pencil-square me-2"></i> Editar Planos
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'gerenciar_planos.php') !== false) ? 'active' : '' ?>" href="gerenciar_planos.php">
+        <a class="nav-link <?= (strpos($currentPage, 'gerenciar_planos.php') !== false) ? 'active' : '' ?>" href="../area_prof/gerenciar_planos.php">
           <i class="bi bi-journal-text me-2"></i> Gerenciar Planos
         </a>
       </li>
       <li class="nav-item mb-3" style="font-size: 18px;">
-        <a class="nav-link <?= (strpos($currentPage, 'progresso_aluno.php') !== false) ? 'active' : '' ?>" href="progresso_aluno.php">
+        <a class="nav-link <?= (strpos($currentPage, 'progresso_aluno.php') !== false) ? 'active' : '' ?>" href="../area_prof/progresso_aluno.php">
           <i class="bi bi-bar-chart-line me-2"></i> Progresso Aluno
         </a>
       </li>

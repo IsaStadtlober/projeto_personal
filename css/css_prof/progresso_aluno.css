@@ -2,8 +2,12 @@
 
 /*Estilo Corpo da página*/
 body {
-    background-image: url('../imagens/img_home_prof.png');
+    background-image: url('../../imagens/img_home_prof.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
+
+
