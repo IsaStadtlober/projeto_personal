@@ -78,146 +78,142 @@
 
                 <!-- Bloco 3 -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div
-                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
-                        <div>
-                            <h5 class="fs-4 fw-bold card-title">Top Alunos</h5>
-                            <div class="w-10" style="height: 10px;"></div>
-                                <canvas id="graficoTopAlunos" class="w-80 h-80"></canvas>
+                    <div class="card flex-fill w-100 h-100 d-flex flex-column text-center p-3">
+                        <h5 class="fs-4 fw-bold card-title">Top Alunos</h5>
+                        <div class="w-100">
+                            <canvas id="graficoTopAlunos" class="w-100"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espaçamento entre linhas -->
+                <div class="my-3"></div>
+
+                <!-- LINHA 2 -->
+                <div class="row g-3 align-items-stretch justify-content-center">
+                    <!-- Bloco 1: Alertas importantes-->
+                    <div class="col-10 col-lg-3 d-flex">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                            <div class="w-100">
+                                <h5 class="fs-4 fw-bold card-title text-warning mb-3">⚠️ Alertas importantes</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-danger">❗</span>
+                                                João está inativo há 7 dias
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">04/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">❗</span>
+                                                Plano da Ana expira em 3 dias
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">04/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-danger">❗</span>
+                                                Lucas aumentou 2kg
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">01/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">⚠️</span>
+                                                Maria atingiu 80% da meta
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">01/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">😕</span>
+                                                Pedro relatou baixa motivação
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">02/09</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloco 2 -->
+                    <div class="col-10 col-lg-3 d-flex flex-column gap-2">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                            <div>
+                                <h5 class="card-title fs-4 fw-bold">Feedback dos Alunos</h5>
+                                <div class="d-flex justify-content-around fs-3">
+                                    <span>😟</span>
+                                    <span>😐</span>
+                                    <span>😄</span>
+                                </div>
+                                <canvas id="graficoFeedback" height="55"></canvas>
+                            </div>
+                        </div>
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                            <div>
+                                <h5 class="card-title fs-4 fw-bold ">Motivação Geral</h5>
+                                <div class="display-4 fw-bold text-black">2</div>
+                                <small class="text-muted fs-6">Escala de 0 a 5</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloco 3: Atividade Recente ajustado -->
+                    <div class="col-10 col-lg-3 d-flex">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                            <div class="w-100">
+                                <h5 class="fs-4 fw-bold card-title mb-3">📌 Atividade Recente</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Carlos bateu meta semanal de treinos</span>
+                                            <small class="text-muted mt-1 align-self-end">Hoje às 08:40</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Isabelle concluiu treino em 25min</span>
+                                            <small class="text-muted mt-1 align-self-end">Hoje às 08:25</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Novo aluno cadastrado: Fernanda Silva</span>
+                                            <small class="text-muted mt-1 align-self-end">Ontem às 16:00</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Ricardo enviou feedback: "treino puxado, mas bom!"</span>
+                                            <small class="text-muted mt-1 align-self-end">Ontem às 15:30</small>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Espaçamento entre linhas -->
-            <div class="my-3"></div>
-
-            <!-- LINHA 2 -->
-            <div class="row g-3 align-items-stretch justify-content-center">
-                <!-- Bloco 1: Alertas importantes-->
-                <div class="col-10 col-lg-3 d-flex">
-                    <div
-                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
-                        <div class="w-100">
-                            <h5 class="fs-4 fw-bold card-title text-warning mb-3">⚠️ Alertas importantes</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;"
-                                                class="text-danger">❗</span>
-                                            João está inativo há 7 dias
-                                        </div>
-                                        <small class="text-muted mt-1 align-self-end">04/09</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;"
-                                                class="text-warning">❗</span>
-                                            Plano da Ana expira em 3 dias
-                                        </div>
-                                        <small class="text-muted mt-1 align-self-end">04/09</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;"
-                                                class="text-danger">❗</span>
-                                            Lucas aumentou 2kg
-                                        </div>
-                                        <small class="text-muted mt-1 align-self-end">01/09</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;"
-                                                class="text-warning">⚠️</span>
-                                            Maria atingiu 80% da meta
-                                        </div>
-                                        <small class="text-muted mt-1 align-self-end">01/09</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;"
-                                                class="text-warning">😕</span>
-                                            Pedro relatou baixa motivação
-                                        </div>
-                                        <small class="text-muted mt-1 align-self-end">02/09</small>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloco 2 -->
-                <div class="col-10 col-lg-3 d-flex flex-column gap-2">
-                    <div
-                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
-                        <div>
-                            <h5 class="card-title fs-4 fw-bold">Feedback dos Alunos</h5>
-                            <div class="d-flex justify-content-around fs-3">
-                                <span>😟</span>
-                                <span>😐</span>
-                                <span>😄</span>
-                            </div>
-                            <canvas id="graficoFeedback" height="55"></canvas>
-                        </div>
-                    </div>
-                    <div
-                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
-                        <div>
-                            <h5 class="card-title fs-4 fw-bold ">Motivação Geral</h5>
-                            <div class="display-4 fw-bold text-black">2</div>
-                            <small class="text-muted fs-6">Escala de 0 a 5</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloco 3: Atividade Recente ajustado -->
-                <div class="col-10 col-lg-3 d-flex">
-                    <div
-                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
-                        <div class="w-100">
-                            <h5 class="fs-4 fw-bold card-title mb-3">📌 Atividade Recente</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <span>Carlos bateu meta semanal de treinos</span>
-                                        <small class="text-muted mt-1 align-self-end">Hoje às 08:40</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <span>Isabelle concluiu treino em 25min</span>
-                                        <small class="text-muted mt-1 align-self-end">Hoje às 08:25</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <span>Novo aluno cadastrado: Fernanda Silva</span>
-                                        <small class="text-muted mt-1 align-self-end">Ontem às 16:00</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex flex-column">
-                                        <span>Ricardo enviou feedback: "treino puxado, mas bom!"</span>
-                                        <small class="text-muted mt-1 align-self-end">Ontem às 15:30</small>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
 
@@ -250,51 +246,69 @@
             }
         });
 
-        const ctxTop = document.getElementById('graficoTopAlunos').getContext('2d');
+        let chartTopAlunos; // variável global para armazenar o gráfico
 
-        new Chart(ctxTop, {
-            type: 'bar',
-            data: {
-                labels: ['Kauã', 'Isabella', 'Marcos'],
-                datasets: [{
-                    label: 'Desempenho (%)',
-                    data: [85, 74, 67],
-                    backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
-                    borderRadius: 6,
-                    barThickness: 20
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                scales: {
-                    x: {
-                        grid: {
-                            display: false // 👈 remove linhas verticais
+        function ajustarGraficoTopAlunos() {
+            const canvasTop = document.getElementById('graficoTopAlunos');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Ajusta altura proporcional
+            const alturaIdeal = largura <= 1152 ? 140 : Math.min(altura * 0.35, 350);
+            canvasTop.style.height = `${alturaIdeal}px`;
+            canvasTop.style.width = '100%';
+
+            // Se já existe um gráfico, destrói antes de recriar
+            if (chartTopAlunos) {
+                chartTopAlunos.destroy();
+            }
+
+            // Cria o gráfico
+            const ctxTop = canvasTop.getContext('2d');
+            chartTopAlunos = new Chart(ctxTop, {
+                type: 'bar',
+                data: {
+                    labels: ['Kauã', 'Isabella', 'Marcos'],
+                    datasets: [{
+                        label: 'Desempenho (%)',
+                        data: [85, 74, 67],
+                        backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
+                        borderRadius: 6,
+                        barThickness: 20
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            max: 100,
+                            ticks: { stepSize: 20 }
                         },
-                        max: 100,
-                        ticks: {
-                            stepSize: 20
+                        y: {
+                            grid: { display: false },
+                            beginAtZero: true
                         }
                     },
-                    y: {
-                        grid: {
-                            display: false // 👈 remove linhas horizontais
-                        },
-                        beginAtZero: true
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: ctx => `${ctx.raw}%`
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => `${ctx.raw}%`
+                            }
                         }
                     }
                 }
-            }
-        });
+            });
+        }
+
+        // Executa ao carregar
+        ajustarGraficoTopAlunos();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoTopAlunos);
 
         const ctxFeedback = document.getElementById('graficoFeedback');
         if (ctxFeedback) {
