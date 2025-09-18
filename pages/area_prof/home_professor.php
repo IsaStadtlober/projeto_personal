@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
-    <link rel="stylesheet" href="../../css/css_prof/home_professor.css">
+    <link rel="stylesheet" href="../../css/home_professor.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -27,135 +27,184 @@
     ?>
 
     <main id="mainHome" class="dashboard-main">
-        <div class="container mt-4">
-            <div class="row">
-                <!-- COLUNA ESQUERDA -->
-                <div class="col-md-4 d-flex flex-column gap-3">
-                    <!-- Planos Ativos -->
-                    <div class="card status-card status-card-small card-planos-ativos">
-                        <div class="card-body">
-                            <h5 class="status-title">Planos Ativos</h5>
+        <div class="container-fluid">
+
+            <!-- LINHA 1 -->
+            <div class="row g-3 align-items-stretch justify-content-center">
+                <!-- Bloco 1 -->
+                <div class="col-10 col-lg-3 d-flex flex-column gap-2">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                        <div>
+                            <h5 class="status-title fs-4 fw-bold">Planos Ativos</h5>
                             <div class="status-content">
-                                <span class="status-icon">📋</span>
-                                <span class="status-number">12</span>
+                                <span class="status-icon fs-1 fw-bold">📋</span>
+                                <span class=" status-number fs-1 fw-bold">12</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Planos a Revisar -->
-                    <div class="card status-card status-card-small card-planos-revisar">
-                        <div class="card-body">
-                            <h5 class="status-title">Planos a Revisar</h5>
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                        <div>
+                            <h5 class="status-title fs-4 fw-bold">Planos a Revisar</h5>
                             <div class="status-content">
-                                <span class="status-icon">⏳</span>
-                                <span class="status-number">3</span>
+                                <span class="status-icon fs-1 fw-bold">⏳</span>
+                                <span class=" status-number fs-1 fw-bold">3</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Alertas importantes -->
-                    <div class="card card-alertas">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">⚠️ Alertas importantes</h5>
-                            <ul class="list-unstyled mt-3">
-                                <li class="mb-2"><span class="text-danger">❗</span> João está inativo há 7 dias -
-                                    <small class="text-muted">04/09</small>
-                                </li>
-                                <li class="mb-2"><span class="text-warning">❗</span> Plano da Ana expira em 3 dias -
-                                    <small class="text-muted">04/09</small>
-                                </li>
-                                <li class="mb-2"><span class="text-danger">❗</span> Lucas aumentou 2kg (meta era
-                                    perder) - <small class="text-muted">01/09</small></li>
-                                <li class="mb-2"><span class="text-warning">⚠️</span> Maria atingiu 80% da meta de
-                                    massa magra - <small class="text-muted">01/09</small></li>
-                                <li class="mb-2"><span class="text-warning">😕</span> Pedro relatou baixa motivação
-                                    - <small class="text-muted">02/09</small></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- COLUNA DIREITA -->
-                <div class="col-md-8 d-flex flex-column gap-3">
-                    <!-- Progresso + Top Alunos lado a lado -->
-                    <div class="d-flex flex-wrap gap-3">
-                        <!-- LINHA: Progresso + Top Alunos -->
-                        <div class="row g-3">
-                            <!-- Progresso -->
-                            <div class="col-md-6">
-                                <div class="card card-progresso h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Progresso Geral dos Alunos</h5>
-                                        <div class="grafico-legenda mb-2 d-flex justify-content-center gap-3">
-                                            <div class="legenda-item"><span class="bolinha"
-                                                    style="background-color: #ff9900ff;"></span> Iniciado</div>
-                                            <div class="legenda-item"><span class="bolinha"
-                                                    style="background-color: #aaaaaaff;"></span> Em andamento</div>
-                                            <div class="legenda-item"><span class="bolinha"
-                                                    style="background-color: #454545ff;"></span> Não iniciado</div>
-                                        </div>
-                                        <canvas id="graficoProgresso" width="180" height="180"></canvas>
-                                    </div>
-                                </div>
+                <!-- Bloco 2 -->
+                <div class="col-10 col-lg-3 d-flex">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                        <div>
+                            <h5 class="card-title fs-4 fw-bold">Progresso Geral dos Alunos</h5>
+                            <div class="grafico-legenda mb-2 d-flex justify-content-center gap-3">
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #ff9900ff;"></span> Iniciado</div>
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #aaaaaaff;"></span> Em andamento</div>
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #454545ff;"></span> Não iniciado</div>
                             </div>
+                            <canvas id="graficoProgresso" class="w-100"></canvas>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Top Alunos -->
-                            <div class="col-md-6">
-                                <div class="card card-top-alunos h-80">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Top Alunos</h5>
-                                        <canvas id="graficoTopAlunos" height="150"></canvas>
-                                    </div>
-                                </div>
+                <!-- Bloco 3 -->
+                <div class="col-10 col-lg-3 d-flex">
+                    <div class="card flex-fill w-100 h-100 d-flex flex-column text-center p-3">
+                        <h5 class="fs-4 fw-bold card-title">Top Alunos</h5>
+                        <div class="w-100">
+                            <canvas id="graficoTopAlunos" class="w-100"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espaçamento entre linhas -->
+                <div class="my-3"></div>
+
+                <!-- LINHA 2 -->
+                <div class="row g-3 align-items-stretch justify-content-center">
+                    <!-- Bloco 1: Alertas importantes-->
+                    <div class="col-10 col-lg-3 d-flex">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                            <div class="w-100">
+                                <h5 class="fs-4 fw-bold card-title text-warning mb-3">⚠️ Alertas importantes</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-danger">❗</span>
+                                                João está inativo há 7 dias
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">04/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">❗</span>
+                                                Plano da Ana expira em 3 dias
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">04/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-danger">❗</span>
+                                                Lucas aumentou 2kg
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">01/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">⚠️</span>
+                                                Maria atingiu 80% da meta
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">01/09</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                    class="text-warning">😕</span>
+                                                Pedro relatou baixa motivação
+                                            </div>
+                                            <small class="text-muted mt-1 align-self-end">02/09</small>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- LINHA: Feedback + Motivação -->
-                        <div class="row g-3 mt-2">
-                            <div class="col-md-6">
-                                <div class="card card-feedback">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Feedback dos Alunos</h5>
-                                        <div class="d-flex justify-content-around fs-3">
-                                            <span>😟</span>
-                                            <span>😐</span>
-                                            <span>😄</span>
-                                        </div>
-                                        <canvas id="graficoFeedback" height="60"></canvas>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
 
-                            <div class="col-md-6">
-                                <div class="card card-motivacao">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Nível de Motivação Geral</h5>
-                                        <div class="display-6 fw-bold text-black">2</div>
-                                        <small class="text-muted">Escala de 0 a 5</small>
-                                    </div>
+                    <!-- Bloco 2 -->
+                    <div class="col-10 col-lg-3 d-flex flex-column gap-2">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                            <div>
+                                <h5 class="card-title fs-4 fw-bold">Feedback dos Alunos</h5>
+                                <div class="d-flex justify-content-around fs-3">
+                                    <span>😟</span>
+                                    <span>😐</span>
+                                    <span>😄</span>
                                 </div>
+                                <canvas id="graficoFeedback" class="w-100"></canvas>
                             </div>
                         </div>
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                            <div>
+                                <h5 class="card-title fs-4 fw-bold ">Motivação Geral</h5>
+                                <div class="display-4 fw-bold text-black">2</div>
+                                <small class="text-muted fs-6">Escala de 0 a 5</small>
+                            </div>
+                        </div>
+                    </div>
 
-                        <!-- Atividade Recente -->
-                        <div class="card card-atividade mt-n1">
-                            <div class="card-body">
-                                <h5 class="card-title">📌 Atividade Recente</h5>
-                                <ul class="list-group list-group-flush mt-2">
-                                    <li class="list-group-item d-flex justify-content-between">
-                                        <span>Carlos bateu meta semanal de treinos</span>
-                                        <small class="text-muted">Hoje às 08:40</small>
+                    <!-- Bloco 3: Atividade Recente ajustado -->
+                    <div class="col-10 col-lg-3 d-flex">
+                        <div
+                            class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                            <div class="w-100">
+                                <h5 class="fs-4 fw-bold card-title mb-3">📌 Atividade Recente</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Carlos bateu meta semanal de treinos</span>
+                                            <small class="text-muted mt-1 align-self-end">Hoje às 08:40</small>
+                                        </div>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between">
-                                        <span>Isabelle concluiu treino em 25min</span>
-                                        <small class="text-muted">Hoje às 08:25</small>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Isabelle concluiu treino em 25min</span>
+                                            <small class="text-muted mt-1 align-self-end">Hoje às 08:25</small>
+                                        </div>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between">
-                                        <span>Novo aluno cadastrado: Fernanda Silva</span>
-                                        <small class="text-muted">Ontem às 16:00</small>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Novo aluno cadastrado: Fernanda Silva</span>
+                                            <small class="text-muted mt-1 align-self-end">Ontem às 16:00</small>
+                                        </div>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between">
-                                        <span>Ricardo enviou feedback: "treino puxado, mas bom!"</span>
-                                        <small class="text-muted">Ontem às 15:30</small>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex flex-column">
+                                            <span>Ricardo enviou feedback: "treino puxado, mas bom!"</span>
+                                            <small class="text-muted mt-1 align-self-end">Ontem às 15:30</small>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -165,86 +214,144 @@
             </div>
     </main>
 
-
-    <?php include '../../templates/footer.php'; ?>
     <!-- Chart.js Script -->
     <script>
-        const ctx = document.getElementById('graficoProgresso').getContext('2d');
-        const graficoProgresso = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Iniciado', 'Em andamento', 'Não iniciado'],
-                datasets: [{
-                    label: 'Progresso dos Alunos',
-                    data: [40, 40, 20],
-                    backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
-                    borderColor: '#fff',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                cutout: '60%',
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    title: {
-                        display: false
-                    }
-                }
+        let chartProgresso;
+
+        function ajustarGraficoProgresso() {
+            const canvas = document.getElementById('graficoProgresso');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Altura proporcional à tela
+            const alturaIdeal = largura <= 1152 ? 140 : Math.min(altura * 0.3, 300);
+            canvas.style.height = `${alturaIdeal}px`;
+            canvas.style.width = '100%';
+
+            // Destroi gráfico anterior se existir
+            if (chartProgresso) {
+                chartProgresso.destroy();
             }
-        });
 
-        const ctxTop = document.getElementById('graficoTopAlunos').getContext('2d');
-
-        new Chart(ctxTop, {
-            type: 'bar',
-            data: {
-                labels: ['Kauã', 'Isabella', 'Marcos'],
-                datasets: [{
-                    label: 'Desempenho (%)',
-                    data: [85, 74, 67],
-                    backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
-                    borderRadius: 6,
-                    barThickness: 20
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                scales: {
-                    x: {
-                        grid: {
-                            display: false // 👈 remove linhas verticais
-                        },
-                        max: 100,
-                        ticks: {
-                            stepSize: 20
-                        }
-                    },
-                    y: {
-                        grid: {
-                            display: false // 👈 remove linhas horizontais
-                        },
-                        beginAtZero: true
-                    }
+            // Cria o gráfico
+            const ctx = canvas.getContext('2d');
+            chartProgresso = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Iniciado', 'Em andamento', 'Não iniciado'],
+                    datasets: [{
+                        label: 'Progresso dos Alunos',
+                        data: [40, 40, 20],
+                        backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
                 },
-                plugins: {
-                    legend: {
-                        display: false
+                options: {
+                    responsive: true,
+                    animation: {
+                        duration: 0 // 👈 desativa animação para evitar bugs
                     },
-                    tooltip: {
-                        callbacks: {
-                            label: ctx => `${ctx.raw}%`
+                    cutout: '60%',
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: false }
+                    }
+                }
+            });
+        }
+
+        // Executa ao carregar
+        ajustarGraficoProgresso();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoProgresso);
+
+
+        let chartTopAlunos; // variável global para armazenar o gráfico
+
+        function ajustarGraficoTopAlunos() {
+            const canvasTop = document.getElementById('graficoTopAlunos');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Ajusta altura proporcional
+            const alturaIdeal = largura <= 1152 ? 140 : Math.min(altura * 0.35, 350);
+            canvasTop.style.height = `${alturaIdeal}px`;
+            canvasTop.style.width = '100%';
+
+            // Se já existe um gráfico, destrói antes de recriar
+            if (chartTopAlunos) {
+                chartTopAlunos.destroy();
+            }
+
+            // Cria o gráfico
+            const ctxTop = canvasTop.getContext('2d');
+            chartTopAlunos = new Chart(ctxTop, {
+                type: 'bar',
+                data: {
+                    labels: ['Kauã', 'Isabelle', 'Marcos'],
+                    datasets: [{
+                        label: 'Desempenho (%)',
+                        data: [85, 74, 67],
+                        backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
+                        borderRadius: 6,
+                        barThickness: 20
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            max: 100,
+                            ticks: { stepSize: 20 }
+                        },
+                        y: {
+                            grid: { display: false },
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => `${ctx.raw}%`
+                            }
                         }
                     }
                 }
-            }
-        });
+            });
+        }
 
-        const ctxFeedback = document.getElementById('graficoFeedback');
-        if (ctxFeedback) {
-            new Chart(ctxFeedback, {
+        // Executa ao carregar
+        ajustarGraficoTopAlunos();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoTopAlunos);
+
+        let chartFeedback;
+
+        function ajustarGraficoFeedback() {
+            const canvas = document.getElementById('graficoFeedback');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Altura proporcional à tela
+            const alturaIdeal = largura <= 1152 ? 55 : Math.min(altura * 0.15, 100);
+            canvas.style.height = `${alturaIdeal}px`;
+            canvas.style.width = '100%';
+
+            // Destroi gráfico anterior se existir
+            if (chartFeedback) {
+                chartFeedback.destroy();
+            }
+
+            // Cria o gráfico
+            const ctx = canvas.getContext('2d');
+            chartFeedback = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: [''],
@@ -256,32 +363,35 @@
                     }]
                 },
                 options: {
+                    responsive: true,
+                    animation: {
+                        duration: 0 // 👈 desativa animação
+                    },
                     indexAxis: 'y',
                     scales: {
                         x: {
                             max: 100,
-                            grid: {
-                                display: false
-                            }
+                            grid: { display: false }
                         },
                         y: {
-                            grid: {
-                                display: false
-                            }
+                            grid: { display: false }
                         }
                     },
                     plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            enabled: false
-                        }
+                        legend: { display: false },
+                        tooltip: { enabled: false }
                     }
                 }
             });
         }
+
+        // Executa ao carregar
+        ajustarGraficoFeedback();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoFeedback);
     </script>
+    <?php include '../../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../js/navbar-scroll.js"></script>
 </body>
