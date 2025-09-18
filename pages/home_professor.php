@@ -162,7 +162,7 @@
                                     <span>😐</span>
                                     <span>😄</span>
                                 </div>
-                                <canvas id="graficoFeedback" height="55"></canvas>
+                                <canvas id="graficoFeedback" class="w-100"></canvas>
                             </div>
                         </div>
                         <div
@@ -333,9 +333,26 @@
         // Atualiza ao redimensionar
         window.addEventListener('resize', ajustarGraficoTopAlunos);
 
-        const ctxFeedback = document.getElementById('graficoFeedback');
-        if (ctxFeedback) {
-            new Chart(ctxFeedback, {
+        let chartFeedback;
+
+        function ajustarGraficoFeedback() {
+            const canvas = document.getElementById('graficoFeedback');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Altura proporcional à tela
+            const alturaIdeal = largura <= 1152 ? 55 : Math.min(altura * 0.15, 100);
+            canvas.style.height = `${alturaIdeal}px`;
+            canvas.style.width = '100%';
+
+            // Destroi gráfico anterior se existir
+            if (chartFeedback) {
+                chartFeedback.destroy();
+            }
+
+            // Cria o gráfico
+            const ctx = canvas.getContext('2d');
+            chartFeedback = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: [''],
@@ -347,31 +364,33 @@
                     }]
                 },
                 options: {
+                    responsive: true,
+                    animation: {
+                        duration: 0 // 👈 desativa animação
+                    },
                     indexAxis: 'y',
                     scales: {
                         x: {
                             max: 100,
-                            grid: {
-                                display: false
-                            }
+                            grid: { display: false }
                         },
                         y: {
-                            grid: {
-                                display: false
-                            }
+                            grid: { display: false }
                         }
                     },
                     plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            enabled: false
-                        }
+                        legend: { display: false },
+                        tooltip: { enabled: false }
                     }
                 }
             });
         }
+
+        // Executa ao carregar
+        ajustarGraficoFeedback();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoFeedback);
     </script>
     <?php include '../templates/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
