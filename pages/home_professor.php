@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="stylesheet" href="../css/home_professor_copy.css">
+    <link rel="stylesheet" href="../css/home_professor.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -33,21 +33,23 @@
             <div class="row g-3 align-items-stretch justify-content-center">
                 <!-- Bloco 1 -->
                 <div class="col-10 col-lg-3 d-flex flex-column gap-2">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="status-title fs-4 fw-bold">Planos Ativos</h5>
                             <div class="status-content">
-                                <span class="status-icon fs-1 fw-bold"">📋</span>
-                                <span class=" status-number fs-1 fw-bold"">12</span>
+                                <span class="status-icon fs-1 fw-bold">📋</span>
+                                <span class=" status-number fs-1 fw-bold">12</span>
                             </div>
                         </div>
                     </div>
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="status-title fs-4 fw-bold">Planos a Revisar</h5>
                             <div class="status-content">
-                                <span class="status-icon fs-1 fw-bold"">⏳</span>
-                                <span class=" status-number fs-1 fw-bold"">3</span>
+                                <span class="status-icon fs-1 fw-bold">⏳</span>
+                                <span class=" status-number fs-1 fw-bold">3</span>
                             </div>
                         </div>
                     </div>
@@ -55,25 +57,34 @@
 
                 <!-- Bloco 2 -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="card-title fs-4 fw-bold">Progresso Geral dos Alunos</h5>
                             <div class="grafico-legenda mb-2 d-flex justify-content-center gap-3">
-                                <div class="legenda-item"><span class="bolinha" style="background-color: #ff9900ff;"></span> Iniciado</div>
-                                <div class="legenda-item"><span class="bolinha" style="background-color: #aaaaaaff;"></span> Em andamento</div>
-                                <div class="legenda-item"><span class="bolinha" style="background-color: #454545ff;"></span> Não iniciado</div>
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #ff9900ff;"></span> Iniciado</div>
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #aaaaaaff;"></span> Em andamento</div>
+                                <div class="legenda-item"><span class="bolinha"
+                                        style="background-color: #454545ff;"></span> Não iniciado</div>
                             </div>
-                            <canvas id="graficoProgresso" width="100" height="100"></canvas>
+                            <div class="w-80" style="height: 300px;">
+                                <canvas id="graficoProgresso" class="w-100 h-100"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Bloco 3 -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="fs-4 fw-bold card-title">Top Alunos</h5>
-                            <canvas id="graficoTopAlunos" height="150"></canvas>
+                            <div class="w-10" style="height: 10px;"></div>
+                                <canvas id="graficoTopAlunos" class="w-80 h-80"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,14 +97,16 @@
             <div class="row g-3 align-items-stretch justify-content-center">
                 <!-- Bloco 1: Alertas importantes-->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
                         <div class="w-100">
                             <h5 class="fs-4 fw-bold card-title text-warning mb-3">⚠️ Alertas importantes</h5>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item px-0">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;" class="text-danger">❗</span>
+                                            <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                class="text-danger">❗</span>
                                             João está inativo há 7 dias
                                         </div>
                                         <small class="text-muted mt-1 align-self-end">04/09</small>
@@ -102,7 +115,8 @@
                                 <li class="list-group-item px-0">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;" class="text-warning">❗</span>
+                                            <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                class="text-warning">❗</span>
                                             Plano da Ana expira em 3 dias
                                         </div>
                                         <small class="text-muted mt-1 align-self-end">04/09</small>
@@ -111,7 +125,8 @@
                                 <li class="list-group-item px-0">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;" class="text-danger">❗</span>
+                                            <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                class="text-danger">❗</span>
                                             Lucas aumentou 2kg
                                         </div>
                                         <small class="text-muted mt-1 align-self-end">01/09</small>
@@ -120,7 +135,8 @@
                                 <li class="list-group-item px-0">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;" class="text-warning">⚠️</span>
+                                            <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                class="text-warning">⚠️</span>
                                             Maria atingiu 80% da meta
                                         </div>
                                         <small class="text-muted mt-1 align-self-end">01/09</small>
@@ -129,7 +145,8 @@
                                 <li class="list-group-item px-0">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <span style="display:inline-block; width:1.5em; text-align:center;" class="text-warning">😕</span>
+                                            <span style="display:inline-block; width:1.5em; text-align:center;"
+                                                class="text-warning">😕</span>
                                             Pedro relatou baixa motivação
                                         </div>
                                         <small class="text-muted mt-1 align-self-end">02/09</small>
@@ -142,7 +159,8 @@
 
                 <!-- Bloco 2 -->
                 <div class="col-10 col-lg-3 d-flex flex-column gap-2">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="card-title fs-4 fw-bold">Feedback dos Alunos</h5>
                             <div class="d-flex justify-content-around fs-3">
@@ -153,7 +171,8 @@
                             <canvas id="graficoFeedback" height="55"></canvas>
                         </div>
                     </div>
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-center text-center p-3">
                         <div>
                             <h5 class="card-title fs-4 fw-bold ">Motivação Geral</h5>
                             <div class="display-4 fw-bold text-black">2</div>
@@ -164,7 +183,8 @@
 
                 <!-- Bloco 3: Atividade Recente ajustado -->
                 <div class="col-10 col-lg-3 d-flex">
-                    <div class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
+                    <div
+                        class="card flex-fill w-100 h-100 d-flex align-items-center justify-content-start text-start p-3">
                         <div class="w-100">
                             <h5 class="fs-4 fw-bold card-title mb-3">📌 Atividade Recente</h5>
                             <ul class="list-group list-group-flush">
