@@ -291,7 +291,7 @@
             chartTopAlunos = new Chart(ctxTop, {
                 type: 'bar',
                 data: {
-                    labels: ['Kauã', 'Isabella', 'Marcos'],
+                    labels: ['Kauã', 'Isabelle', 'Marcos'],
                     datasets: [{
                         label: 'Desempenho (%)',
                         data: [85, 74, 67],
