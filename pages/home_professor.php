@@ -69,9 +69,7 @@
                                 <div class="legenda-item"><span class="bolinha"
                                         style="background-color: #454545ff;"></span> Não iniciado</div>
                             </div>
-                            <div class="w-80" style="height: 300px;">
-                                <canvas id="graficoProgresso" class="w-100 h-100"></canvas>
-                            </div>
+                            <canvas id="graficoProgresso" class="w-100"></canvas>
                         </div>
                     </div>
                 </div>
@@ -219,32 +217,57 @@
 
     <!-- Chart.js Script -->
     <script>
-        const ctx = document.getElementById('graficoProgresso').getContext('2d');
-        const graficoProgresso = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Iniciado', 'Em andamento', 'Não iniciado'],
-                datasets: [{
-                    label: 'Progresso dos Alunos',
-                    data: [40, 40, 20],
-                    backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
-                    borderColor: '#fff',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                cutout: '60%',
-                plugins: {
-                    legend: {
-                        display: false
+        let chartProgresso;
+
+        function ajustarGraficoProgresso() {
+            const canvas = document.getElementById('graficoProgresso');
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            // Altura proporcional à tela
+            const alturaIdeal = largura <= 1152 ? 140 : Math.min(altura * 0.3, 300);
+            canvas.style.height = `${alturaIdeal}px`;
+            canvas.style.width = '100%';
+
+            // Destroi gráfico anterior se existir
+            if (chartProgresso) {
+                chartProgresso.destroy();
+            }
+
+            // Cria o gráfico
+            const ctx = canvas.getContext('2d');
+            chartProgresso = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Iniciado', 'Em andamento', 'Não iniciado'],
+                    datasets: [{
+                        label: 'Progresso dos Alunos',
+                        data: [40, 40, 20],
+                        backgroundColor: ['#ff9900ff', '#aaaaaaff', '#454545ff'],
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    animation: {
+                        duration: 0 // 👈 desativa animação para evitar bugs
                     },
-                    title: {
-                        display: false
+                    cutout: '60%',
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: false }
                     }
                 }
-            }
-        });
+            });
+        }
+
+        // Executa ao carregar
+        ajustarGraficoProgresso();
+
+        // Atualiza ao redimensionar
+        window.addEventListener('resize', ajustarGraficoProgresso);
+
 
         let chartTopAlunos; // variável global para armazenar o gráfico
 
