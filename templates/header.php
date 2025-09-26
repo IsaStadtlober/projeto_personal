@@ -8,7 +8,7 @@
       $pagesComSeta = ['cadastro_aluno.php', 'cadastro_professor.php', 'login_aluno.php', 'login_professor.php'];
       $pagesSemHamburguer = ['index.php', 'cadastro_aluno.php', 'cadastro_professor.php', 'login_aluno.php', 'login_professor.php'];
       $pagesAluno = ['perfil_aluno.php', 'meu_progresso.php', 'home_aluno.php', 'treinos.php'];
-      $pagesProfessor = ['add_aluno.php', 'home_professor.php', 'criar_plano.php','editar_planos.php', 'gerenciar_planos.php', 'progresso_aluno.php'];
+      $pagesProfessor = ['add_aluno.php', 'home_professor.php', 'criar_plano.php','editar_planos.php', 'gerenciar_planos.php', 'progresso_aluno.php', 'perfil_professor.php'];
 
       if (in_array($currentPage, $pagesComSeta)) {
         // Exibe botão de voltar
@@ -61,7 +61,7 @@
             <i class="bi bi-person-circle ms-2 fs-5"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="perfil_professor.php">Perfil</a></li>
             <li><a class="dropdown-item" href="#">Configurações</a></li>
             <li>
               <hr class="dropdown-divider">

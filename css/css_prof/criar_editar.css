@@ -59,6 +59,14 @@ select.form-select:focus {
   scrollbar-width: none;     /* Firefox */
 }
 
+#cardsIniciais{
+cursor: pointer;
+}
+
+#cardsAlternativosMusculacao{
+cursor: pointer;
+}
+
 /*Painel de detalhes como um Offcanvas*/
 #painelDetalhes {
   position: absolute;
