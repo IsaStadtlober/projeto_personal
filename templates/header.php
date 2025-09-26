@@ -7,6 +7,8 @@
       $currentPage = basename($_SERVER['PHP_SELF']);
       $pagesComSeta = ['cadastro_aluno.php', 'cadastro_professor.php', 'login_aluno.php', 'login_professor.php'];
       $pagesSemHamburguer = ['index.php', 'cadastro_aluno.php', 'cadastro_professor.php', 'login_aluno.php', 'login_professor.php'];
+      $pagesAluno = ['perfil_aluno.php', 'meu_progresso.php', 'home_aluno.php', 'treinos.php'];
+      $pagesProfessor = ['add_aluno.php', 'home_professor.php', 'criar_plano.php','editar_planos.php', 'gerenciar_planos.php', 'progresso_aluno.php'];
 
       if (in_array($currentPage, $pagesComSeta)) {
         // Exibe botão de voltar
@@ -50,7 +52,8 @@
             <li><a class="dropdown-item" href="/projeto_personal/pages/login_professor.php">ENTRAR COMO PROFESSOR</a></li>
           </ul>
         </div>
-      <?php else: ?>
+      <?php endif; ?>
+      <?php if (in_array($currentPage, $pagesProfessor)): ?>
         <!-- Botão "Prof. Carlos" com opções -->
         <div class="dropdown">
           <a class="nav-link text-dark d-flex align-items-center ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,6 +62,23 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end shadow-sm">
             <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="/projeto_personal/index.php">Sair</a></li>
+          </ul>
+        </div>
+      <?php endif; ?>
+      <?php if (in_array($currentPage, $pagesAluno)): ?>
+      <!--Botão "Aluno Diogo" com opções-->
+      <div class="dropdown">
+          <a class="nav-link text-dark d-flex align-items-center ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="fs-5 fw-semibold">Aluno Diogo</span>
+            <i class="bi bi-person-circle ms-2 fs-5"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+            <li><a class="dropdown-item" href="perfil_aluno.php">Perfil</a></li>
             <li><a class="dropdown-item" href="#">Configurações</a></li>
             <li>
               <hr class="dropdown-divider">
