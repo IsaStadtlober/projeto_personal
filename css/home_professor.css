@@ -21,4 +21,9 @@ body {
   display: inline-block;
 }
 
+.list-group-item:hover {
+  background-color: #f8f9fa; /* cor clara no hover */
+  cursor: pointer; /* mostra o cursor de clique */
+}
+
 

@@ -21,19 +21,35 @@
 
 <!-- OFFCANVAS FILTRO -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFiltro" aria-labelledby="offcanvasFiltroLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasFiltroLabel" class="offcanvas-title">Filtrar por Aluno</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="list-group">
-      <li class="list-group-item">João Silva</li>
-      <li class="list-group-item">Maria Souza</li>
-      <li class="list-group-item">Lucas Pereira</li>
-      <li class="list-group-item">Isabela Costa</li>
-      <li class="list-group-item">Bruno Lima</li>
-    </ul>
-  </div>
+    <div class="offcanvas-header">
+        <h5 id="offcanvasFiltroLabel" class="offcanvas-title">Filtrar por Aluno</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Todos</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Isabelle Stadtlober</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Maria Eduarda Almeida</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Kauã de Almeida</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Marcus do Vale</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Lucrecia de Araujo</button>
+            </li>
+            <li class="list-group-item">
+                <button class="list-group-item-action btn w-100 text-start">Gustavo</button>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <body class="d-flex flex-column min-vh-100">
@@ -45,8 +61,9 @@
 
     <main id="mainHome" class="dashboard-main">
         <div class="container-fluid mt-5">
-            <button class="btn position-fixed" style="top: 90px; right: 20px; background-color: #ff7700ff;" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro" aria-controls="offcanvasFiltro">
+            <button class="btn position-fixed" style="top: 90px; right: 20px; background-color: #ff7700ff;"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro"
+                aria-controls="offcanvasFiltro">
                 Alunos
             </button>
             <!-- LINHA 1 -->
