@@ -19,6 +19,23 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
+<!-- OFFCANVAS FILTRO -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFiltro" aria-labelledby="offcanvasFiltroLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasFiltroLabel" class="offcanvas-title">Filtrar por Aluno</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group">
+      <li class="list-group-item">João Silva</li>
+      <li class="list-group-item">Maria Souza</li>
+      <li class="list-group-item">Lucas Pereira</li>
+      <li class="list-group-item">Isabela Costa</li>
+      <li class="list-group-item">Bruno Lima</li>
+    </ul>
+  </div>
+</div>
+
 <body class="d-flex flex-column min-vh-100">
     <?php include '../../templates/header.php'; ?>
     <?php
@@ -27,8 +44,11 @@
     ?>
 
     <main id="mainHome" class="dashboard-main">
-        <div class="container-fluid">
-
+        <div class="container-fluid mt-5">
+            <button class="btn position-fixed" style="top: 90px; right: 20px; background-color: #ff7700ff;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro" aria-controls="offcanvasFiltro">
+                Alunos
+            </button>
             <!-- LINHA 1 -->
             <div class="row g-3 align-items-stretch justify-content-center">
                 <!-- Bloco 1 -->
