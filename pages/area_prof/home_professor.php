@@ -61,9 +61,9 @@
 
     <main id="mainHome" class="dashboard-main">
         <div class="container-fluid mt-5">
-            <button class="btn position-fixed" style="top: 90px; right: 20px; background-color: #ff7700ff;"
-                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro"
-                aria-controls="offcanvasFiltro">
+            <button class="btn position-fixed"
+                style="top: 90px; right: 20px; background-color: #ff7700ff; color: white;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasFiltro" aria-controls="offcanvasFiltro">
                 Alunos
             </button>
             <!-- LINHA 1 -->
