@@ -14,7 +14,7 @@ body {
     margin-bottom: 50px;
 }
 
-.bolinha {
+.bolinha { 
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -22,8 +22,8 @@ body {
 }
 
 .list-group-item:hover {
-  background-color: #f8f9fa; /* cor clara no hover */
-  cursor: pointer; /* mostra o cursor de clique */
+  background-color: #f8f9fa; 
+  cursor: pointer; 
 }
 
 
