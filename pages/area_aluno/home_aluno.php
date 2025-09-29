@@ -26,37 +26,18 @@
     include '../../templates/sidebar_aluno.php';
     ?>
 
-    <main style="margin-top: 100px;">
+    <main style="margin-top: 80px;">
         <div class="container py-4">
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
 
                 <!-- Treino do Dia -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
-                            <img src="../../imagens/card_treinodia.png" alt="" style="width: 60px;">
-                            <img src="../../imagens/card_treinodia.png" alt="" style="width: 60px;">
-                            <img src="../../imagens/card_treinodia.png" alt="" style="width: 60px;">
+                            <img src="../../imagens/card_treinodia.png" alt="" style="width: 150px;">
                             <h5 class="card-title mt-2">Seu Treino do Dia</h5>
-                            <button class="btn btn-success mt-2">Iniciar Treino</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Motivacional -->
-                <div class="col-md-6">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="fs-5">"O corpo alcança o que a mente acredita, então não desista, o suor de
-                                    hoje é o resultado de amanhã."
-                                    <br>
-                                    <br>
-                                    <br>
-                                    - Isabelle Stadtlober
-
-                                </p>
-                            </blockquote>
+                            <button class="btn" style="background-color: #ff7700; color: #ffffff;">Iniciar
+                                Treino</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +49,22 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">✅ Você já está há 5 dias seguidos ativo, continue assim!</li>
                             <li class="list-group-item">📅 Seu plano expira em 12 dias</li>
+                            <li class="list-group-item">⚠️ Você ainda não concluiu o treino de ontem</li>
+                            <li class="list-group-item">🔥 Hoje é dia de treino! Não deixe o foco escapar.</li>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- Motivacional -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p class="fs-5">"O corpo alcança o que a mente acredita, então não desista, o suor de
+                                    hoje é o resultado de amanhã."
+                                </p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
 
@@ -106,7 +102,7 @@
                 </div>
 
                 <!-- Próximos Treinos -->
-                <div class="col-12">
+                <div class="col-md-10">
                     <div class="card shadow-sm">
                         <div class="card-header bg-light fw-bold">Próximos Treinos</div>
                         <div class="card-body">
