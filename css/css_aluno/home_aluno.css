@@ -7,3 +7,30 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4px; /* controla a distância lateral entre os dias */
+  gap: 4px; /* espaço entre letra e bolinha */
+}
+
+.bolinha {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.laranja {
+  background-color: #ff7700;
+}
+
+.cinza {
+  background-color: #ccc;
+}
