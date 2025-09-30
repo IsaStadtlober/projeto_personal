@@ -24,18 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
             ];
             titleEl.textContent = `${monthNames[dateInfo.start.getMonth()]} de ${dateInfo.start.getFullYear()}`;
-        },
-
-        events: [
-            {
-                title: 'Treino A',
-                start: '2025-10-02'
-            },
-            {
-                title: 'Treino B',
-                start: '2025-10-05'
-            }
-        ]
+        }
     });
 
     calendar.render();
@@ -49,5 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
         calendar.next();
     });
 });
-
-

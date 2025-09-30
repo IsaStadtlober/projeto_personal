@@ -15,11 +15,6 @@ main {
 
 /* Estilo do calendário FullCalendar */
 
-/* Remove o título dos eventos */
-.fc-event-title {
-    display: none !important;
-}
-
 /* Estilo base dos quadrados dos dias */
 .fc-daygrid-day-frame {
     display: flex;
@@ -72,4 +67,31 @@ main {
     color: #000000dc !important;
     text-transform: uppercase;
     text-decoration: none !important;
+}
+
+
+/* Estilo dos botões dos cards */
+/* Botão Reagendar */
+.btn-reagendar {
+    background-color: #f8a73e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-reagendar:hover {
+    background-color: #e68f1f;
+    /* tom mais escuro no hover */
+    color: #fff;
+}
+
+/* Botão Iniciar Treino */
+.btn-iniciar {
+    background-color: #f8a73e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-iniciar:hover {
+    background-color: #e68f1f;
+    color: #fff;
 }
