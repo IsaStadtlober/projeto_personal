@@ -27,7 +27,7 @@
 
     <main style="margin-top: 80px;">
         <div class="container my-4">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
 
                 <div class="col-12 col-lg-4 d-flex flex-column gap-2">
 
