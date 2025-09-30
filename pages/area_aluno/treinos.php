@@ -48,39 +48,6 @@
                 </div>
             </div>
 
-            <!-- Treino do dia -->
-            <div class="col-lg-4">
-                <div class="card shadow-sm rounded-4 h-100">
-                    <!-- Header interno -->
-                    <div class="card-header bg-white text-dark rounded-top-4">
-                        <h6 class="mb-0 fs-3 fw-bold text-center">Treino do dia</h6>
-                    </div>
-
-                    <!-- Corpo do card -->
-                    <div class="card-body p-4">
-                        <p class="mb-2 fw-semibold text-dark fs-4">Treino peito iniciante</p>
-
-                        <p class="mb-3 fs-6 text-muted">
-                            Execute o movimento como se fosse sentar em uma cadeira, mantendo o abdômen contraído e as costas retas. Desça até que as coxas fiquem paralelas ao chão ou o máximo que sua mobilidade permitir.
-                        </p>
-
-                        <div class="mb-2 d-flex align-items-center fs-6">
-                            <i class="bi bi-clock me-2 text-warning"></i>
-                            <span class="text-dark">Duração: <strong>45 min</strong></span>
-                        </div>
-
-                        <div class="mb-3 d-flex align-items-center fs-6">
-                            <span class="me-2 text-dark">Dificuldade:</span>
-                            <span class="text-warning">⭐☆☆</span>
-                        </div>
-
-                        <button class="btn text-white w-100 fw-semibold" style="background-color:#f85e16f1 ;">Iniciar Treino</button>
-
-                        <p class="text-success text-center mt-3 small">Você está quase 💪</p>
-                    </div>
-                </div>
-            </div>
-
             <!-- Próximos treinos -->
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-4 h-100 bg-white">
@@ -92,35 +59,132 @@
                     <!-- Corpo com scroll interno limitado a 3 blocos -->
                     <div class="card-body px-4 py-3" style="max-height: 390px; overflow-y: auto;">
                         <!-- Bloco 1 -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary text-center">
-                            <h6 class="fw-bold mb-1">Treino A</h6>
-                            <p class="text-muted mb-3">14 de Novembro</p>
-                            <button class="btn btn-sm btn-outline-danger">Cancelar</button>
+                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                            <h6 class="fw-bold fs-4 mb-2">Peito - Iniciante</h6>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 14 de Novembro</p>
+                            <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:45 min</p>
+                            <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="text-muted mb-1">Dificuldade</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
+                                <button class="btn px-5" style="background-color: #fda126;">Reagendar</button>
+                            </div>
                         </div>
 
                         <!-- Bloco 2 -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary text-center">
-                            <h6 class="fw-bold mb-1">Treino A</h6>
-                            <p class="text-muted mb-3">15 de Novembro</p>
-                            <button class="btn btn-sm btn-outline-danger">Cancelar</button>
+                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                            <h6 class="fw-bold fs-4 mb-2">Perna - Iniciante</h6>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 15 de Novembro</p>
+                            <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:55 min</p>
+                            <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="text-muted mb-1">Dificuldade</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
+                                <button class="btn px-5" style="background-color: #fda126;">Reagendar</button>
+                            </div>
                         </div>
-
                         <!-- Bloco 3 -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary text-center">
-                            <h6 class="fw-bold mb-1">Treino A</h6>
-                            <p class="text-muted mb-3">16 de Novembro</p>
-                            <button class="btn btn-sm btn-outline-danger">Cancelar</button>
+                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                            <h6 class="fw-bold fs-4 mb-2">Ombro - Iniciante</h6>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 14 de Novembro</p>
+                            <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:45 min</p>
+                            <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="text-muted mb-1">Dificuldade</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
+                                <button class="btn px-5" style="background-color: #fda126;">Reagendar</button>
+                            </div>
                         </div>
-
                         <!-- Bloco 4 (visível com rolagem) -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary text-center">
-                            <h6 class="fw-bold mb-1">Treino A</h6>
-                            <p class="text-muted mb-3">17 de Novembro</p>
-                            <button class="btn btn-sm btn-outline-danger">Cancelar</button>
+                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                            <h6 class="fw-bold fs-4 mb-2">Braço - Iniciante</h6>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 14 de Novembro</p>
+                            <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:45 min</p>
+                            <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="text-muted mb-1">Dificuldade</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
+                                <button class="btn px-5" style="background-color: #fda126;">Reagendar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- Treino do dia -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm rounded-4 h-100">
+                    <!-- Header interno -->
+                    <div class="card-header bg-white text-dark rounded-top-4">
+                        <h6 class="mb-0 fs-3 fw-bold text-center">Treino do dia</h6>
+                    </div>
+
+                    <!-- Corpo do card -->
+                    <div class="card-body p-4">
+                        <img src="../../imagens/peito_iniciante.png.png" class="img-fluid mx-auto d-block rounded-top mb-3" alt="Imagem do treino">
+
+                        <p class="mb-2 fw-semibold text-dark fs-4">Treino Peito Iniciante</p>
+
+                        <p class="mb-3 fs-6 text-muted">
+                            Execute o movimento como se fosse sentar em uma cadeira, mantendo o abdômen contraído e as costas retas. Desça até que as coxas fiquem paralelas ao chão ou o máximo que sua mobilidade permitir.
+                        </p>
+
+                        <div class="mb-2 d-flex align-items-center fs-6">
+                            <i class="bi bi-clock me-2 text-warning"></i>
+                            <span class="text-dark">Duração: <strong>45 min</strong></span>
+                        </div>
+                        <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                            <p class="text-muted mb-1">Dificuldade</p>
+                            <div>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            
+                        </div>
+
+                        <button class="btn text-white w-100 fw-semibold" style="background-color:#f85e16f1 ;">Iniciar Treino</button>
+
+                        <p class="text-success text-center mt-3 small">Você está quase 💪</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
