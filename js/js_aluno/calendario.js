@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const calendar = new tui.Calendar('#calendar', {
         defaultView: 'month',
         usageStatistics: false,
+        isReadOnly: true, // Impede seleção de dias
         month: {
             visibleWeeksCount: 6,
             startDayOfWeek: 0,
@@ -24,32 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCalendarTitle(calendar);
 
-    let selectedDayElement = null;
-
-    calendar.on('clickDay', function (event) {
-        if (selectedDayElement === event.dayElement) {
-            selectedDayElement.classList.remove('selected');
-            selectedDayElement = null;
-            return;
-        }
-
-        if (selectedDayElement) {
-            selectedDayElement.classList.remove('selected');
-        }
-
-        event.dayElement.classList.add('selected');
-        selectedDayElement = event.dayElement;
-    });
-
     document.getElementById('prevMonth').addEventListener('click', () => {
         calendar.prev();
         updateCalendarTitle(calendar);
-        selectedDayElement = null;
     });
 
     document.getElementById('nextMonth').addEventListener('click', () => {
         calendar.next();
         updateCalendarTitle(calendar);
-        selectedDayElement = null;
     });
 });
