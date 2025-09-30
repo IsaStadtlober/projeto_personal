@@ -162,23 +162,79 @@
         new Chart(document.getElementById('bioChart'), {
             type: 'radar',
             data: {
-                labels: ['Massa Muscular', 'Gordura Visceral', 'Taxa Metabólica', 'Água Corporal (%)', 'Gordura Corporal'],
+                labels: [
+                    'Massa Muscular',
+                    'Gordura Visceral',
+                    'Taxa Metabólica',
+                    'Água Corporal (%)',
+                    'Gordura Corporal'
+                ],
                 datasets: [{
                         label: '1ª Medida',
                         data: [60, 50, 70, 65, 55],
                         backgroundColor: 'rgba(255,165,0,0.2)',
                         borderColor: 'orange',
+                        borderWidth: 2,
+                        pointRadius: 4
                     },
                     {
                         label: '2ª Medida',
                         data: [75, 40, 80, 70, 45],
                         backgroundColor: 'rgba(0,123,255,0.2)',
                         borderColor: '#007bff',
+                        borderWidth: 2,
+                        pointRadius: 4
                     }
                 ]
             },
             options: {
-                responsive: true
+                responsive: true,
+                scales: {
+                    r: {
+                        min: 0,
+                        max: 100,
+                        ticks: {
+                            stepSize: 20,
+                            backdropColor: 'transparent',
+                            font: {
+                                size: 12
+                            }
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 8
+                            }
+                        },
+                        grid: {
+                            color: '#dee2e6'
+                        },
+                        angleLines: {
+                            color: '#ced4da'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.dataset.label}: ${context.formattedValue}`;
+                            }
+                        }
+                    }
+                },
+                elements: {
+                    line: {
+                        tension: 0.3
+                    }
+                }
             }
         });
     </script>
