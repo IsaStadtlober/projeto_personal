@@ -180,8 +180,8 @@
                     {
                         label: '2ª Medida',
                         data: [75, 40, 80, 70, 45],
-                        backgroundColor: 'rgba(0,123,255,0.2)',
-                        borderColor: '#007bff',
+                        backgroundColor: 'rgba(107, 107, 107, 0.2)',
+                        borderColor: '#7a7a7aff',
                         borderWidth: 2,
                         pointRadius: 4
                     }
