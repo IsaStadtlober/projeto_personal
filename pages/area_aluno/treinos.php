@@ -74,7 +74,7 @@
                             <span class="text-warning">⭐☆☆</span>
                         </div>
 
-                        <button class="btn btn-warning text-white w-100 fw-semibold">Iniciar Treino</button>
+                        <button class="btn text-white w-100 fw-semibold" style="background-color:#f85e16f1 ;">Iniciar Treino</button>
 
                         <p class="text-success text-center mt-3 small">Você está quase 💪</p>
                     </div>
