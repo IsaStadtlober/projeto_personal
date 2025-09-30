@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Estilo Corpo da página*/
+/* 🌄 Fundo da página */
 body {
     background-image: url('../../imagens/img_home_prof.png');
     background-size: cover;
@@ -9,13 +9,12 @@ body {
 }
 
 main {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 80px 0 20px;
 }
 
-/* Estilo do calendário FullCalendar */
+/* 📅 Estilo do calendário FullCalendar */
 
-/* Estilo base dos quadrados dos dias */
+/* Dias do mês */
 .fc-daygrid-day-frame {
     display: flex;
     align-items: center;
@@ -24,7 +23,6 @@ main {
     background-color: #f5f5f57a !important;
 }
 
-/* Texto preto nos dias padrão */
 .fc-daygrid-day-number {
     font-weight: bold;
     font-size: 1.1rem;
@@ -34,27 +32,25 @@ main {
     border-bottom: none !important;
 }
 
-/* Hover*/
+/* Hover nos dias */
 .fc-daygrid-day:hover .fc-daygrid-day-frame {
     background-color: #ffc16f !important;
-    /* laranja claro */
 }
 
 .fc-daygrid-day:hover .fc-daygrid-day-number {
     color: #ffffff !important;
 }
 
-/* Dia atual */
+/* Dia atual destacado */
 .fc-day-today .fc-daygrid-day-frame {
     background-color: #f8a73e !important;
-    /* laranja escuro */
 }
 
 .fc-day-today .fc-daygrid-day-number {
     color: #fff !important;
 }
 
-/* Cabeçalho dos dias da semana: sem borda, só iniciais */
+/* Cabeçalho dos dias da semana */
 .fc-col-header-cell {
     border: none !important;
     background: #00000015 !important;
@@ -62,35 +58,23 @@ main {
 
 .fc-col-header-cell-cushion {
     font-size: 1.2rem !important;
-    /* aumenta o tamanho da letra */
     font-weight: 700;
     color: #000000dc !important;
     text-transform: uppercase;
     text-decoration: none !important;
 }
 
+/* 🎯 Botões personalizados */
 
-/* Estilo dos botões dos cards */
 /* Botão Reagendar */
-.btn-reagendar {
-    background-color: #f8a73e;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.btn-reagendar:hover {
-    background-color: #e68f1f;
-    /* tom mais escuro no hover */
-    color: #fff;
-}
-
-/* Botão Iniciar Treino */
+.btn-reagendar,
 .btn-iniciar {
     background-color: #f8a73e;
     color: #fff;
     transition: all 0.3s ease;
 }
 
+.btn-reagendar:hover,
 .btn-iniciar:hover {
     background-color: #e68f1f;
     color: #fff;
