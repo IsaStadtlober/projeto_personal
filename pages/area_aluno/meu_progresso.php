@@ -148,8 +148,8 @@
                 datasets: [{
                     label: 'Treinos',
                     data: [60, 45, 80],
-                    borderColor: '#007bff',
-                    backgroundColor: 'rgba(0,123,255,0.2)',
+                    borderColor: '#6c757d', // cinza escuro
+                    backgroundColor: 'rgba(108,117,125,0.2)', // cinza com transparência
                     tension: 0.3
                 }]
             },
