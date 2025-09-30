@@ -38,13 +38,13 @@
         <div class="row g-3 align-items-stretch">
             <!-- Calendário -->
             <div class="col-lg-4">
-                <div class="card p-3 shadow-sm rounded-4 h-100">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <button id="prevMonth" class="btn btn-sm btn-outline-secondary"><i class="bi bi-chevron-left"></i></button>
-                        <h6 id="calendarTitle" class="mb-3 mt-1 fs-4 fw-bold text-center flex-grow-1">Março 2025</h6>
-                        <button id="nextMonth" class="btn btn-sm btn-outline-secondary"><i class="bi bi-chevron-right"></i></button>
+                <div class="card p-3 shadow-sm rounded-4 h-100 d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center gap-4 mb-4 mt-2">
+                        <i id="prevMonth" class="bi bi-chevron-left fs-4 text-dark" style="cursor:pointer;"></i>
+                        <h6 id="calendarTitle" class="fs-4 fw-bold mb-0">Março 2025</h6>
+                        <i id="nextMonth" class="bi bi-chevron-right fs-4 text-dark" style="cursor:pointer;"></i>
                     </div>
-                    <div id="calendar" style="height: 260px;"></div>
+                    <div id="calendarFull" class="calendar-container"></div>
                 </div>
             </div>
 

@@ -15,6 +15,11 @@ main {
 
 /* Estilo do calendário FullCalendar */
 
+/* Remove o título dos eventos */
+.fc-event-title {
+    display: none !important;
+}
+
 /* Estilo base dos quadrados dos dias */
 .fc-daygrid-day-frame {
     display: flex;
@@ -46,9 +51,10 @@ main {
 
 /* Dia atual */
 .fc-day-today .fc-daygrid-day-frame {
-    background-color: #f8a73e!important;
+    background-color: #f8a73e !important;
     /* laranja escuro */
 }
+
 .fc-day-today .fc-daygrid-day-number {
     color: #fff !important;
 }
@@ -60,7 +66,8 @@ main {
 }
 
 .fc-col-header-cell-cushion {
-    font-size: 1.2rem !important; /* aumenta o tamanho da letra */
+    font-size: 1.2rem !important;
+    /* aumenta o tamanho da letra */
     font-weight: 700;
     color: #000000dc !important;
     text-transform: uppercase;
