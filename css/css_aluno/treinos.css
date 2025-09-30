@@ -12,3 +12,82 @@ main {
     margin-top: 80px;
     margin-bottom: 20px;
 }
+
+/* Estilo do calendário FullCalendar */
+
+/* Remove bordas e linhas gerais do calendário */
+#calendarFull .fc {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Remove bordas internas e linhas estruturais */
+#calendarFull .fc-scrollgrid,
+#calendarFull .fc-scrollgrid-section,
+#calendarFull .fc-scrollgrid-sync-table,
+#calendarFull .fc-daygrid-day,
+#calendarFull .fc-daygrid-day-frame {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove scroll do calendário */
+#calendarFull,
+#calendarFull .fc-scroller,
+#calendarFull .fc-daygrid-body {
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+/* Estilo base dos quadrados dos dias */
+.fc-daygrid-day-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #f5f5f5 !important;
+    /* cinza claro */
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* Texto preto nos dias padrão */
+.fc-daygrid-day-number {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000000af !important;
+    /* preto */
+    text-align: center;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* Hover*/
+.fc-daygrid-day:hover .fc-daygrid-day-frame {
+    background-color: #ffc16f !important;
+    /* laranja claro */
+}
+
+/* Dia atual */
+.fc-day-today .fc-daygrid-day-frame {
+    background-color: #f85e16 !important;
+    /* laranja escuro */
+}
+
+/* Cabeçalho dos dias da semana: sem borda, só iniciais */
+.fc-col-header-cell {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.fc-col-header-cell-cushion {
+    font-weight: bold;
+    color: #000 !important;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border: none !important;
+}
