@@ -45,7 +45,7 @@
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-4 h-100 bg-white">
                     <!-- Header -->
-                    <div class="card-header bg-white text-dark rounded-top-4 py-3 px-4">
+                    <div class="p-4 mb-3 border-bottom shadow-sm">
                         <h6 class="mb-0 fs-3 fw-bold text-center">Calendário de Treinos</h6>
                     </div>
 
@@ -84,7 +84,7 @@
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-4 h-100 bg-white">
                     <!-- Header -->
-                    <div class="card-header bg-white text-dark rounded-top-4 p-3">
+                    <div class="p-4 mb-3 border-bottom shadow-sm">
                         <h6 class="mb-0 fs-3 fw-bold text-center">Próximos Treinos</h6>
                     </div>
 
@@ -160,7 +160,7 @@
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-4 h-100">
                     <!-- Header -->
-                    <div class="card-header bg-white text-dark rounded-top-4 p-3">
+                    <div class="p-4 mb-3 border-bottom shadow-sm">
                         <h6 class="mb-0 fs-3 fw-bold text-center">Treino do dia</h6>
                     </div>
 
@@ -204,7 +204,7 @@
                         </div>
 
                         <!-- Botão final -->
-                        <button class="btn btn-iniciar w-100 fw-semibold mt-3">Iniciar Treino</button>
+                        <a href="exercicio.php" class="btn btn-iniciar w-100 fw-semibold mt-3">Iniciar Treino</a>
                         <p class="text-success text-center mt-3 small">Você está quase 💪</p>
                     </div>
                 </div>
@@ -220,7 +220,6 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
     <script src="../../js/navbar-scroll.js"></script>
     <script src="../../js/js_aluno/calendario.js"></script>
 </body>

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* 🌄 Fundo da página */
+body {
+    background-image: url('../../imagens/img_home_prof.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main {
+    margin: 80px 0 20px;
+}
