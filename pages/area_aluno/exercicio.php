@@ -54,52 +54,57 @@
 
                 <!-- Coluna das instruções e mini cards dos parâmetros -->
                 <div class="col-md-6">
-                    <!-- Instruções -->
-                    <ul class="list-group list-group-flush mb-4">
-                        <li class="list-group-item">
-                            ✅ <strong>Execução Escapular:</strong> Antes de puxar, puxe os ombros para baixo e para trás para ativar o Grande Dorsal.
-                        </li>
-                        <li class="list-group-item">
-                            ✅ <strong>Foco nos Cotovelos:</strong> Puxe com os cotovelos e não com as mãos. Isso ajuda a ativar melhor o Grande Dorsal.
-                        </li>
-                        <li class="list-group-item">
-                            ✅ <strong>Postura Fixa:</strong> Mantenha a coluna reta, o peito aberto e o tronco levemente inclinado para trás durante toda a execução.
-                        </li>
-                        <li class="list-group-item">
-                            ✅ <strong>Fase Excêntrica Controlada:</strong> Suba o peso lentamente e de forma controlada para aumentar a eficiência do exercício.
-                        </li>
-                        <li class="list-group-item">
-                            ✅ <strong>Amplitude Total:</strong> Puxe a barra até a altura do peito e os braços totalmente na subida (alongamento), mantendo o controle total.
-                        </li>
-                    </ul>
+                    <!-- Instruções sem linhas e com ícone de seta verde -->
+                    <div class="mb-4">
+                        <p class="mb-2">
+                            <i class="bi bi-check2 text-success me-2"></i>
+                            <strong>Execução Escapular:</strong> Antes de puxar, puxe os ombros para baixo e para trás <br>para ativar o Grande Dorsal.
+                        </p>
+                        <p class="mb-2">
+                            <i class="bi bi-check2 text-success me-2"></i>
+                            <strong>Foco nos Cotovelos:</strong> Puxe com os cotovelos e não com as mãos. Isso ajuda <br> a ativar melhor o Grande Dorsal.
+                        </p>
+                        <p class="mb-2">
+                            <i class="bi bi-check2 text-success me-2"></i>
+                            <strong>Postura Fixa:</strong> Mantenha a coluna reta, o peito aberto e o tronco levemente <br>inclinado para trás durante toda a execução.
+                        </p>
+                        <p class="mb-2">
+                            <i class="bi bi-check2 text-success me-2"></i>
+                            <strong>Fase Excêntrica Controlada:</strong> Suba o peso lentamente e de forma controlada <br>para aumentar a eficiência do exercício.
+                        </p>
+                        <p class="mb-0">
+                            <i class="bi bi-check2 text-success me-2"></i>
+                            <strong>Amplitude Total:</strong> Puxe a barra até a altura do peito e os braços totalmente <br>na subida (alongamento), mantendo o controle total.
+                        </p>
+                    </div>
 
                     <!-- Mini cards dos parâmetros -->
-                    <div class="row text-center g-2 mb-5">
+                    <div class="row text-center g-1 mb-5">
                         <div class="col-6 col-lg-3">
-                            <div class="bg-light border p-1 shadow-sm">
-                                <i class="bi bi-list-check text-warning fs-5"></i>
-                                <div class="small fw-bold mt-1">Séries</div>
+                            <div class="mini-card d-flex flex-column justify-content-center align-items-center bg-light border shadow-sm p-2 mx-auto">
+                                <i class="bi bi-list-check text-warning fs-2 mb-1"></i>
+                                <div class="small fw-bold">Séries</div>
                                 <div class="small">3</div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="bg-light border p-1 shadow-sm">
-                                <i class="bi bi-repeat text-warning fs-5"></i>
-                                <div class="small fw-bold mt-1">Repetições</div>
+                            <div class="mini-card d-flex flex-column justify-content-center align-items-center bg-light border shadow-sm p-2 mx-auto">
+                                <i class="bi bi-repeat text-warning fs-2 mb-1"></i>
+                                <div class="small fw-bold">Repetições</div>
                                 <div class="small">12</div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="bg-light border p-1 shadow-sm">
-                                <i class="bi bi-stopwatch text-warning fs-5"></i>
-                                <div class="small fw-bold mt-1">Descanso</div>
+                            <div class="mini-card d-flex flex-column justify-content-center align-items-center bg-light border shadow-sm p-2 mx-auto">
+                                <i class="bi bi-stopwatch text-warning fs-2 mb-1"></i>
+                                <div class="small fw-bold">Descanso</div>
                                 <div class="small">3m</div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="bg-light border p-1 shadow-sm">
-                                <i class="bi bi-bar-chart text-warning fs-5"></i>
-                                <div class="small fw-bold mt-1">Carga</div>
+                            <div class="mini-card d-flex flex-column justify-content-center align-items-center bg-light border shadow-sm p-2 mx-auto">
+                                <i class="bi bi-bar-chart text-warning fs-2 mb-1"></i>
+                                <div class="small fw-bold">Carga</div>
                                 <div class="small">4kg</div>
                             </div>
                         </div>
