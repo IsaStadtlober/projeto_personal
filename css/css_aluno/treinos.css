@@ -12,6 +12,24 @@ main {
     margin: 80px 0 20px;
 }
 
+/* 🃏 Estilo dos cards */
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.4s ease;
+    z-index: 1;
+}
+
+/* 🏷️ Estilo dos títulos */
+h1 {
+    letter-spacing: 10px;
+}
+
+h2 {
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #222222e1;
+}
+
 /* 📅 Estilo do calendário FullCalendar */
 
 /* Dias do mês */
@@ -78,4 +96,9 @@ main {
 .btn-iniciar:hover {
     background-color: #e68f1f;
     color: #fff;
+}
+
+/* Barra de progresso com degradê */
+.progress-gradient {
+    background-image: linear-gradient(to right, #ffc107, #ff9800, #ff5722);
 }

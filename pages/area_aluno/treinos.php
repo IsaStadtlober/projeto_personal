@@ -30,29 +30,53 @@
     ?>
 
     <main class="container-fluid px-5 py-4">
-        <div class="mb-4">
-            <h1 class="fw-bold">TREINOS</h1>
-            <h2 class="text-muted">Bem-vindo, Diogo</h2>
+        <!-- Cabeçalho com título e saudação -->
+        <div class="bg-body-tertiary rounded-4 px-4 py-3 mb-3">
+            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-baseline gap-3">
+                    <h1 class="fw-bold mb-0">TREINOS</h1>
+                    <h2 class="fs-3 mb-0">Bem-vindo, Diogo</h2>
+                </div>
+            </div>
         </div>
 
         <div class="row g-3 align-items-stretch">
+            <!-- Card do Calendário de Treinos -->
             <div class="col-lg-4">
-                <div class="card shadow-sm rounded-4 h-100 d-flex flex-column">
+                <div class="card shadow-sm rounded-4 h-100 bg-white">
+                    <!-- Header -->
+                    <div class="card-header bg-white text-dark rounded-top-4 py-3 px-4">
+                        <h6 class="mb-0 fs-3 fw-bold text-center">Calendário de Treinos</h6>
+                    </div>
 
-                    <!-- Header do calendário com título e setas -->
-                    <div class="card-header bg-white text-dark rounded-top-4 p-3">
-                        <div class="d-flex justify-content-center align-items-center gap-4">
-                            <i id="prevMonth" class="bi bi-chevron-left fs-4 text-dark" style="cursor:pointer;"></i>
-                            <h6 id="calendarTitle" class="fs-3 fw-bold mb-0">Março 2025</h6>
-                            <i id="nextMonth" class="bi bi-chevron-right fs-4 text-dark" style="cursor:pointer;"></i>
+                    <!-- Corpo -->
+                    <div class="card-body px-4 py-4">
+                        <!-- Bloco com mês, ano e setas -->
+                        <div class="rounded-4 p-4 mb-4 bg-light">
+                            <div class="d-flex justify-content-center align-items-center gap-4">
+                                <i id="prevMonth" class="bi bi-chevron-left fs-4 text-dark" style="cursor:pointer;"></i>
+                                <h6 id="calendarTitle" class="fs-4 fw-bold mb-0">Março 2025</h6>
+                                <i id="nextMonth" class="bi bi-chevron-right fs-4 text-dark" style="cursor:pointer;"></i>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Corpo do calendário -->
-                    <div class="card-body p-3 d-flex flex-column justify-content-center align-items-center">
-                        <div id="calendarFull" class="calendar-container w-100"></div>
-                    </div>
+                        <!-- Calendário -->
+                        <div id="calendarFull" class="calendar-container w-100 mb-4"></div>
 
+                        <!-- Bloco de progresso -->
+                        <div class="border border-dark border-opacity-10 rounded-4 p-4 bg-white">
+                            <h6 class="fw-semibold text-center mb-3 fs-5">Meta de treinos em andamento</h6>
+
+                            <div class="progress rounded-pill" style="height: 10px;">
+                                <div class="progress-bar progress-gradient text-white" role="progressbar"
+                                    style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Texto fora do bloco -->
+                        <p id="trainingMessage" class="text-dark text-center mt-3">Você treinou <strong>8 dias</strong> 🔥</p>
+                    </div>
                 </div>
             </div>
 
@@ -64,10 +88,10 @@
                         <h6 class="mb-0 fs-3 fw-bold text-center">Próximos Treinos</h6>
                     </div>
 
-                    <!-- Corpo com scroll interno limitado a 3 blocos -->
-                    <div class="card-body px-4 py-3">
+                    <!-- Corpo -->
+                    <div class="card-body px-4 py-4">
                         <!-- Bloco 1 -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                        <div class="mb-2 p-3 rounded-4 bg-body-tertiary">
                             <h6 class="fw-bold fs-4 mb-2">Peito - Iniciante</h6>
                             <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 14 de Novembro</p>
                             <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:45 min</p>
@@ -81,14 +105,14 @@
                                 </div>
                                 <p class="text-muted mb-1">Dificuldade</p>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
-                                <button class="btn btn-reagendar px-5">Reagendar</button>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-outline-danger w-75 px-4">Cancelar</button>
+                                <button class="btn btn-reagendar w-75 px-4">Reagendar</button>
                             </div>
                         </div>
 
                         <!-- Bloco 2 -->
-                        <div class="mb-3 p-3 rounded-4 bg-body-tertiary">
+                        <div class="mb-2 p-3 rounded-4 bg-body-tertiary">
                             <h6 class="fw-bold fs-4 mb-2">Perna - Iniciante</h6>
                             <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 15 de Novembro</p>
                             <p class="text-muted mb-1"><i class="bi bi-clock"></i> 1:55 min</p>
@@ -102,56 +126,85 @@
                                 </div>
                                 <p class="text-muted mb-1">Dificuldade</p>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-outline-danger mx-3 px-5">Cancelar</button>
-                                <button class="btn btn-reagendar px-5">Reagendar</button>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-outline-danger w-75 px-4">Cancelar</button>
+                                <button class="btn btn-reagendar w-75 px-4">Reagendar</button>
+                            </div>
+                        </div>
+
+                        <!-- Bloco 3 -->
+                        <div class="mb-2 p-3 rounded-4 bg-body-tertiary">
+                            <h6 class="fw-bold fs-4 mb-2">Costas - Intermediário</h6>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar3"></i> 17 de Novembro</p>
+                            <p class="text-muted mb-1"><i class="bi bi-clock"></i> 2:00 min</p>
+                            <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="text-muted mb-1">Dificuldade</p>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-outline-danger w-75 px-4">Cancelar</button>
+                                <button class="btn btn-reagendar w-75 px-4">Reagendar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <!-- Treino do dia -->
             <div class="col-lg-4">
                 <div class="card shadow-sm rounded-4 h-100">
-                    <!-- Header interno -->
+                    <!-- Header -->
                     <div class="card-header bg-white text-dark rounded-top-4 p-3">
                         <h6 class="mb-0 fs-3 fw-bold text-center">Treino do dia</h6>
                     </div>
 
                     <!-- Corpo do card -->
                     <div class="card-body p-4">
-                        <img src="../../imagens/peito_iniciante.png.png"
-                            class="img-fluid mx-auto d-block rounded-top mb-3" alt="Imagem do treino">
-
-                        <p class="mb-2 fw-semibold text-dark fs-4">Treino Peito Iniciante</p>
-
-                        <p class="mb-3 fs-6 text-muted">
-                            Execute o movimento como se fosse sentar em uma cadeira, mantendo o abdômen contraído e as
-                            costas retas. Desça até que as coxas fiquem paralelas ao chão ou o máximo que sua mobilidade
-                            permitir.
-                        </p>
-
-                        <div class="mb-2 d-flex align-items-center fs-6">
-                            <i class="bi bi-clock me-2 text-warning"></i>
-                            <span class="text-dark">Duração: <strong>45 min</strong></span>
+                        <!-- Bloco da imagem -->
+                        <div class="bg-body-tertiary rounded-4 p-5 mb-3 text-center">
+                            <img src="../../imagens/peito_iniciante.png"
+                                class="img-fluid mx-auto d-block rounded-top"
+                                alt="Imagem do treino">
                         </div>
-                        <div class="d-flex align-items-center text-warning fs-6 mb-2 gap-2">
-                            <p class="text-muted mb-1">Dificuldade</p>
-                            <div>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
+
+                        <!-- Bloco do título e descrição -->
+                        <div class="bg-body-tertiary rounded-4 p-3 mb-3 text-center">
+                            <p class="fw-semibold text-dark fs-4 mb-2">Peito - Iniciante</p>
+                            <p class="fs-6 text-muted mb-0">
+                                Hoje vamos fortalecer o peito e tríceps para melhorar a postura e força funcional.
+                            </p>
+                        </div>
+
+                        <!-- Bloco da duração -->
+                        <div class="bg-body-tertiary rounded-3 p-3 mb-3 text-center">
+                            <div class="d-flex justify-content-center align-items-center fs-6">
+                                <i class="bi bi-clock me-2 text-warning"></i>
+                                <span class="text-dark">Duração: <strong>45 min</strong></span>
                             </div>
-
                         </div>
 
-                        <button class="btn btn-iniciar w-100 fw-semibold">Iniciar
-                            Treino</button>
+                        <!-- Bloco da dificuldade -->
+                        <div class="bg-body-tertiary rounded-3 p-3 mb-5 text-center">
+                            <div class="d-flex justify-content-center align-items-center text-warning fs-6 gap-2">
+                                <p class="text-muted mb-1">Dificuldade</p>
+                                <div>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Botão final -->
+                        <button class="btn btn-iniciar w-100 fw-semibold mt-3">Iniciar Treino</button>
                         <p class="text-success text-center mt-3 small">Você está quase 💪</p>
                     </div>
                 </div>
