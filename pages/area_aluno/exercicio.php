@@ -109,11 +109,24 @@
                 </div>
             </div>
 
-            <!-- Botão de iniciar exercício centralizado -->
+            <!-- Botão de iniciar exercício -->
             <div class="text-center mb-3">
-                <button class="btn btn-warning text-white fw-bold fs-5 w-50">
+                <button class="btn btn-warning text-white fw-bold fs-5 w-50" onclick="mostrarCronometro()">
                     Iniciar Exercício <i class="bi bi-rocket ms-2"></i>
                 </button>
+            </div>
+
+            <!-- Cronômetro (inicialmente oculto) -->
+            <div id="cronometroContainer" class="text-center mt-4" style="display: none;">
+                <h5 class="fw-bold mb-3">Cronômetro</h5>
+                <div id="cronometroDisplay" class="fs-2 fw-bold border rounded-circle px-5 py-3 d-inline-block bg-light text-dark">
+                    00:00
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-outline-secondary me-2" onclick="cronometro.pause()">Pausar</button>
+                    <button class="btn btn-outline-success me-2" onclick="cronometro.resume()">Retomar</button>
+                    <button class="btn btn-danger" onclick="finalizarCronometro()">Finalizar</button>
+                </div>
             </div>
         </div>
     </main>
@@ -123,6 +136,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../js/navbar-scroll.js"></script>
+    <script src="../../js/js_aluno/cronometro.js"></script>
 </body>
 
 </html>
